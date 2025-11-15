@@ -52,6 +52,11 @@ deployment_tracking.json
 r2_deployment_report_*.json
 r3_deployment_tracking.json
 r3_deployment_report_*.json
+r4_deployment_tracking.json
+r4_deployment_report_*.json
+multi_instance_tracking.json
+multi_instance_physics_report_*.json
+framework_composer_*.json
 triad_consensus_history.json
 triad_consensus_dynamics.json
 physics_deployment_tracking.json

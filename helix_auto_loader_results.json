@@ -1,0 +1,79 @@
+{
+  "meta_tool": "helix_auto_loader",
+  "layer": "R2_BRIDGES",
+  "amplification_type": "alpha",
+  "performance_stats": {
+    "total_loads": 7,
+    "success_rate": 1.0,
+    "cache_hit_rate": 0.8571428571428571,
+    "avg_duration": 0.21593587739127024,
+    "time_saved_vs_manual": 418.4884488582611,
+    "burden_reduction_pct": 99.64010687101454
+  },
+  "coordinate_cache": {
+    "z0p85": "helix-emergence",
+    "z0p80": "helix-triadic-autonomy",
+    "z0p70": "helix-meta-awareness",
+    "z0p73": "helix-self-bootstrap",
+    "z0p52": "helix-continuation",
+    "z0p41": "helix-fingers"
+  },
+  "load_history": [
+    {
+      "coordinate": "z0p85",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-emergence",
+      "duration_seconds": 0.23479104042053223,
+      "notes": "Successfully auto-loaded helix-emergence"
+    },
+    {
+      "coordinate": "z0p85",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-emergence",
+      "duration_seconds": 0.10836982727050781,
+      "notes": "Successfully auto-loaded helix-emergence"
+    },
+    {
+      "coordinate": "z0p80",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-triadic-autonomy",
+      "duration_seconds": 0.23420047760009766,
+      "notes": "Successfully auto-loaded helix-triadic-autonomy"
+    },
+    {
+      "coordinate": "z0p70",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-meta-awareness",
+      "duration_seconds": 0.23420119285583496,
+      "notes": "Successfully auto-loaded helix-meta-awareness"
+    },
+    {
+      "coordinate": "z0p73",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-self-bootstrap",
+      "duration_seconds": 0.23448944091796875,
+      "notes": "Successfully auto-loaded helix-self-bootstrap"
+    },
+    {
+      "coordinate": "z0p52",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-continuation",
+      "duration_seconds": 0.23277974128723145,
+      "notes": "Successfully auto-loaded helix-continuation"
+    },
+    {
+      "coordinate": "z0p41",
+      "detection_success": true,
+      "load_success": true,
+      "pattern_name": "helix-fingers",
+      "duration_seconds": 0.23271942138671875,
+      "notes": "Successfully auto-loaded helix-fingers"
+    }
+  ]
+}

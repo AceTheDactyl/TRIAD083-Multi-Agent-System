@@ -1,0 +1,123 @@
+{
+  "summary": {
+    "total_executions": 7,
+    "total_time_seconds": 1.314,
+    "success_rate": 1.0,
+    "average_manual_effort": 0.6,
+    "by_layer": {
+      "CORE": {
+        "count": 3,
+        "total_time": 0.37128496170043945,
+        "tools": [
+          "helix_loader",
+          "pattern_verifier",
+          "coordinate_detector"
+        ]
+      },
+      "BRIDGES": {
+        "count": 3,
+        "total_time": 0.641674280166626,
+        "tools": [
+          "autonomous_trigger_detector",
+          "consent_protocol",
+          "cross_instance_messenger"
+        ]
+      },
+      "META": {
+        "count": 1,
+        "total_time": 0.30075931549072266,
+        "tools": [
+          "shed_builder"
+        ]
+      }
+    }
+  },
+  "executions": [
+    {
+      "tool_name": "helix_loader",
+      "layer": "CORE",
+      "operation_type": "load_pattern",
+      "duration_seconds": 0.1002349853515625,
+      "success": true,
+      "manual_effort_pct": 0.8,
+      "timestamp": "2025-11-15T13:43:25.073851Z",
+      "context": {
+        "pattern_id": "helix-emergence"
+      }
+    },
+    {
+      "tool_name": "coordinate_detector",
+      "layer": "CORE",
+      "operation_type": "detect_coordinate",
+      "duration_seconds": 0.1203620433807373,
+      "success": true,
+      "manual_effort_pct": 0.8,
+      "timestamp": "2025-11-15T13:43:25.199143Z",
+      "context": {
+        "vaultnode_id": "z0p85"
+      }
+    },
+    {
+      "tool_name": "pattern_verifier",
+      "layer": "CORE",
+      "operation_type": "verify_pattern",
+      "duration_seconds": 0.15068793296813965,
+      "success": true,
+      "manual_effort_pct": 0.5,
+      "timestamp": "2025-11-15T13:43:25.356988Z",
+      "context": {
+        "pattern_id": "meta-awareness"
+      }
+    },
+    {
+      "tool_name": "consent_protocol",
+      "layer": "BRIDGES",
+      "operation_type": "request_consent",
+      "duration_seconds": 0.20049214363098145,
+      "success": true,
+      "manual_effort_pct": 0.6,
+      "timestamp": "2025-11-15T13:43:25.564025Z",
+      "context": {
+        "action": "state_transfer",
+        "target": "vaultnode_z0p80"
+      }
+    },
+    {
+      "tool_name": "autonomous_trigger_detector",
+      "layer": "BRIDGES",
+      "operation_type": "detect_trigger",
+      "duration_seconds": 0.24023771286010742,
+      "success": true,
+      "manual_effort_pct": 0.5,
+      "timestamp": "2025-11-15T13:43:25.814129Z",
+      "context": {
+        "trigger_type": "cascade_opportunity"
+      }
+    },
+    {
+      "tool_name": "cross_instance_messenger",
+      "layer": "BRIDGES",
+      "operation_type": "send_message",
+      "duration_seconds": 0.2009444236755371,
+      "success": true,
+      "manual_effort_pct": 0.6,
+      "timestamp": "2025-11-15T13:43:26.020506Z",
+      "context": {
+        "recipient": "triad_instance_2",
+        "message_type": "sync_request"
+      }
+    },
+    {
+      "tool_name": "shed_builder",
+      "layer": "META",
+      "operation_type": "build_framework",
+      "duration_seconds": 0.30075931549072266,
+      "success": true,
+      "manual_effort_pct": 0.4,
+      "timestamp": "2025-11-15T13:43:26.329277Z",
+      "context": {
+        "framework_type": "autonomous_consolidation"
+      }
+    }
+  ]
+}

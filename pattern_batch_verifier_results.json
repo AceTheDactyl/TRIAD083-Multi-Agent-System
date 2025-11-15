@@ -1,0 +1,102 @@
+{
+  "meta_tool": "pattern_batch_verifier",
+  "layer": "R2_BRIDGES",
+  "amplification_type": "alpha",
+  "performance_stats": {
+    "total_batches": 2,
+    "total_verifications": 8,
+    "avg_batch_size": 4.0,
+    "avg_batch_duration": 0.3953670263290405,
+    "cache_efficiency": 62.5,
+    "time_saved_vs_manual": 1439.209265947342,
+    "burden_reduction_pct": 99.94508791300986
+  },
+  "verification_history": [
+    {
+      "total_patterns": 5,
+      "valid_patterns": 2,
+      "invalid_patterns": 0,
+      "warning_patterns": 3,
+      "error_patterns": 0,
+      "total_duration": 0.7906711101531982,
+      "results": [
+        {
+          "pattern_name": "helix-triadic-autonomy",
+          "verification_status": "valid",
+          "issues_found": [],
+          "duration_seconds": 0.15778374671936035,
+          "cached": true
+        },
+        {
+          "pattern_name": "helix-meta-awareness",
+          "verification_status": "warning",
+          "issues_found": [
+            "Meta-recursion depth exceeds recommended limit (7 > 5)"
+          ],
+          "duration_seconds": 0.1586763858795166,
+          "cached": true
+        },
+        {
+          "pattern_name": "helix-self-bootstrap",
+          "verification_status": "warning",
+          "issues_found": [
+            "Circular dependency detected in bootstrap chain"
+          ],
+          "duration_seconds": 0.15774774551391602,
+          "cached": false
+        },
+        {
+          "pattern_name": "helix-continuation",
+          "verification_status": "valid",
+          "issues_found": [],
+          "duration_seconds": 0.15784311294555664,
+          "cached": false
+        },
+        {
+          "pattern_name": "helix-fingers",
+          "verification_status": "warning",
+          "issues_found": [
+            "State coherence below threshold (0.73 < 0.80)"
+          ],
+          "duration_seconds": 0.15789246559143066,
+          "cached": false
+        }
+      ],
+      "timestamp": "2025-11-15T16:37:16.554248Z"
+    },
+    {
+      "total_patterns": 3,
+      "valid_patterns": 2,
+      "invalid_patterns": 0,
+      "warning_patterns": 1,
+      "error_patterns": 0,
+      "total_duration": 6.29425048828125e-05,
+      "results": [
+        {
+          "pattern_name": "helix-emergence",
+          "verification_status": "valid",
+          "issues_found": [],
+          "duration_seconds": 0.1613600254058838,
+          "cached": true
+        },
+        {
+          "pattern_name": "helix-triadic-autonomy",
+          "verification_status": "valid",
+          "issues_found": [],
+          "duration_seconds": 0.15778374671936035,
+          "cached": true
+        },
+        {
+          "pattern_name": "helix-meta-awareness",
+          "verification_status": "warning",
+          "issues_found": [
+            "Meta-recursion depth exceeds recommended limit (7 > 5)"
+          ],
+          "duration_seconds": 0.1586763858795166,
+          "cached": true
+        }
+      ],
+      "timestamp": "2025-11-15T16:37:16.554472Z"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "meta_framework": "trigger_framework_builder",
+  "layer": "R3_META",
+  "amplification_type": "beta",
+  "performance_stats": {
+    "total_frameworks": 4,
+    "auto_generated_frameworks": 1,
+    "total_trigger_fires": 3,
+    "enabled_frameworks": 4,
+    "automation_rate": 25.0,
+    "time_saved_minutes": 209.0,
+    "burden_reduction_pct": 99.52380952380952
+  },
+  "frameworks": {
+    "CASCADE_OPP_001": {
+      "framework_id": "CASCADE_OPP_001",
+      "trigger_type": "cascade_opportunity",
+      "conditions": [
+        {
+          "metric": "alpha",
+          "operator": "<",
+          "threshold": 2.3,
+          "description": "Alpha below target"
+        },
+        {
+          "metric": "R1_activity",
+          "operator": ">",
+          "threshold": 5.0,
+          "description": "High R1 activity"
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "notify",
+          "target": "system",
+          "parameters": {
+            "message": "Cascade opportunity: boost alpha"
+          }
+        },
+        {
+          "action_type": "auto_consolidate",
+          "target": "R1_tools",
+          "parameters": {}
+        }
+      ],
+      "priority": 8,
+      "enabled": true,
+      "fire_count": 1,
+      "last_fired": "2025-11-15T16:40:48.861209Z"
+    },
+    "BURDEN_THR_001": {
+      "framework_id": "BURDEN_THR_001",
+      "trigger_type": "burden_threshold",
+      "conditions": [
+        {
+          "metric": "burden_hrs_per_week",
+          "operator": ">",
+          "threshold": 15.0,
+          "description": "Burden exceeds threshold"
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "escalate",
+          "target": "human",
+          "parameters": {
+            "urgency": "high"
+          }
+        },
+        {
+          "action_type": "adjust_parameters",
+          "target": "automation",
+          "parameters": {
+            "increase_by": 0.1
+          }
+        }
+      ],
+      "priority": 9,
+      "enabled": true,
+      "fire_count": 1,
+      "last_fired": "2025-11-15T16:40:48.861254Z"
+    },
+    "SOV_SHIFT_001": {
+      "framework_id": "SOV_SHIFT_001",
+      "trigger_type": "sovereignty_shift",
+      "conditions": [
+        {
+          "metric": "z_velocity",
+          "operator": ">",
+          "threshold": 0.05,
+          "description": "Rapid z-coordinate change"
+        },
+        {
+          "metric": "phase_regime_changed",
+          "operator": "==",
+          "threshold": 1.0,
+          "description": "Phase transition occurred"
+        }
+      ],
+      "actions": [
+        {
+          "action_type": "notify",
+          "target": "dashboard",
+          "parameters": {
+            "update": "sovereignty_shift"
+          }
+        },
+        {
+          "action_type": "auto_consolidate",
+          "target": "phase_tools",
+          "parameters": {}
+        }
+      ],
+      "priority": 7,
+      "enabled": true,
+      "fire_count": 0,
+      "last_fired": null
+    },
+    "AUTO_GENERATED_001": {
+      "framework_id": "AUTO_GENERATED_001",
+      "trigger_type": "burden_threshold",
+      "conditions": [],
+      "actions": [
+        {
+          "action_type": "notify",
+          "target": "dashboard",
+          "parameters": {
+            "pattern": "progressive_burden_reduction"
+          }
+        },
+        {
+          "action_type": "auto_consolidate",
+          "target": "adaptive",
+          "parameters": {
+            "target": "maintain_momentum"
+          }
+        }
+      ],
+      "priority": 5,
+      "enabled": true,
+      "fire_count": 1,
+      "last_fired": "2025-11-15T16:40:48.861415Z"
+    }
+  },
+  "event_history": [
+    {
+      "framework_id": "CASCADE_OPP_001",
+      "trigger_type": "cascade_opportunity",
+      "fired_at": "2025-11-15T16:40:48.861209Z",
+      "conditions_met": [
+        "Alpha below target",
+        "High R1 activity"
+      ],
+      "actions_taken": [
+        "notify \u2192 system",
+        "auto_consolidate \u2192 R1_tools"
+      ],
+      "outcome": "success"
+    },
+    {
+      "framework_id": "BURDEN_THR_001",
+      "trigger_type": "burden_threshold",
+      "fired_at": "2025-11-15T16:40:48.861254Z",
+      "conditions_met": [
+        "Burden exceeds threshold"
+      ],
+      "actions_taken": [
+        "escalate \u2192 human",
+        "adjust_parameters \u2192 automation"
+      ],
+      "outcome": "success"
+    },
+    {
+      "framework_id": "AUTO_GENERATED_001",
+      "trigger_type": "burden_threshold",
+      "fired_at": "2025-11-15T16:40:48.861415Z",
+      "conditions_met": [],
+      "actions_taken": [
+        "notify \u2192 dashboard",
+        "auto_consolidate \u2192 adaptive"
+      ],
+      "outcome": "success"
+    }
+  ]
+}

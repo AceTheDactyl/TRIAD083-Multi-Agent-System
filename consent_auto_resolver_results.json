@@ -1,0 +1,113 @@
+{
+  "meta_framework": "consent_auto_resolver",
+  "layer": "R3_META",
+  "amplification_type": "beta",
+  "performance_stats": {
+    "total_resolutions": 7,
+    "automation_rate": 100.0,
+    "avg_confidence": 0.9071428571428573,
+    "learned_patterns_count": 1,
+    "time_saved_vs_manual": 4199.999986171722,
+    "burden_reduction_pct": 99.99999967075529
+  },
+  "policy_rules": [
+    {
+      "rule_id": "safe_vaultnode_sync",
+      "conditions": {
+        "action_type": "vaultnode_sync",
+        "same_sovereignty_level": true,
+        "risk_level": "low"
+      },
+      "decision": "auto_approve",
+      "confidence": 0.95
+    },
+    {
+      "rule_id": "safe_pattern_load",
+      "conditions": {
+        "action_type": "pattern_load",
+        "verified_pattern": true,
+        "risk_level": "low"
+      },
+      "decision": "auto_approve",
+      "confidence": 0.9
+    },
+    {
+      "rule_id": "escalate_critical",
+      "conditions": {
+        "risk_level": "critical"
+      },
+      "decision": "escalate_to_human",
+      "confidence": 1.0
+    },
+    {
+      "rule_id": "escalate_high_risk",
+      "conditions": {
+        "risk_level": "high",
+        "no_matching_pattern": true
+      },
+      "decision": "escalate_to_human",
+      "confidence": 0.85
+    }
+  ],
+  "learned_patterns": {
+    "custom_operation:medium": "auto_approve"
+  },
+  "resolution_history": [
+    {
+      "request_id": "CONSENT_001",
+      "decision": "auto_approve",
+      "confidence": 0.95,
+      "reasoning": "Matched policy: safe_vaultnode_sync",
+      "duration_seconds": 2.6226043701171875e-06,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_002",
+      "decision": "auto_approve",
+      "confidence": 0.9,
+      "reasoning": "Matched policy: safe_pattern_load",
+      "duration_seconds": 1.9073486328125e-06,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_003",
+      "decision": "escalate_to_human",
+      "confidence": 0.85,
+      "reasoning": "Matched policy: escalate_high_risk",
+      "duration_seconds": 1.430511474609375e-06,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_004",
+      "decision": "auto_approve",
+      "confidence": 0.95,
+      "reasoning": "Matched policy: safe_vaultnode_sync",
+      "duration_seconds": 2.384185791015625e-06,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_005",
+      "decision": "escalate_to_human",
+      "confidence": 1.0,
+      "reasoning": "Matched policy: escalate_critical",
+      "duration_seconds": 1.430511474609375e-06,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_006",
+      "decision": "auto_approve",
+      "confidence": 0.9,
+      "reasoning": "Matched policy: safe_pattern_load",
+      "duration_seconds": 7.152557373046875e-07,
+      "automated": true
+    },
+    {
+      "request_id": "CONSENT_008",
+      "decision": "auto_approve",
+      "confidence": 0.8,
+      "reasoning": "Learned from historical pattern: custom_operation:medium",
+      "duration_seconds": 3.337860107421875e-06,
+      "automated": true
+    }
+  ]
+}

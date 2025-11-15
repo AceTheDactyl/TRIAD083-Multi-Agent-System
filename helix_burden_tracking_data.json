@@ -1,0 +1,123 @@
+{
+  "operations": [
+    {
+      "operation_id": "HELIX_OP_000001",
+      "operation_type": "load_pattern",
+      "layer": "CORE",
+      "tool_name": "helix_loader",
+      "start_time": "2025-11-15T13:43:24.973380",
+      "end_time": "2025-11-15T13:43:25.073661",
+      "duration_seconds": 0.100281,
+      "duration_hours": 2.7855833333333332e-05,
+      "success": true,
+      "manual_effort_pct": 80.0,
+      "notes": "Context: {'pattern_id': 'helix-emergence'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000002",
+      "operation_type": "detect_coordinate",
+      "layer": "CORE",
+      "tool_name": "coordinate_detector",
+      "start_time": "2025-11-15T13:43:25.078573",
+      "end_time": "2025-11-15T13:43:25.198975",
+      "duration_seconds": 0.120402,
+      "duration_hours": 3.3444999999999996e-05,
+      "success": true,
+      "manual_effort_pct": 80.0,
+      "notes": "Context: {'vaultnode_id': 'z0p85'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000003",
+      "operation_type": "verify_pattern",
+      "layer": "CORE",
+      "tool_name": "pattern_verifier",
+      "start_time": "2025-11-15T13:43:25.206084",
+      "end_time": "2025-11-15T13:43:25.356818",
+      "duration_seconds": 0.150734,
+      "duration_hours": 4.1870555555555556e-05,
+      "success": true,
+      "manual_effort_pct": 50.0,
+      "notes": "Context: {'pattern_id': 'meta-awareness'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000004",
+      "operation_type": "manage_consent",
+      "layer": "BRIDGES",
+      "tool_name": "consent_protocol",
+      "start_time": "2025-11-15T13:43:25.363315",
+      "end_time": "2025-11-15T13:43:25.563850",
+      "duration_seconds": 0.200535,
+      "duration_hours": 5.570416666666666e-05,
+      "success": true,
+      "manual_effort_pct": 60.0,
+      "notes": "Context: {'action': 'state_transfer', 'target': 'vaultnode_z0p80'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000005",
+      "operation_type": "detect_trigger",
+      "layer": "BRIDGES",
+      "tool_name": "autonomous_trigger_detector",
+      "start_time": "2025-11-15T13:43:25.573681",
+      "end_time": "2025-11-15T13:43:25.813965",
+      "duration_seconds": 0.240284,
+      "duration_hours": 6.674555555555555e-05,
+      "success": true,
+      "manual_effort_pct": 50.0,
+      "notes": "Context: {'trigger_type': 'cascade_opportunity'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000006",
+      "operation_type": "sync_memory",
+      "layer": "BRIDGES",
+      "tool_name": "cross_instance_messenger",
+      "start_time": "2025-11-15T13:43:25.819328",
+      "end_time": "2025-11-15T13:43:26.020319",
+      "duration_seconds": 0.200991,
+      "duration_hours": 5.5830833333333334e-05,
+      "success": true,
+      "manual_effort_pct": 60.0,
+      "notes": "Context: {'recipient': 'triad_instance_2', 'message_type': 'sync_request'}"
+    },
+    {
+      "operation_id": "HELIX_OP_000007",
+      "operation_type": "build_shed",
+      "layer": "META",
+      "tool_name": "shed_builder",
+      "start_time": "2025-11-15T13:43:26.028314",
+      "end_time": "2025-11-15T13:43:26.329117",
+      "duration_seconds": 0.300803,
+      "duration_hours": 8.355638888888889e-05,
+      "success": true,
+      "manual_effort_pct": 40.0,
+      "notes": "Context: {'framework_type': 'autonomous_consolidation'}"
+    }
+  ],
+  "weekly_summary": {
+    "period": "7_days",
+    "total_hours": 0.00036500833333333327,
+    "total_operations": 7,
+    "time_by_layer": {
+      "CORE": 0.00010317138888888888,
+      "BRIDGES": 0.00017828055555555556,
+      "META": 8.355638888888889e-05
+    },
+    "operations_by_type": {
+      "load_pattern": 1,
+      "detect_coordinate": 1,
+      "verify_pattern": 1,
+      "manage_consent": 1,
+      "detect_trigger": 1,
+      "sync_memory": 1,
+      "build_shed": 1
+    },
+    "average_manual_effort_pct": 60.0,
+    "success_rate_pct": 100.0,
+    "current_sovereignty": {
+      "z_coordinate": 1.0,
+      "phase_regime": "supercritical_stable",
+      "R1": 9.041556737669612,
+      "R2": 16.415714253099242,
+      "R3": 40.0
+    }
+  }
+}

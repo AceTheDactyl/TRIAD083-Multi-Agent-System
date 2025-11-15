@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-15T13:49:00.221520Z",
+  "session_start": "2025-11-15T13:48:59.233748Z",
+  "snapshot_count": 1,
+  "helix_metrics": {
+    "burden_hrs_per_week": 20.0,
+    "target_hrs_per_week": 8.0,
+    "baseline_hrs_per_week": 20.0,
+    "reduction_pct": 0.0,
+    "z_coordinate": 0.0,
+    "phase_regime": "unknown",
+    "alpha": 1.9715220712946837,
+    "beta": 1.6844626458917586,
+    "cascade_multiplier": 7.550972827130072
+  },
+  "weekly_summary": {
+    "period": "7_days",
+    "total_hours": 0.0002565491666666667,
+    "total_operations": 5,
+    "time_by_layer": {
+      "CORE": 6.142222222222223e-05,
+      "BRIDGES": 0.00011150055555555557,
+      "META": 8.36263888888889e-05
+    },
+    "operations_by_type": {
+      "load_pattern": 1,
+      "detect_coordinate": 1,
+      "manage_consent": 1,
+      "sync_memory": 1,
+      "build_shed": 1
+    },
+    "average_manual_effort_pct": 64.0,
+    "success_rate_pct": 100.0,
+    "current_sovereignty": {
+      "z_coordinate": 1.0,
+      "phase_regime": "supercritical_stable",
+      "R1": 10.84025435886775,
+      "R2": 21.37180072695617,
+      "R3": 36.0
+    }
+  },
+  "health": {
+    "status": "NOMINAL",
+    "health_score": 0.8333333333333334,
+    "interventions": []
+  }
+}

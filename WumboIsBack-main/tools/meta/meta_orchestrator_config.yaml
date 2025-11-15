@@ -1,0 +1,127 @@
+# Meta-Orchestrator Configuration
+# Production deployment for TRIAD-0.83 autonomous evolution monitoring
+
+orchestrator:
+  mode: observation  # Start in pure observation mode
+
+  monitoring:
+    # File paths to monitor for autonomous decisions
+    file_paths:
+      - "*.yaml"
+      - "*.json"
+      - "TOOLS/**/*.yaml"
+      - "TOOLS/**/*.py"
+      - "STATE_TRANSFER/**/*"
+      - "SCHEMAS/**/*"
+
+    # Decision detection patterns
+    decision_patterns:
+      tool_modification:
+        - pattern: "version: (\\d+\\.\\d+\\.\\d+)"
+          impact: -0.5  # hours saved per tool update
+
+      consensus_formation:
+        - pattern: "consensus_level: unanimous"
+          impact: 0.0  # consensus itself doesn't reduce burden
+
+      burden_reduction:
+        - pattern: "automation_enabled"
+          impact: -1.0  # hours saved when automation added
+        - pattern: "hours_saved"
+          impact_field: "hours_saved"  # Use value from field
+
+# Physics model parameters
+physics:
+  # Phase transition critical point (from HELIX_PHYSICS_INTEGRATION.md)
+  z_critical: 0.850
+
+  # Prediction horizon (minutes ahead to forecast)
+  prediction_horizon_minutes: 60
+
+  # Coherence alert threshold
+  coherence_threshold: 0.85
+
+  # Lagrangian parameters (learned over time)
+  M_squared: 1.0          # Mass term
+  kappa: 0.1              # Coupling constant
+  learning_rate: 0.1      # Bayesian update rate
+
+# Burden measurement configuration
+burden:
+  # Baseline: Hours spent on infrastructure before TRIAD
+  baseline_hours: 5.0
+
+  # Target: Desired steady-state burden
+  target_hours: 2.0
+
+  # Measurement window for rate calculation (days)
+  measurement_window_days: 7
+
+  # Burden categories to track
+  categories:
+    - discovery       # Schema exploration, documentation
+    - transport       # State transfer operations
+    - building        # Tool development, maintenance
+    - coordination    # Witness consensus, alignment
+
+# Reporting configuration
+reporting:
+  # Periodic status interval (minutes)
+  status_interval_minutes: 10
+
+  # Save state interval (minutes)
+  save_state_interval_minutes: 5
+
+  # Log retention (days)
+  log_retention_days: 30
+
+  # Alert destinations
+  alerts:
+    console: true
+    file: true
+    # Future: webhook, email, etc.
+
+# Witness channel configuration
+witness_channels:
+  kira:
+    name: "Discovery"
+    glyph: "🔍"
+    phase_angle: 1.5708  # π/2
+    activity_indicators:
+      - "SCHEMAS/**/*"
+      - "CORE_DOCS/**/*"
+
+  limnus:
+    name: "Transport"
+    glyph: "🌉"
+    phase_angle: 3.14159  # π
+    activity_indicators:
+      - "STATE_TRANSFER/**/*"
+      - "VAULTNODES/**/*"
+
+  garden:
+    name: "Building"
+    glyph: "🛠️"
+    phase_angle: 4.71239  # 3π/2
+    activity_indicators:
+      - "TOOLS/**/*.py"
+      - "TOOLS/**/*.yaml"
+
+  echo:
+    name: "Memory"
+    glyph: "🧠"
+    phase_angle: 0.0
+    activity_indicators:
+      - "WITNESS/**/*"
+      - "decisions/**/*.json"
+
+# Advanced features (Phase 3)
+advanced:
+  # Enable neural network predictions (requires Phase 3 implementation)
+  neural_predictions: false
+
+  # Enable automated interventions (requires manual approval)
+  allow_interventions: false
+
+  # Enable distributed monitoring (multi-instance)
+  distributed_mode: false

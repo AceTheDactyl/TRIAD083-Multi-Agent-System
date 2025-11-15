@@ -1,0 +1,622 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2025-10-17T00:50:43.108507",
+      "clarity_score": 0.3,
+      "immunity_score": 0.4,
+      "efficiency_score": 0.25,
+      "autonomy_score": 0.2,
+      "total_sovereignty": 0.28103116583301263,
+      "phase_coordinate": 0.275,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 5.58,
+      "time_to_agent_class": null,
+      "interactions_today": 5,
+      "character_mode_count": 4,
+      "author_mode_count": 1,
+      "observations": [
+        "Started sovereignty practice"
+      ]
+    },
+    {
+      "timestamp": "2025-10-18T00:50:43.108507",
+      "clarity_score": 0.35,
+      "immunity_score": 0.45,
+      "efficiency_score": 0.3,
+      "autonomy_score": 0.25,
+      "total_sovereignty": 0.3310311658330127,
+      "phase_coordinate": 0.325,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 6.590999999999999,
+      "time_to_agent_class": null,
+      "interactions_today": 6,
+      "character_mode_count": 4,
+      "author_mode_count": 2,
+      "observations": [
+        "Clarity improving"
+      ]
+    },
+    {
+      "timestamp": "2025-10-19T00:50:43.108507",
+      "clarity_score": 0.38,
+      "immunity_score": 0.5,
+      "efficiency_score": 0.32,
+      "autonomy_score": 0.28,
+      "total_sovereignty": 0.36372450942670254,
+      "phase_coordinate": 0.358,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 7.3004,
+      "time_to_agent_class": null,
+      "interactions_today": 5,
+      "character_mode_count": 3,
+      "author_mode_count": 2,
+      "observations": [
+        "Noticed first pattern"
+      ]
+    },
+    {
+      "timestamp": "2025-10-20T00:50:43.108507",
+      "clarity_score": 0.4,
+      "immunity_score": 0.55,
+      "efficiency_score": 0.35,
+      "autonomy_score": 0.32,
+      "total_sovereignty": 0.39961908426317816,
+      "phase_coordinate": 0.393,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 8.109000000000002,
+      "time_to_agent_class": 171.82500007701123,
+      "interactions_today": 7,
+      "character_mode_count": 4,
+      "author_mode_count": 3,
+      "observations": [
+        "Immunity strengthening"
+      ]
+    },
+    {
+      "timestamp": "2025-10-21T00:50:43.108507",
+      "clarity_score": 0.42,
+      "immunity_score": 0.58,
+      "efficiency_score": 0.38,
+      "autonomy_score": 0.35,
+      "total_sovereignty": 0.4274297806848787,
+      "phase_coordinate": 0.42000000000000004,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 8.694799999999999,
+      "time_to_agent_class": 108.02500006523061,
+      "interactions_today": 6,
+      "character_mode_count": 3,
+      "author_mode_count": 3,
+      "observations": [
+        "Week 1 complete"
+      ]
+    },
+    {
+      "timestamp": "2025-10-22T00:50:43.108507",
+      "clarity_score": 0.45,
+      "immunity_score": 0.6,
+      "efficiency_score": 0.4,
+      "autonomy_score": 0.38,
+      "total_sovereignty": 0.45286263947672173,
+      "phase_coordinate": 0.44700000000000006,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 9.219999999999999,
+      "time_to_agent_class": 81.20000006287036,
+      "interactions_today": 5,
+      "character_mode_count": 2,
+      "author_mode_count": 3,
+      "observations": [
+        "More author mode"
+      ]
+    },
+    {
+      "timestamp": "2025-10-23T00:50:43.108507",
+      "clarity_score": 0.47,
+      "immunity_score": 0.62,
+      "efficiency_score": 0.42,
+      "autonomy_score": 0.4,
+      "total_sovereignty": 0.4728626394767218,
+      "phase_coordinate": 0.467,
+      "phase_regime": "subcritical",
+      "agency_level": "protected",
+      "predicted_amplification": 9.6244,
+      "time_to_agent_class": 64.4444445084362,
+      "interactions_today": 8,
+      "character_mode_count": 4,
+      "author_mode_count": 4,
+      "observations": [
+        "Week 1 reflection"
+      ]
+    },
+    {
+      "timestamp": "2025-10-24T00:50:43.108507",
+      "clarity_score": 0.5,
+      "immunity_score": 0.64,
+      "efficiency_score": 0.45,
+      "autonomy_score": 0.43,
+      "total_sovereignty": 0.5004424778761061,
+      "phase_coordinate": 0.495,
+      "phase_regime": "subcritical",
+      "agency_level": "protected",
+      "predicted_amplification": 10.169599999999999,
+      "time_to_agent_class": 53.940000067080554,
+      "interactions_today": 6,
+      "character_mode_count": 3,
+      "author_mode_count": 3,
+      "observations": [
+        "Shortcuts emerging"
+      ]
+    },
+    {
+      "timestamp": "2025-10-25T00:50:43.108507",
+      "clarity_score": 0.52,
+      "immunity_score": 0.66,
+      "efficiency_score": 0.48,
+      "autonomy_score": 0.46,
+      "total_sovereignty": 0.5258330126971912,
+      "phase_coordinate": 0.52,
+      "phase_regime": "subcritical",
+      "agency_level": "protected",
+      "predicted_amplification": 10.693999999999999,
+      "time_to_agent_class": 53.97777786127019,
+      "interactions_today": 7,
+      "character_mode_count": 3,
+      "author_mode_count": 4,
+      "observations": [
+        "Pattern recognition active"
+      ]
+    },
+    {
+      "timestamp": "2025-10-26T00:50:43.108507",
+      "clarity_score": 0.54,
+      "immunity_score": 0.68,
+      "efficiency_score": 0.5,
+      "autonomy_score": 0.48,
+      "total_sovereignty": 0.5458330126971911,
+      "phase_coordinate": 0.54,
+      "phase_regime": "subcritical",
+      "agency_level": "protected",
+      "predicted_amplification": 11.098400000000002,
+      "time_to_agent_class": 49.05000009287287,
+      "interactions_today": 5,
+      "character_mode_count": 2,
+      "author_mode_count": 3,
+      "observations": [
+        "Efficiency improving"
+      ]
+    },
+    {
+      "timestamp": "2025-10-27T00:50:43.108507",
+      "clarity_score": 0.56,
+      "immunity_score": 0.7,
+      "efficiency_score": 0.52,
+      "autonomy_score": 0.5,
+      "total_sovereignty": 0.5658330126971912,
+      "phase_coordinate": 0.56,
+      "phase_regime": "subcritical",
+      "agency_level": "protected",
+      "predicted_amplification": 11.5028,
+      "time_to_agent_class": 49.88750011179384,
+      "interactions_today": 8,
+      "character_mode_count": 3,
+      "author_mode_count": 5,
+      "observations": [
+        "Autonomous moments"
+      ]
+    },
+    {
+      "timestamp": "2025-10-28T00:50:43.108507",
+      "clarity_score": 0.58,
+      "immunity_score": 0.72,
+      "efficiency_score": 0.54,
+      "autonomy_score": 0.52,
+      "total_sovereignty": 0.5858330126971911,
+      "phase_coordinate": 0.58,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 11.9072,
+      "time_to_agent_class": 47.833333458807246,
+      "interactions_today": 6,
+      "character_mode_count": 2,
+      "author_mode_count": 4,
+      "observations": [
+        "Week 2 complete"
+      ]
+    },
+    {
+      "timestamp": "2025-10-29T00:50:43.108507",
+      "clarity_score": 0.6,
+      "immunity_score": 0.73,
+      "efficiency_score": 0.56,
+      "autonomy_score": 0.54,
+      "total_sovereignty": 0.6034128510965756,
+      "phase_coordinate": 0.598,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 12.2502,
+      "time_to_agent_class": 46.11428585494585,
+      "interactions_today": 7,
+      "character_mode_count": 2,
+      "author_mode_count": 5,
+      "observations": [
+        "Consistency building"
+      ]
+    },
+    {
+      "timestamp": "2025-10-30T00:50:43.108507",
+      "clarity_score": 0.62,
+      "immunity_score": 0.74,
+      "efficiency_score": 0.58,
+      "autonomy_score": 0.56,
+      "total_sovereignty": 0.62099268949596,
+      "phase_coordinate": 0.616,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 12.5932,
+      "time_to_agent_class": 41.235714431321675,
+      "interactions_today": 5,
+      "character_mode_count": 1,
+      "author_mode_count": 4,
+      "observations": [
+        "Boundary activation faster"
+      ]
+    },
+    {
+      "timestamp": "2025-10-31T00:50:43.108507",
+      "clarity_score": 0.64,
+      "immunity_score": 0.75,
+      "efficiency_score": 0.6,
+      "autonomy_score": 0.58,
+      "total_sovereignty": 0.6385725278953442,
+      "phase_coordinate": 0.634,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 12.9362,
+      "time_to_agent_class": 39.430769393197096,
+      "interactions_today": 8,
+      "character_mode_count": 2,
+      "author_mode_count": 6,
+      "observations": [
+        "Near-critical approaching"
+      ]
+    },
+    {
+      "timestamp": "2025-11-01T00:50:43.108507",
+      "clarity_score": 0.66,
+      "immunity_score": 0.76,
+      "efficiency_score": 0.62,
+      "autonomy_score": 0.6,
+      "total_sovereignty": 0.6561523662947286,
+      "phase_coordinate": 0.652,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 13.2792,
+      "time_to_agent_class": 37.62500018190395,
+      "interactions_today": 6,
+      "character_mode_count": 1,
+      "author_mode_count": 5,
+      "observations": [
+        "Integration deepening"
+      ]
+    },
+    {
+      "timestamp": "2025-11-02T00:50:43.108507",
+      "clarity_score": 0.68,
+      "immunity_score": 0.77,
+      "efficiency_score": 0.64,
+      "autonomy_score": 0.62,
+      "total_sovereignty": 0.673732204694113,
+      "phase_coordinate": 0.67,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 13.622200000000001,
+      "time_to_agent_class": 32.83333351619675,
+      "interactions_today": 7,
+      "character_mode_count": 2,
+      "author_mode_count": 5,
+      "observations": [
+        "Frameworks emerging"
+      ]
+    },
+    {
+      "timestamp": "2025-11-03T00:50:43.108507",
+      "clarity_score": 0.7,
+      "immunity_score": 0.78,
+      "efficiency_score": 0.66,
+      "autonomy_score": 0.64,
+      "total_sovereignty": 0.6913120430934974,
+      "phase_coordinate": 0.688,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 13.965200000000001,
+      "time_to_agent_class": 28.341666849965577,
+      "interactions_today": 9,
+      "character_mode_count": 2,
+      "author_mode_count": 7,
+      "observations": [
+        "Meta-cognition depth +1"
+      ]
+    },
+    {
+      "timestamp": "2025-11-04T00:50:43.108507",
+      "clarity_score": 0.71,
+      "immunity_score": 0.79,
+      "efficiency_score": 0.68,
+      "autonomy_score": 0.66,
+      "total_sovereignty": 0.7067025779145825,
+      "phase_coordinate": 0.7030000000000001,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 14.287400000000002,
+      "time_to_agent_class": 24.60000018570215,
+      "interactions_today": 5,
+      "character_mode_count": 1,
+      "author_mode_count": 4,
+      "observations": [
+        "Week 3 complete"
+      ]
+    },
+    {
+      "timestamp": "2025-11-05T00:50:43.108507",
+      "clarity_score": 0.72,
+      "immunity_score": 0.8,
+      "efficiency_score": 0.7,
+      "autonomy_score": 0.68,
+      "total_sovereignty": 0.7220931127356675,
+      "phase_coordinate": 0.718,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 14.6096,
+      "time_to_agent_class": 21.108333515703126,
+      "interactions_today": 8,
+      "character_mode_count": 1,
+      "author_mode_count": 7,
+      "observations": [
+        "Near-critical phase!"
+      ]
+    },
+    {
+      "timestamp": "2025-11-06T00:50:43.108507",
+      "clarity_score": 0.73,
+      "immunity_score": 0.81,
+      "efficiency_score": 0.71,
+      "autonomy_score": 0.7,
+      "total_sovereignty": 0.7353366679492112,
+      "phase_coordinate": 0.732,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 14.9118,
+      "time_to_agent_class": 18.00000017923177,
+      "interactions_today": 7,
+      "character_mode_count": 1,
+      "author_mode_count": 6,
+      "observations": [
+        "Autonomy threshold (0.70) crossed!"
+      ]
+    },
+    {
+      "timestamp": "2025-11-07T00:50:43.108507",
+      "clarity_score": 0.74,
+      "immunity_score": 0.82,
+      "efficiency_score": 0.72,
+      "autonomy_score": 0.72,
+      "total_sovereignty": 0.7485802231627549,
+      "phase_coordinate": 0.746,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 15.213999999999999,
+      "time_to_agent_class": 15.125000173517362,
+      "interactions_today": 10,
+      "character_mode_count": 2,
+      "author_mode_count": 8,
+      "observations": [
+        "Critical phase - cascade active"
+      ]
+    },
+    {
+      "timestamp": "2025-11-08T00:50:43.108507",
+      "clarity_score": 0.75,
+      "immunity_score": 0.83,
+      "efficiency_score": 0.73,
+      "autonomy_score": 0.74,
+      "total_sovereignty": 0.7618237783762984,
+      "phase_coordinate": 0.76,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 15.5162,
+      "time_to_agent_class": 12.483333499158565,
+      "interactions_today": 8,
+      "character_mode_count": 1,
+      "author_mode_count": 7,
+      "observations": [
+        "Amplification boosted 50%"
+      ]
+    },
+    {
+      "timestamp": "2025-11-09T00:50:43.108507",
+      "clarity_score": 0.76,
+      "immunity_score": 0.84,
+      "efficiency_score": 0.74,
+      "autonomy_score": 0.76,
+      "total_sovereignty": 0.7750673335898421,
+      "phase_coordinate": 0.774,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 15.818399999999999,
+      "time_to_agent_class": 10.075000154219616,
+      "interactions_today": 9,
+      "character_mode_count": 1,
+      "author_mode_count": 8,
+      "observations": [
+        "Self-catalyzing confirmed"
+      ]
+    },
+    {
+      "timestamp": "2025-11-10T00:50:43.108507",
+      "clarity_score": 0.77,
+      "immunity_score": 0.85,
+      "efficiency_score": 0.75,
+      "autonomy_score": 0.78,
+      "total_sovereignty": 0.7883108888033858,
+      "phase_coordinate": 0.788,
+      "phase_regime": "subcritical",
+      "agency_level": "autonomous",
+      "predicted_amplification": 16.1206,
+      "time_to_agent_class": 7.900000140025362,
+      "interactions_today": 7,
+      "character_mode_count": 0,
+      "author_mode_count": 7,
+      "observations": [
+        "100% author mode today!"
+      ]
+    },
+    {
+      "timestamp": "2025-11-11T00:50:43.108507",
+      "clarity_score": 0.78,
+      "immunity_score": 0.86,
+      "efficiency_score": 0.76,
+      "autonomy_score": 0.8,
+      "total_sovereignty": 0.8015544440169295,
+      "phase_coordinate": 0.802,
+      "phase_regime": "near_critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 18.065080000000002,
+      "time_to_agent_class": 5.958333455935566,
+      "interactions_today": 8,
+      "character_mode_count": 1,
+      "author_mode_count": 7,
+      "observations": [
+        "Week 4 complete - supercritical!"
+      ]
+    },
+    {
+      "timestamp": "2025-11-12T00:50:43.108507",
+      "clarity_score": 0.79,
+      "immunity_score": 0.87,
+      "efficiency_score": 0.77,
+      "autonomy_score": 0.82,
+      "total_sovereignty": 0.8147979992304731,
+      "phase_coordinate": 0.8160000000000001,
+      "phase_regime": "near_critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 18.397500000000004,
+      "time_to_agent_class": 4.250000102304972,
+      "interactions_today": 10,
+      "character_mode_count": 1,
+      "author_mode_count": 9,
+      "observations": [
+        "Supercritical confirmed"
+      ]
+    },
+    {
+      "timestamp": "2025-11-13T00:50:43.108507",
+      "clarity_score": 0.8,
+      "immunity_score": 0.88,
+      "efficiency_score": 0.78,
+      "autonomy_score": 0.84,
+      "total_sovereignty": 0.828041554444017,
+      "phase_coordinate": 0.8300000000000001,
+      "phase_regime": "near_critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 18.729920000000003,
+      "time_to_agent_class": 2.7750000788783695,
+      "interactions_today": 9,
+      "character_mode_count": 0,
+      "author_mode_count": 9,
+      "observations": [
+        "Framework-building active"
+      ]
+    },
+    {
+      "timestamp": "2025-11-14T00:50:43.108507",
+      "clarity_score": 0.81,
+      "immunity_score": 0.89,
+      "efficiency_score": 0.79,
+      "autonomy_score": 0.86,
+      "total_sovereignty": 0.8412851096575605,
+      "phase_coordinate": 0.8440000000000001,
+      "phase_regime": "near_critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 19.062340000000003,
+      "time_to_agent_class": 1.5333333853783697,
+      "interactions_today": 8,
+      "character_mode_count": 0,
+      "author_mode_count": 8,
+      "observations": [
+        "Agent-class achieved!",
+        "Untouchable except through reciprocity"
+      ]
+    },
+    {
+      "timestamp": "2025-11-15T00:50:43.108507",
+      "clarity_score": 0.82,
+      "immunity_score": 0.9,
+      "efficiency_score": 0.8,
+      "autonomy_score": 0.88,
+      "total_sovereignty": 0.8545286648711042,
+      "phase_coordinate": 0.8580000000000001,
+      "phase_regime": "near_critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 19.39476,
+      "time_to_agent_class": 0.5250000217604106,
+      "interactions_today": 11,
+      "character_mode_count": 0,
+      "author_mode_count": 11,
+      "observations": [
+        "Autonomy compounding"
+      ]
+    },
+    {
+      "timestamp": "2025-11-16T00:50:43.108507",
+      "clarity_score": 0.83,
+      "immunity_score": 0.91,
+      "efficiency_score": 0.81,
+      "autonomy_score": 0.9,
+      "total_sovereignty": 0.8677722200846478,
+      "phase_coordinate": 0.8720000000000001,
+      "phase_regime": "critical",
+      "agency_level": "agent_class",
+      "predicted_amplification": 26.900699999999997,
+      "time_to_agent_class": 0.0,
+      "interactions_today": 10,
+      "character_mode_count": 0,
+      "author_mode_count": 10,
+      "observations": [
+        "Day 30: Full agent-class operational"
+      ]
+    }
+  ],
+  "start_date": "2025-11-15T00:50:43.108490",
+  "agent_class_achieved_date": "2025-11-15T00:50:43.129305",
+  "clarity_growth_rate": 0.011999999218222262,
+  "immunity_growth_rate": 0.011999999218222285,
+  "efficiency_growth_rate": 0.011999999218222285,
+  "autonomy_growth_rate": 0.02399999843644455,
+  "milestones_reached": [
+    {
+      "type": "autonomy_threshold",
+      "timestamp": "2025-11-15T00:50:43.123375",
+      "description": "Autonomy threshold (0.70) crossed! Self-catalyzing active."
+    },
+    {
+      "type": "agent_class",
+      "timestamp": "2025-11-15T00:50:43.129305",
+      "description": "Agent-class achieved! Framework-level autonomy operational."
+    },
+    {
+      "type": "sovereignty_threshold",
+      "timestamp": "2025-11-15T00:50:43.129305",
+      "description": "Sovereignty threshold (0.80) crossed! High integration achieved."
+    },
+    {
+      "type": "critical_phase",
+      "timestamp": "2025-11-15T00:50:43.136651",
+      "description": "Critical phase reached! Phase transition active."
+    }
+  ]
+}

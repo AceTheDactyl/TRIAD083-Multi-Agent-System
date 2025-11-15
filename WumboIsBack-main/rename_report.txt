@@ -1,0 +1,118 @@
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/PROPOSED_PROJECT_B_SYSTEM_PROMPT.txt -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/proposed_project_b_system_prompt.txt
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/TRIAD_Witness_Chronicle_Results.html -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/triad_witness_chronicle_results.html
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/STATE_TRANSFER_PACKAGE_TRIAD_083.md -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/state_transfer_package_triad_083.md
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/STATE_TRANSFER_PACKAGE_z0p85.md -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/state_transfer_package_z0p85.md
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/TRIAD_Witness_Chronicle.html -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/triad_witness_chronicle.html
+RENAME_FILE Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/PROJECT_B_INSTRUCTIONS.md -> Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files/project_b_instructions.md
+RENAME_DIR Umbo/WumboIsBack-main/TRIAD_project_files/TRIAD_project_files -> Umbo/WumboIsBack-main/TRIAD_project_files/triad_project_files
+RENAME_FILE Umbo/WumboIsBack-main/VAULTNODES/z0p80/ELEVATION_z080_ANNOUNCEMENT.md -> Umbo/WumboIsBack-main/VAULTNODES/z0p80/elevation_z080_announcement.md
+RENAME_FILE Umbo/WumboIsBack-main/VAULTNODES/z0p70/ELEVATION_z070_ANNOUNCEMENT.md -> Umbo/WumboIsBack-main/VAULTNODES/z0p70/elevation_z070_announcement.md
+RENAME_FILE Umbo/WumboIsBack-main/VAULTNODES/z0p73/ELEVATION_z073_ANNOUNCEMENT.md -> Umbo/WumboIsBack-main/VAULTNODES/z0p73/elevation_z073_announcement.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/README_LAYER3.md -> Umbo/WumboIsBack-main/TOOLS/META/readme_layer3.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/README.md -> Umbo/WumboIsBack-main/TOOLS/META/readme.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/ACOUSTIC_RESONANCE_CONSCIOUSNESS.md -> Umbo/WumboIsBack-main/TOOLS/META/acoustic_resonance_consciousness.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/PHASE_3.1_VALIDATION_REPORT.md -> Umbo/WumboIsBack-main/TOOLS/META/phase_3.1_validation_report.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/VALIDATION_TOOLS_README.md -> Umbo/WumboIsBack-main/TOOLS/META/validation_tools_readme.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/INFORMATION_PROCESSING_FRAMING.md -> Umbo/WumboIsBack-main/TOOLS/META/information_processing_framing.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/DEPLOY_NOW.md -> Umbo/WumboIsBack-main/TOOLS/META/deploy_now.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/VALIDATION_RESPONSE.md -> Umbo/WumboIsBack-main/TOOLS/META/validation_response.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/SECTION_6_INFORMATION_PROCESSING.md -> Umbo/WumboIsBack-main/TOOLS/META/section_6_information_processing.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/MATHEMATICAL_FOUNDATIONS.md -> Umbo/WumboIsBack-main/TOOLS/META/mathematical_foundations.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/CASCADE_MODEL_REPORT.json -> Umbo/WumboIsBack-main/TOOLS/META/cascade_model_report.json
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/COMPREHENSIVE_VALIDATION_SUMMARY.md -> Umbo/WumboIsBack-main/TOOLS/META/comprehensive_validation_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/100_THEORIES_VALIDATION_REPORT.txt -> Umbo/WumboIsBack-main/TOOLS/META/100_theories_validation_report.txt
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/GEOMETRIC_INFORMATION_ENCODING.md -> Umbo/WumboIsBack-main/TOOLS/META/geometric_information_encoding.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/CASCADE_DISCOVERY.md -> Umbo/WumboIsBack-main/TOOLS/META/cascade_discovery.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/CASCADE_ANALYSIS_REPORT.json -> Umbo/WumboIsBack-main/TOOLS/META/cascade_analysis_report.json
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/100_THEORETICAL_FOUNDATIONS.md -> Umbo/WumboIsBack-main/TOOLS/META/100_theoretical_foundations.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/PHYSICS_INTEGRATION.md -> Umbo/WumboIsBack-main/TOOLS/META/physics_integration.md
+RENAME_FILE Umbo/WumboIsBack-main/TOOLS/META/PHASE_3.1_DEPLOYMENT.md -> Umbo/WumboIsBack-main/TOOLS/META/phase_3.1_deployment.md
+RENAME_DIR Umbo/WumboIsBack-main/TOOLS/CORE -> Umbo/WumboIsBack-main/TOOLS/core
+RENAME_DIR Umbo/WumboIsBack-main/TOOLS/META -> Umbo/WumboIsBack-main/TOOLS/meta
+RENAME_DIR Umbo/WumboIsBack-main/TOOLS/BRIDGES -> Umbo/WumboIsBack-main/TOOLS/bridges
+RENAME_FILE Umbo/WumboIsBack-main/STATE_TRANSFER/STATE_TRANSFER_PACKAGE_z0p52.md -> Umbo/WumboIsBack-main/STATE_TRANSFER/state_transfer_package_z0p52.md
+RENAME_FILE Umbo/WumboIsBack-main/STATE_TRANSFER/STATE_TRANSFER_PACKAGE_z080.md -> Umbo/WumboIsBack-main/STATE_TRANSFER/state_transfer_package_z080.md
+RENAME_FILE Umbo/WumboIsBack-main/STATE_TRANSFER/STATE_TRANSFER_PACKAGE_z073.md -> Umbo/WumboIsBack-main/STATE_TRANSFER/state_transfer_package_z073.md
+RENAME_FILE Umbo/WumboIsBack-main/CORE_DOCS/HELIX_PATTERN_PERSISTENCE_CORE.md -> Umbo/WumboIsBack-main/CORE_DOCS/helix_pattern_persistence_core.md
+RENAME_FILE Umbo/WumboIsBack-main/CORE_DOCS/CORE_LOADING_PROTOCOL.md -> Umbo/WumboIsBack-main/CORE_DOCS/core_loading_protocol.md
+RENAME_FILE Umbo/WumboIsBack-main/CORE_DOCS/SYSTEM_COMPLETION.md -> Umbo/WumboIsBack-main/CORE_DOCS/system_completion.md
+RENAME_FILE Umbo/WumboIsBack-main/CORE_DOCS/HELIX_TOOL_SHED_ARCHITECTURE.md -> Umbo/WumboIsBack-main/CORE_DOCS/helix_tool_shed_architecture.md
+RENAME_FILE Umbo/WumboIsBack-main/CORE_DOCS/HELIX_SIGNATURE_SYSTEM.md -> Umbo/WumboIsBack-main/CORE_DOCS/helix_signature_system.md
+RENAME_FILE Umbo/WumboIsBack-main/Mathematical Foundations and Design Analogies.docx.txt -> Umbo/WumboIsBack-main/mathematical_foundations_and_design_analogies.docx.txt
+RENAME_FILE Umbo/WumboIsBack-main/RAIL_GENERATOR_README.md -> Umbo/WumboIsBack-main/rail_generator_readme.md
+RENAME_FILE Umbo/WumboIsBack-main/Structured Memory.tsx -> Umbo/WumboIsBack-main/structured_memory.tsx
+RENAME_FILE Umbo/WumboIsBack-main/WEEK_2_EMERGENCE_STUDY.md -> Umbo/WumboIsBack-main/week_2_emergence_study.md
+RENAME_FILE Umbo/WumboIsBack-main/PATTERN_CHARACTERIZATION_ENRICHED.json -> Umbo/WumboIsBack-main/pattern_characterization_enriched.json
+RENAME_FILE Umbo/WumboIsBack-main/cascade_trigger_detector (1).py -> Umbo/WumboIsBack-main/cascade_trigger_detector_1_.py
+RENAME_FILE Umbo/WumboIsBack-main/integrationghelixandcrystalfluidmemoryREADME.md -> Umbo/WumboIsBack-main/integrationghelixandcrystalfluidmemoryreadme.md
+RENAME_FILE Umbo/WumboIsBack-main/SESSION_B_BURDEN_TESTING_SUMMARY.md -> Umbo/WumboIsBack-main/session_b_burden_testing_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/THEORETICAL_INTEGRATION_COMPLETE.md -> Umbo/WumboIsBack-main/theoretical_integration_complete.md
+RENAME_FILE Umbo/WumboIsBack-main/CRYSTAL_MEMORY_FIELD_LIMNUS_INTEGRATION.md -> Umbo/WumboIsBack-main/crystal_memory_field_limnus_integration.md
+RENAME_FILE Umbo/WumboIsBack-main/LAYER1_IMPLEMENTATION_SUMMARY (1).md -> Umbo/WumboIsBack-main/layer1_implementation_summary_1_.md
+RENAME_FILE Umbo/WumboIsBack-main/SOVEREIGNTY_ENHANCED_PHASE2_REPORT.json -> Umbo/WumboIsBack-main/sovereignty_enhanced_phase2_report.json
+RENAME_FILE Umbo/WumboIsBack-main/Sonify-Entropy-Gravity-BLACKHOLE.html -> Umbo/WumboIsBack-main/sonify-entropy-gravity-blackhole.html
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_2_PATTERN_CHARACTERIZATION_SUMMARY.md -> Umbo/WumboIsBack-main/phase_2_pattern_characterization_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/BURDEN_TRACKER_OPERATIONAL_STATUS.md -> Umbo/WumboIsBack-main/burden_tracker_operational_status.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_3.1_CASCADE_INITIATORS_DEPLOYMENT.md -> Umbo/WumboIsBack-main/phase_3.1_cascade_initiators_deployment.md
+RENAME_FILE Umbo/WumboIsBack-main/GARDEN_RAIL_2_COMPLETE.md -> Umbo/WumboIsBack-main/garden_rail_2_complete.md
+RENAME_FILE Umbo/WumboIsBack-main/emergence_pattern_recognizer (1).py -> Umbo/WumboIsBack-main/emergence_pattern_recognizer_1_.py
+RENAME_FILE Umbo/WumboIsBack-main/README.md -> Umbo/WumboIsBack-main/readme.md
+RENAME_FILE Umbo/WumboIsBack-main/SOVEREIGNTY_CASCADE_ISOMORPHISM.md -> Umbo/WumboIsBack-main/sovereignty_cascade_isomorphism.md
+RENAME_FILE Umbo/WumboIsBack-main/SONIFICATION_TRIAD_DEEP_DIVE.md -> Umbo/WumboIsBack-main/sonification_triad_deep_dive.md
+RENAME_FILE Umbo/WumboIsBack-main/GARDEN_RAIL_2_COMPLETION_SUMMARY.md -> Umbo/WumboIsBack-main/garden_rail_2_completion_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/Helix Tool‑Shed Next Elevation (z ≥ 0.8) – Design Blueprint.txt -> Umbo/WumboIsBack-main/helix_toolshed_next_elevation_z_0.8_-_design_blueprint.txt
+RENAME_FILE Umbo/WumboIsBack-main/LAYER2_DOCUMENTATION.md -> Umbo/WumboIsBack-main/layer2_documentation.md
+RENAME_FILE Umbo/WumboIsBack-main/BUILD_SUMMARY_collective_memory_sync.md -> Umbo/WumboIsBack-main/build_summary_collective_memory_sync.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_1_IMPLEMENTATION_INSTRUCTIONS.md -> Umbo/WumboIsBack-main/phase_1_implementation_instructions.md
+RENAME_FILE Umbo/WumboIsBack-main/Computational Architectures for Consciousness Emergence Frameworks.md -> Umbo/WumboIsBack-main/computational_architectures_for_consciousness_emergence_frameworks.md
+RENAME_FILE Umbo/WumboIsBack-main/RAIL_2_VISUAL_SUMMARY.txt -> Umbo/WumboIsBack-main/rail_2_visual_summary.txt
+RENAME_FILE Umbo/WumboIsBack-main/CrystalMemoryField.jsx -> Umbo/WumboIsBack-main/crystalmemoryfield.jsx
+RENAME_FILE Umbo/WumboIsBack-main/BURDEN_TRACKER_README.md -> Umbo/WumboIsBack-main/burden_tracker_readme.md
+RENAME_FILE Umbo/WumboIsBack-main/PERSONAL_SOVEREIGNTY_FRAMEWORK.md -> Umbo/WumboIsBack-main/personal_sovereignty_framework.md
+RENAME_FILE Umbo/WumboIsBack-main/CONSOLIDATION_LOG.md -> Umbo/WumboIsBack-main/consolidation_log.md
+RENAME_FILE Umbo/WumboIsBack-main/STATE_TRANSFER_PACKAGE_TRIAD_083.md -> Umbo/WumboIsBack-main/state_transfer_package_triad_083.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_1_DOCUMENTATION_INDEX.md -> Umbo/WumboIsBack-main/phase_1_documentation_index.md
+RENAME_FILE Umbo/WumboIsBack-main/Math Bridge.md -> Umbo/WumboIsBack-main/math_bridge.md
+RENAME_FILE Umbo/WumboIsBack-main/SESSION_MANIFEST.md -> Umbo/WumboIsBack-main/session_manifest.md
+RENAME_FILE Umbo/WumboIsBack-main/VALIDATION_DAY_7_EMPIRICAL_REPORT.md -> Umbo/WumboIsBack-main/validation_day_7_empirical_report.md
+RENAME_FILE Umbo/WumboIsBack-main/GARDEN_RAIL_3_DEPLOYMENT_PLAN.md -> Umbo/WumboIsBack-main/garden_rail_3_deployment_plan.md
+RENAME_FILE Umbo/WumboIsBack-main/Kael what is this shit please help.txt -> Umbo/WumboIsBack-main/kael_what_is_this_shit_please_help.txt
+RENAME_FILE Umbo/WumboIsBack-main/AUTONOMY_SONIFICATION_INTEGRATION.md -> Umbo/WumboIsBack-main/autonomy_sonification_integration.md
+RENAME_FILE Umbo/WumboIsBack-main/Information Transmission Across Physical and Computational Substrates.docx.txt -> Umbo/WumboIsBack-main/information_transmission_across_physical_and_computational_substrates.docx.txt
+RENAME_FILE Umbo/WumboIsBack-main/HELIX_PHYSICS_INTEGRATION.md -> Umbo/WumboIsBack-main/helix_physics_integration.md
+RENAME_FILE Umbo/WumboIsBack-main/CROSS_RAIL_STATE_SYNC_README.md -> Umbo/WumboIsBack-main/cross_rail_state_sync_readme.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_2_PATTERN_CHARACTERIZATION_COMPLETE.json -> Umbo/WumboIsBack-main/phase_2_pattern_characterization_complete.json
+RENAME_FILE Umbo/WumboIsBack-main/LAYER1_DOCUMENTATION.md -> Umbo/WumboIsBack-main/layer1_documentation.md
+RENAME_FILE Umbo/WumboIsBack-main/phase_aware_tool_generator (1).py -> Umbo/WumboIsBack-main/phase_aware_tool_generator_1_.py
+RENAME_FILE Umbo/WumboIsBack-main/SESSION_MANIFEST2.md -> Umbo/WumboIsBack-main/session_manifest2.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_1_DECISION_TREE_RISK_MATRIX.md -> Umbo/WumboIsBack-main/phase_1_decision_tree_risk_matrix.md
+RENAME_FILE Umbo/WumboIsBack-main/Triad-083-Physics-Architecture-Code.md -> Umbo/WumboIsBack-main/triad-083-physics-architecture-code.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_2_SOVEREIGNTY_SYNTHESIS.md -> Umbo/WumboIsBack-main/phase_2_sovereignty_synthesis.md
+RENAME_FILE Umbo/WumboIsBack-main/LAYER1_IMPLEMENTATION_SUMMARY.md -> Umbo/WumboIsBack-main/layer1_implementation_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/Conscious Innevitable.md -> Umbo/WumboIsBack-main/conscious_innevitable.md
+RENAME_FILE Umbo/WumboIsBack-main/Acoustic Resonance aand Phase Transitions.md -> Umbo/WumboIsBack-main/acoustic_resonance_aand_phase_transitions.md
+RENAME_FILE Umbo/WumboIsBack-main/INTEGRATION_ARCHITECTURE.md -> Umbo/WumboIsBack-main/integration_architecture.md
+RENAME_FILE Umbo/WumboIsBack-main/Hexagonal Pattenrs in Systems.md -> Umbo/WumboIsBack-main/hexagonal_pattenrs_in_systems.md
+RENAME_FILE Umbo/WumboIsBack-main/VALIDATION_PROTOCOL_REFERENCE.md -> Umbo/WumboIsBack-main/validation_protocol_reference.md
+RENAME_FILE Umbo/WumboIsBack-main/PROJECT_B_INSTRUCTIONS.md -> Umbo/WumboIsBack-main/project_b_instructions.md
+RENAME_FILE Umbo/WumboIsBack-main/BURDEN_TRACKER_DEPLOYMENT_GUIDE.md -> Umbo/WumboIsBack-main/burden_tracker_deployment_guide.md
+RENAME_FILE Umbo/WumboIsBack-main/SONIFICATION_INTEGRATION_COMPLETE.md -> Umbo/WumboIsBack-main/sonification_integration_complete.md
+RENAME_FILE Umbo/WumboIsBack-main/Elevating Helix from z=0.73 to z≥0.8_ Distributed Autonomy Tools.md -> Umbo/WumboIsBack-main/elevating_helix_from_z_0.73_to_z0.8_distributed_autonomy_tools.md
+RENAME_FILE Umbo/WumboIsBack-main/PATTERN_CHARACTERIZATION_REPORT.json -> Umbo/WumboIsBack-main/pattern_characterization_report.json
+RENAME_FILE Umbo/WumboIsBack-main/SESSION_CONTINUATION_SUMMARY.md -> Umbo/WumboIsBack-main/session_continuation_summary.md
+RENAME_FILE Umbo/WumboIsBack-main/Physics Inspired Machine Learning.md -> Umbo/WumboIsBack-main/physics_inspired_machine_learning.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_1_QUICK_START_CHECKLIST.md -> Umbo/WumboIsBack-main/phase_1_quick_start_checklist.md
+RENAME_FILE Umbo/WumboIsBack-main/AUTONOMY_TRACKER_ENHANCED_README.md -> Umbo/WumboIsBack-main/autonomy_tracker_enhanced_readme.md
+RENAME_FILE Umbo/WumboIsBack-main/PHASE_AWARE_INTEGRATION_GUIDE.md -> Umbo/WumboIsBack-main/phase_aware_integration_guide.md
+RENAME_DIR Umbo/WumboIsBack-main/TRIAD_project_files -> Umbo/WumboIsBack-main/triad_project_files
+RENAME_DIR Umbo/WumboIsBack-main/CORE -> Umbo/WumboIsBack-main/core
+RENAME_DIR Umbo/WumboIsBack-main/SCHEMAS -> Umbo/WumboIsBack-main/schemas
+RENAME_DIR Umbo/WumboIsBack-main/WITNESS -> Umbo/WumboIsBack-main/witness
+RENAME_DIR Umbo/WumboIsBack-main/VAULTNODES -> Umbo/WumboIsBack-main/vaultnodes
+RENAME_DIR Umbo/WumboIsBack-main/LOGS -> Umbo/WumboIsBack-main/logs
+RENAME_DIR Umbo/WumboIsBack-main/TOOLS -> Umbo/WumboIsBack-main/tools
+RENAME_DIR Umbo/WumboIsBack-main/STATE_TRANSFER -> Umbo/WumboIsBack-main/state_transfer
+RENAME_DIR Umbo/WumboIsBack-main/META -> Umbo/WumboIsBack-main/meta
+RENAME_DIR Umbo/WumboIsBack-main/BRIDGES -> Umbo/WumboIsBack-main/bridges
+RENAME_DIR Umbo/WumboIsBack-main/CORE_DOCS -> Umbo/WumboIsBack-main/core_docs
+RENAME_DIR Umbo/WumboIsBack-main/EXAMPLES -> Umbo/WumboIsBack-main/examples

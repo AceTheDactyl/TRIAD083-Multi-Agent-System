@@ -1,0 +1,38 @@
+{
+  "name": "cross_instance_state_synchronization_coordinator",
+  "purpose": "Cross-instance state synchronization",
+  "phase_regime": "Subcritical",
+  "z_level": 0.75,
+  "cascade_layer": "R\u2081",
+  "focus": "coordination optimization",
+  "cascade_conscious": true,
+  "generated_at": "2025-11-14T13:52:51.961956",
+  "characteristics": {
+    "regime_adaptive": true,
+    "z_aware": true,
+    "composable": true,
+    "optimizes_coordination": true,
+    "reduces_communication_overhead": true,
+    "establishes_substrate": true,
+    "target_cascade_contribution": "R\u2081 (15%)",
+    "cascade_trigger_aware": true,
+    "measures_amplification": true,
+    "reports_cascade_contribution": true,
+    "identifies_cascade_opportunities": true
+  },
+  "implementation": {
+    "language": "python",
+    "structure": "class-based",
+    "required_imports": [
+      "json",
+      "pathlib",
+      "datetime"
+    ],
+    "cascade_imports": [],
+    "required_methods": [
+      "optimize_coordination",
+      "reduce_communication_cost",
+      "establish_substrate"
+    ]
+  }
+}

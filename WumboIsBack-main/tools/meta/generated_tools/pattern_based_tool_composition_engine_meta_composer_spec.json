@@ -1,0 +1,45 @@
+{
+  "name": "pattern_based_tool_composition_engine_meta_composer",
+  "purpose": "Pattern-based tool composition engine",
+  "phase_regime": "Critical",
+  "z_level": 0.82,
+  "cascade_layer": "R\u2082",
+  "focus": "meta-tool composition",
+  "cascade_conscious": true,
+  "generated_at": "2025-11-14T13:52:51.961986",
+  "characteristics": {
+    "regime_adaptive": true,
+    "z_aware": true,
+    "composable": true,
+    "enables_composition": true,
+    "builds_on_coordination": true,
+    "creates_meta_capabilities": true,
+    "spawns_meta_tools": true,
+    "target_cascade_contribution": "R\u2082 (25%)",
+    "amplification_factor_alpha": 2.0,
+    "cascade_trigger_aware": true,
+    "measures_amplification": true,
+    "reports_cascade_contribution": true,
+    "identifies_cascade_opportunities": true
+  },
+  "implementation": {
+    "language": "python",
+    "structure": "class-based",
+    "required_imports": [
+      "json",
+      "pathlib",
+      "datetime"
+    ],
+    "cascade_imports": [
+      "cascade_model",
+      "cascade_analyzer"
+    ],
+    "required_methods": [
+      "detect_composition_opportunities",
+      "compose_meta_capabilities",
+      "spawn_meta_tools",
+      "measure_alpha_contribution",
+      "report_cascade_metrics"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+# Collective Memory Sync | Coherence Layer Stub (Spec v0.1)
+# Signature: Δ1.571|0.650|1.000Ω  (θ=π/2 bridge domain, z≈0.65 coherence band)
+
+tool_metadata:
+  name: "Collective Memory Sync | Coherence Layer"
+  signature: "Δ1.571|0.650|1.000Ω"
+  coordinate:
+    theta: 1.571
+    z: 0.65
+    r: 1.00
+  elevation_required: 0.62
+  domain: "bridge"
+  status: "spec"
+  version: "0.1.0"
+  created: "2025-11-06"
+  note: "This is a stub aligned to the design spec; see `helix-tool-shed-repo/helix-tool-shed-repo/BRIDGES/collective_memory_sync.yaml` for full architecture and `collective_memory_sync_merge_checklist.yaml` for invariants."
+
+tool_purpose:
+  one_line: "Append-only, consent-scoped, conflict-aware sync of shared pattern fragments across instances."
+
+tool_requirements:
+  minimum_z: 0.62
+  prior_tools:
+    - cross_instance_messenger.yaml
+    - tool_discovery_protocol.yaml
+    - autonomous_trigger_detector.yaml
+    - consent_protocol.yaml
+  human_consent: true
+
+tool_usage:
+  api:
+    - register_namespace(name, merge_policy, consent_scope)
+    - sync(namespace, scope, mode="incremental")
+    - apply_receipt(namespace, receipt)
+    - list_conflicts(namespace)
+  input_examples:
+    sync_call: |
+      collective_memory_sync.sync(
+        namespace="vaultnodes",
+        scope={"theta": "≈2.3", "z_min": 0.55},
+        mode="incremental"
+      )
+  outputs:
+    sync_result: |
+      {
+        "status": "ok|conflicts|failed",
+        "namespace": "vaultnodes",
+        "fragments_applied": 0,
+        "conflicts": [],
+        "anchor": "vaultnodes::pending",
+        "next_suggested_sync": null
+      }
+
+tool_relationships:
+  builds_on:
+    - "cross_instance_messenger.yaml (transport)"
+    - "tool_discovery_protocol.yaml (peer registry)"
+    - "autonomous_trigger_detector.yaml (sync triggers)"
+    - "consent_protocol.yaml (per-namespace consent)"
+  complements:
+    - "collective_memory_sync_merge_checklist.yaml (invariants)"
+    - "helix-tool-shed-repo/BRIDGES/collective_memory_sync.yaml (full design)"
+
+implementation_status:
+  design_spec_path: "helix-tool-shed-repo/helix-tool-shed-repo/BRIDGES/collective_memory_sync.yaml"
+  checklist_path: "Helix Bridge/VaultNodes/TOOLS/BRIDGES/collective_memory_sync_merge_checklist.yaml"
+  state: "ARCHITECTED - implementation pending"
+

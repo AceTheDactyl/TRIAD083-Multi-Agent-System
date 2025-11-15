@@ -1,0 +1,834 @@
+{
+  "states": [
+    {
+      "timestamp": "2025-11-15T01:50:57.244639",
+      "primary_black_hole": {
+        "mass_solar": 0.32275,
+        "schwarzschild_radius_km": 0.9521124999999999,
+        "hawking_temperature_K": 1.9116963594113093e-07,
+        "entropy_kb": 1.0833426499999999e+76
+      },
+      "spacetime": {
+        "phase_coordinate": 0.21500000000000002,
+        "camera_distance": 6732.374610999192,
+        "distance_over_rs": 7.0709864758620355,
+        "time_dilation_factor": 0.4297856824822459,
+        "status": "Moderate"
+      },
+      "field_state": {
+        "coherence": 0.21893035782993456,
+        "weyl_curvature": 0.1650861195760227,
+        "sovereignty_integration": 0.12
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 0.656,
+          "schwarzschild_radius_km": 1.9352,
+          "hawking_temperature_K": 9.40548780487805e-08,
+          "entropy_kb": 4.475494400000001e+76,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 1.7366889566081816,
+          "schwarzschild_radius_km": 5.123232421994135,
+          "hawking_temperature_K": 3.552737510377357e-08,
+          "entropy_kb": 3.1367320732850067e+77,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 2.04,
+          "schwarzschild_radius_km": 6.018,
+          "hawking_temperature_K": 3.024509803921569e-08,
+          "entropy_kb": 4.328064e+77,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -7.922095810221563,
+        "harmonic_mode": "major_pentatonic",
+        "resonances": [],
+        "time_dilated_bpm": 240.0
+      },
+      "phase": {
+        "regime": "subcritical_early",
+        "agency_level": "reactive",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 2,
+        "frameworks_owned": 2,
+        "pattern_library_size": 0
+      },
+      "sovereignty_raw": {
+        "clarity": 0.25,
+        "immunity": 0.3,
+        "efficiency": 0.2,
+        "autonomy": 0.15,
+        "total": 0.21893035782993456
+      }
+    },
+    {
+      "timestamp": "2025-11-15T01:50:57.245078",
+      "primary_black_hole": {
+        "mass_solar": 4.951,
+        "schwarzschild_radius_km": 14.60545,
+        "hawking_temperature_K": 1.246212886285599e-08,
+        "entropy_kb": 2.5492897039999997e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.741,
+        "camera_distance": 21314.6524940253,
+        "distance_over_rs": 1.4593629428757966,
+        "time_dilation_factor": 1.1234245447999958,
+        "status": "Warning"
+      },
+      "field_state": {
+        "coherence": 0.7442824163139669,
+        "weyl_curvature": 0.5707399999999648,
+        "sovereignty_integration": 0.5599999999999999
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 0.968,
+          "schwarzschild_radius_km": 2.8556,
+          "hawking_temperature_K": 6.373966942148761e-08,
+          "entropy_kb": 9.7450496e+76,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.0139199999997186,
+          "schwarzschild_radius_km": 8.891063999999169,
+          "hawking_temperature_K": 2.0471678080375644e-08,
+          "entropy_kb": 9.447062317054235e+77,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.02,
+          "schwarzschild_radius_km": 11.858999999999998,
+          "hawking_temperature_K": 1.5348258706467663e-08,
+          "entropy_kb": 1.6806815999999995e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -78.23938637945037,
+        "harmonic_mode": "dorian",
+        "resonances": [],
+        "time_dilated_bpm": 106.81625264059342
+      },
+      "phase": {
+        "regime": "subcritical_late",
+        "agency_level": "agent_class_threshold",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 5,
+        "frameworks_owned": 6,
+        "pattern_library_size": 2
+      },
+      "sovereignty_raw": {
+        "clarity": 0.75,
+        "immunity": 0.82,
+        "efficiency": 0.72,
+        "autonomy": 0.7,
+        "total": 0.7442824163139669
+      }
+    },
+    {
+      "timestamp": "2025-11-15T01:50:57.245380",
+      "primary_black_hole": {
+        "mass_solar": 7.422039999999999,
+        "schwarzschild_radius_km": 21.895017999999997,
+        "hawking_temperature_K": 8.313078345037215e-09,
+        "entropy_kb": 5.729014487206398e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.847,
+        "camera_distance": 23248.930299668482,
+        "distance_over_rs": 1.0618365465453596,
+        "time_dilation_factor": 1.3863507622121545,
+        "status": "Warning"
+      },
+      "field_state": {
+        "coherence": 0.8434744132358599,
+        "weyl_curvature": 0.659869999999998,
+        "sovereignty_integration": 0.6880000000000001
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 1.0116800000000001,
+          "schwarzschild_radius_km": 2.9844560000000007,
+          "hawking_temperature_K": 6.098766408350467e-08,
+          "entropy_kb": 1.0644362792960003e+77,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.185839999999984,
+          "schwarzschild_radius_km": 9.398227999999952,
+          "hawking_temperature_K": 1.9366948748210934e-08,
+          "entropy_kb": 1.0555559565823892e+78,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.596,
+          "schwarzschild_radius_km": 13.558200000000001,
+          "hawking_temperature_K": 1.3424717145343778e-08,
+          "entropy_kb": 2.196814464e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -314.38709399174564,
+        "harmonic_mode": "minor_pentatonic",
+        "resonances": [],
+        "time_dilated_bpm": 86.55818085209542
+      },
+      "phase": {
+        "regime": "near_critical",
+        "agency_level": "agent_class",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 6,
+        "frameworks_owned": 7,
+        "pattern_library_size": 4
+      },
+      "sovereignty_raw": {
+        "clarity": 0.82,
+        "immunity": 0.89,
+        "efficiency": 0.79,
+        "autonomy": 0.86,
+        "total": 0.8434744132358599
+      }
+    },
+    {
+      "timestamp": "2025-11-15T01:50:57.245724",
+      "primary_black_hole": {
+        "mass_solar": 9.414909999999999,
+        "schwarzschild_radius_km": 27.773984499999997,
+        "hawking_temperature_K": 6.553434923966348e-09,
+        "entropy_kb": 9.218615152042398e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.9490000000000001,
+        "camera_distance": 21717.095755285714,
+        "distance_over_rs": 0.7819222249254771,
+        "time_dilation_factor": 1.6155491727821278,
+        "status": "CRITICAL"
+      },
+      "field_state": {
+        "coherence": 0.9437937668333974,
+        "weyl_curvature": 0.877296,
+        "sovereignty_integration": 0.776
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 1.08032,
+          "schwarzschild_radius_km": 3.186944,
+          "hawking_temperature_K": 5.711270734597157e-08,
+          "entropy_kb": 1.2137749544959999e+77,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.35776,
+          "schwarzschild_radius_km": 9.905391999999999,
+          "hawking_temperature_K": 1.837534546840751e-08,
+          "entropy_kb": 1.1725534306303997e+78,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.992,
+          "schwarzschild_radius_km": 14.7264,
+          "hawking_temperature_K": 1.2359775641025641e-08,
+          "entropy_kb": 2.591686656e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -100.0,
+        "harmonic_mode": "whole_tone",
+        "resonances": [
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4999959330007524,
+            "strength": 0.9999918660015047,
+            "phase_alignment": 0.9999918660015047,
+            "participating_metrics": [
+              "clarity",
+              "immunity"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4999959330007524,
+            "strength": 0.9999918660015047,
+            "phase_alignment": 0.9999918660015047,
+            "participating_metrics": [
+              "clarity",
+              "efficiency"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4973157754407047,
+            "strength": 0.9946315508814093,
+            "phase_alignment": 0.9946315508814093,
+            "participating_metrics": [
+              "clarity",
+              "autonomy"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.5,
+            "strength": 1.0,
+            "phase_alignment": 1.0,
+            "participating_metrics": [
+              "immunity",
+              "efficiency"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4971030449423948,
+            "strength": 0.9942060898847895,
+            "phase_alignment": 0.9942060898847895,
+            "participating_metrics": [
+              "immunity",
+              "autonomy"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4971030449423948,
+            "strength": 0.9942060898847895,
+            "phase_alignment": 0.9942060898847895,
+            "participating_metrics": [
+              "efficiency",
+              "autonomy"
+            ]
+          }
+        ],
+        "time_dilated_bpm": 74.27814765510894
+      },
+      "phase": {
+        "regime": "supercritical_stable",
+        "agency_level": "agent_class",
+        "stability": 0.0
+      },
+      "meta": {
+        "depth_level": 6,
+        "frameworks_owned": 8,
+        "pattern_library_size": 6
+      },
+      "sovereignty_raw": {
+        "clarity": 0.93,
+        "immunity": 0.96,
+        "efficiency": 0.9,
+        "autonomy": 0.97,
+        "total": 0.9437937668333974
+      }
+    },
+    {
+      "timestamp": "2025-11-15T02:11:15.043542",
+      "primary_black_hole": {
+        "mass_solar": 0.32275,
+        "schwarzschild_radius_km": 0.9521124999999999,
+        "hawking_temperature_K": 1.9116963594113093e-07,
+        "entropy_kb": 1.0833426499999999e+76
+      },
+      "spacetime": {
+        "phase_coordinate": 0.21500000000000002,
+        "camera_distance": 6732.374610999192,
+        "distance_over_rs": 7.0709864758620355,
+        "time_dilation_factor": 0.4297856824822459,
+        "status": "Moderate"
+      },
+      "field_state": {
+        "coherence": 0.21893035782993456,
+        "weyl_curvature": 0.1650861195760227,
+        "sovereignty_integration": 0.12
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 0.656,
+          "schwarzschild_radius_km": 1.9352,
+          "hawking_temperature_K": 9.40548780487805e-08,
+          "entropy_kb": 4.475494400000001e+76,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 1.7366889566081816,
+          "schwarzschild_radius_km": 5.123232421994135,
+          "hawking_temperature_K": 3.552737510377357e-08,
+          "entropy_kb": 3.1367320732850067e+77,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 2.04,
+          "schwarzschild_radius_km": 6.018,
+          "hawking_temperature_K": 3.024509803921569e-08,
+          "entropy_kb": 4.328064e+77,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -7.922095810221563,
+        "harmonic_mode": "major_pentatonic",
+        "resonances": [],
+        "time_dilated_bpm": 240.0
+      },
+      "phase": {
+        "regime": "subcritical_early",
+        "agency_level": "reactive",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 2,
+        "frameworks_owned": 2,
+        "pattern_library_size": 0
+      },
+      "sovereignty_raw": {
+        "clarity": 0.25,
+        "immunity": 0.3,
+        "efficiency": 0.2,
+        "autonomy": 0.15,
+        "total": 0.21893035782993456
+      }
+    },
+    {
+      "timestamp": "2025-11-15T02:11:15.044143",
+      "primary_black_hole": {
+        "mass_solar": 4.951,
+        "schwarzschild_radius_km": 14.60545,
+        "hawking_temperature_K": 1.246212886285599e-08,
+        "entropy_kb": 2.5492897039999997e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.741,
+        "camera_distance": 21314.6524940253,
+        "distance_over_rs": 1.4593629428757966,
+        "time_dilation_factor": 1.1234245447999958,
+        "status": "Warning"
+      },
+      "field_state": {
+        "coherence": 0.7442824163139669,
+        "weyl_curvature": 0.5707399999999648,
+        "sovereignty_integration": 0.5599999999999999
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 0.968,
+          "schwarzschild_radius_km": 2.8556,
+          "hawking_temperature_K": 6.373966942148761e-08,
+          "entropy_kb": 9.7450496e+76,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.0139199999997186,
+          "schwarzschild_radius_km": 8.891063999999169,
+          "hawking_temperature_K": 2.0471678080375644e-08,
+          "entropy_kb": 9.447062317054235e+77,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.02,
+          "schwarzschild_radius_km": 11.858999999999998,
+          "hawking_temperature_K": 1.5348258706467663e-08,
+          "entropy_kb": 1.6806815999999995e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -78.23938637945037,
+        "harmonic_mode": "dorian",
+        "resonances": [],
+        "time_dilated_bpm": 106.81625264059342
+      },
+      "phase": {
+        "regime": "subcritical_late",
+        "agency_level": "agent_class_threshold",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 5,
+        "frameworks_owned": 6,
+        "pattern_library_size": 2
+      },
+      "sovereignty_raw": {
+        "clarity": 0.75,
+        "immunity": 0.82,
+        "efficiency": 0.72,
+        "autonomy": 0.7,
+        "total": 0.7442824163139669
+      }
+    },
+    {
+      "timestamp": "2025-11-15T02:11:15.044463",
+      "primary_black_hole": {
+        "mass_solar": 7.422039999999999,
+        "schwarzschild_radius_km": 21.895017999999997,
+        "hawking_temperature_K": 8.313078345037215e-09,
+        "entropy_kb": 5.729014487206398e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.847,
+        "camera_distance": 23248.930299668482,
+        "distance_over_rs": 1.0618365465453596,
+        "time_dilation_factor": 1.3863507622121545,
+        "status": "Warning"
+      },
+      "field_state": {
+        "coherence": 0.8434744132358599,
+        "weyl_curvature": 0.659869999999998,
+        "sovereignty_integration": 0.6880000000000001
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 1.0116800000000001,
+          "schwarzschild_radius_km": 2.9844560000000007,
+          "hawking_temperature_K": 6.098766408350467e-08,
+          "entropy_kb": 1.0644362792960003e+77,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.185839999999984,
+          "schwarzschild_radius_km": 9.398227999999952,
+          "hawking_temperature_K": 1.9366948748210934e-08,
+          "entropy_kb": 1.0555559565823892e+78,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.596,
+          "schwarzschild_radius_km": 13.558200000000001,
+          "hawking_temperature_K": 1.3424717145343778e-08,
+          "entropy_kb": 2.196814464e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -314.38709399174564,
+        "harmonic_mode": "minor_pentatonic",
+        "resonances": [],
+        "time_dilated_bpm": 86.55818085209542
+      },
+      "phase": {
+        "regime": "near_critical",
+        "agency_level": "agent_class",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 6,
+        "frameworks_owned": 7,
+        "pattern_library_size": 4
+      },
+      "sovereignty_raw": {
+        "clarity": 0.82,
+        "immunity": 0.89,
+        "efficiency": 0.79,
+        "autonomy": 0.86,
+        "total": 0.8434744132358599
+      }
+    },
+    {
+      "timestamp": "2025-11-15T02:11:15.044776",
+      "primary_black_hole": {
+        "mass_solar": 9.414909999999999,
+        "schwarzschild_radius_km": 27.773984499999997,
+        "hawking_temperature_K": 6.553434923966348e-09,
+        "entropy_kb": 9.218615152042398e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.9490000000000001,
+        "camera_distance": 21717.095755285714,
+        "distance_over_rs": 0.7819222249254771,
+        "time_dilation_factor": 1.6155491727821278,
+        "status": "CRITICAL"
+      },
+      "field_state": {
+        "coherence": 0.9437937668333974,
+        "weyl_curvature": 0.877296,
+        "sovereignty_integration": 0.776
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 1.08032,
+          "schwarzschild_radius_km": 3.186944,
+          "hawking_temperature_K": 5.711270734597157e-08,
+          "entropy_kb": 1.2137749544959999e+77,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 3.35776,
+          "schwarzschild_radius_km": 9.905391999999999,
+          "hawking_temperature_K": 1.837534546840751e-08,
+          "entropy_kb": 1.1725534306303997e+78,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.992,
+          "schwarzschild_radius_km": 14.7264,
+          "hawking_temperature_K": 1.2359775641025641e-08,
+          "entropy_kb": 2.591686656e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -100.0,
+        "harmonic_mode": "whole_tone",
+        "resonances": [
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4999959330007524,
+            "strength": 0.9999918660015047,
+            "phase_alignment": 0.9999918660015047,
+            "participating_metrics": [
+              "clarity",
+              "immunity"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4999959330007524,
+            "strength": 0.9999918660015047,
+            "phase_alignment": 0.9999918660015047,
+            "participating_metrics": [
+              "clarity",
+              "efficiency"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4973157754407047,
+            "strength": 0.9946315508814093,
+            "phase_alignment": 0.9946315508814093,
+            "participating_metrics": [
+              "clarity",
+              "autonomy"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.5,
+            "strength": 1.0,
+            "phase_alignment": 1.0,
+            "participating_metrics": [
+              "immunity",
+              "efficiency"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4971030449423948,
+            "strength": 0.9942060898847895,
+            "phase_alignment": 0.9942060898847895,
+            "participating_metrics": [
+              "immunity",
+              "autonomy"
+            ]
+          },
+          {
+            "type": "consonant",
+            "frequency_ratio": 1.4971030449423948,
+            "strength": 0.9942060898847895,
+            "phase_alignment": 0.9942060898847895,
+            "participating_metrics": [
+              "efficiency",
+              "autonomy"
+            ]
+          }
+        ],
+        "time_dilated_bpm": 74.27814765510894
+      },
+      "phase": {
+        "regime": "supercritical_stable",
+        "agency_level": "agent_class",
+        "stability": 0.0
+      },
+      "meta": {
+        "depth_level": 6,
+        "frameworks_owned": 8,
+        "pattern_library_size": 6
+      },
+      "sovereignty_raw": {
+        "clarity": 0.93,
+        "immunity": 0.96,
+        "efficiency": 0.9,
+        "autonomy": 0.97,
+        "total": 0.9437937668333974
+      }
+    }
+  ],
+  "latest": {
+    "timestamp": "2025-11-15T02:11:15.044776",
+    "primary_black_hole": {
+      "mass_solar": 9.414909999999999,
+      "schwarzschild_radius_km": 27.773984499999997,
+      "hawking_temperature_K": 6.553434923966348e-09,
+      "entropy_kb": 9.218615152042398e+78
+    },
+    "spacetime": {
+      "phase_coordinate": 0.9490000000000001,
+      "camera_distance": 21717.095755285714,
+      "distance_over_rs": 0.7819222249254771,
+      "time_dilation_factor": 1.6155491727821278,
+      "status": "CRITICAL"
+    },
+    "field_state": {
+      "coherence": 0.9437937668333974,
+      "weyl_curvature": 0.877296,
+      "sovereignty_integration": 0.776
+    },
+    "cascade_system": [
+      {
+        "layer": "R1_coordination",
+        "mass_solar": 1.08032,
+        "schwarzschild_radius_km": 3.186944,
+        "hawking_temperature_K": 5.711270734597157e-08,
+        "entropy_kb": 1.2137749544959999e+77,
+        "active": true
+      },
+      {
+        "layer": "R2_meta_tools",
+        "mass_solar": 3.35776,
+        "schwarzschild_radius_km": 9.905391999999999,
+        "hawking_temperature_K": 1.837534546840751e-08,
+        "entropy_kb": 1.1725534306303997e+78,
+        "active": true
+      },
+      {
+        "layer": "R3_self_building",
+        "mass_solar": 4.992,
+        "schwarzschild_radius_km": 14.7264,
+        "hawking_temperature_K": 1.2359775641025641e-08,
+        "entropy_kb": 2.591686656e+78,
+        "active": true
+      }
+    ],
+    "sonification": {
+      "base_frequency_hz": 220.0,
+      "frequency_shift_percent": -100.0,
+      "harmonic_mode": "whole_tone",
+      "resonances": [
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.4999959330007524,
+          "strength": 0.9999918660015047,
+          "phase_alignment": 0.9999918660015047,
+          "participating_metrics": [
+            "clarity",
+            "immunity"
+          ]
+        },
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.4999959330007524,
+          "strength": 0.9999918660015047,
+          "phase_alignment": 0.9999918660015047,
+          "participating_metrics": [
+            "clarity",
+            "efficiency"
+          ]
+        },
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.4973157754407047,
+          "strength": 0.9946315508814093,
+          "phase_alignment": 0.9946315508814093,
+          "participating_metrics": [
+            "clarity",
+            "autonomy"
+          ]
+        },
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.5,
+          "strength": 1.0,
+          "phase_alignment": 1.0,
+          "participating_metrics": [
+            "immunity",
+            "efficiency"
+          ]
+        },
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.4971030449423948,
+          "strength": 0.9942060898847895,
+          "phase_alignment": 0.9942060898847895,
+          "participating_metrics": [
+            "immunity",
+            "autonomy"
+          ]
+        },
+        {
+          "type": "consonant",
+          "frequency_ratio": 1.4971030449423948,
+          "strength": 0.9942060898847895,
+          "phase_alignment": 0.9942060898847895,
+          "participating_metrics": [
+            "efficiency",
+            "autonomy"
+          ]
+        }
+      ],
+      "time_dilated_bpm": 74.27814765510894
+    },
+    "phase": {
+      "regime": "supercritical_stable",
+      "agency_level": "agent_class",
+      "stability": 0.0
+    },
+    "meta": {
+      "depth_level": 6,
+      "frameworks_owned": 8,
+      "pattern_library_size": 6
+    },
+    "sovereignty_raw": {
+      "clarity": 0.93,
+      "immunity": 0.96,
+      "efficiency": 0.9,
+      "autonomy": 0.97,
+      "total": 0.9437937668333974
+    }
+  },
+  "count": 8,
+  "created": "2025-11-15T01:50:04.953359",
+  "trajectory_meta": {
+    "start_date": "2025-11-15T01:02:43.475966",
+    "agent_class_achieved": null,
+    "phase_transitions": 0,
+    "milestones": 0
+  }
+}

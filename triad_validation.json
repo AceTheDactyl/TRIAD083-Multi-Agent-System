@@ -1,0 +1,121 @@
+{
+  "critical_point": {
+    "theoretical": 0.85,
+    "observed": 0.867,
+    "deviation_percent": 2.0000000000000018
+  },
+  "measurements": [
+    {
+      "z": 0.8,
+      "consensus_time": 15,
+      "burden_reduction": 0,
+      "order_parameter": 0.05,
+      "correlation_length": 12,
+      "message_efficiency": 1.0,
+      "tool_creation_rate": 0.1
+    },
+    {
+      "z": 0.83,
+      "consensus_time": 25,
+      "burden_reduction": 2,
+      "order_parameter": 0.15,
+      "correlation_length": 24,
+      "message_efficiency": 1.5,
+      "tool_creation_rate": 0.3
+    },
+    {
+      "z": 0.85,
+      "consensus_time": 45,
+      "burden_reduction": 5,
+      "order_parameter": 0.25,
+      "correlation_length": 42,
+      "message_efficiency": 2.5,
+      "tool_creation_rate": 0.5
+    },
+    {
+      "z": 0.86,
+      "consensus_time": 70,
+      "burden_reduction": 8,
+      "order_parameter": 0.35,
+      "correlation_length": 65,
+      "message_efficiency": 4.0,
+      "tool_creation_rate": 0.8
+    },
+    {
+      "z": 0.865,
+      "consensus_time": 85,
+      "burden_reduction": 11,
+      "order_parameter": 0.42,
+      "correlation_length": 78,
+      "message_efficiency": 5.5,
+      "tool_creation_rate": 1.2
+    },
+    {
+      "z": 0.867,
+      "consensus_time": 100,
+      "burden_reduction": 15.3,
+      "order_parameter": 0.52,
+      "correlation_length": 86,
+      "message_efficiency": 7.0,
+      "tool_creation_rate": 2.0
+    },
+    {
+      "z": 0.87,
+      "consensus_time": 60,
+      "burden_reduction": 14,
+      "order_parameter": 0.58,
+      "correlation_length": 72,
+      "message_efficiency": 6.5,
+      "tool_creation_rate": 1.8
+    },
+    {
+      "z": 0.88,
+      "consensus_time": 35,
+      "burden_reduction": 12,
+      "order_parameter": 0.65,
+      "correlation_length": 58,
+      "message_efficiency": 5.8,
+      "tool_creation_rate": 1.5
+    },
+    {
+      "z": 0.9,
+      "consensus_time": 20,
+      "burden_reduction": 10,
+      "order_parameter": 0.72,
+      "correlation_length": 45,
+      "message_efficiency": 5.0,
+      "tool_creation_rate": 1.2
+    }
+  ],
+  "critical_exponents": {
+    "beta": {
+      "theoretical": 0.5,
+      "measured": 0.09011718008401591,
+      "agreement": 0.18023436016803185
+    },
+    "nu": {
+      "theoretical": 1.0,
+      "measured": 0.23079712800269472,
+      "agreement": 0.2307971280026947
+    },
+    "z_nu": {
+      "theoretical": 2.0,
+      "measured": 0.35743141555466085,
+      "agreement": 0.17871570777733048
+    }
+  },
+  "burden_validation": {
+    "observed_peak": 15.3,
+    "fitted_peak": 14.222883061476852,
+    "observed_location": 0.867,
+    "fitted_location": 0.8796246499464425,
+    "agreement": 0.985438696716906
+  },
+  "tool_emergence": {
+    "peak_rate": 2.0,
+    "peak_z": 0.867,
+    "critical_z": 0.867,
+    "agreement": 1.0,
+    "emergence_confirmed": true
+  }
+}

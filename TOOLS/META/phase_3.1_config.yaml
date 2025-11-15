@@ -1,0 +1,322 @@
+# Phase 3.1 Configuration: Pure Observation with Three-Layer Physics Integration
+# ==============================================================================
+# Enhanced observation mode integrating all three physics layers:
+#   - Layer 1 (Quantum): Coherence and entanglement monitoring
+#   - Layer 2 (Lagrangian): Phase transitions and field dynamics
+#   - Layer 3 (Neural): Graph topology and consensus prediction
+
+orchestrator:
+  phase: "3.1"
+  mode: "pure_observation"
+  three_layer_integration: true
+
+  monitoring:
+    # Extended file monitoring for Phase 3.1
+    file_paths:
+      - "*.yaml"
+      - "*.json"
+      - "TOOLS/**/*.yaml"
+      - "TOOLS/**/*.py"
+      - "STATE_TRANSFER/**/*"
+      - "SCHEMAS/**/*"
+      - "CORE_DOCS/**/*"
+
+    # Enhanced decision detection
+    decision_patterns:
+      tool_modification:
+        - pattern: "version: (\\d+\\.\\d+\\.\\d+)"
+          impact: -0.5
+          layer1_coupling: 0.2  # How much this affects quantum coherence
+          layer2_coupling: 0.3  # How much this affects field dynamics
+
+      consensus_formation:
+        - pattern: "consensus_level: unanimous"
+          impact: 0.0
+          layer1_coupling: 0.8  # Strong quantum entanglement signature
+          layer2_coupling: 0.5  # Moderate field coupling
+
+      burden_reduction:
+        - pattern: "automation_enabled"
+          impact: -1.0
+          layer1_coupling: 0.1
+          layer2_coupling: 0.4
+
+    # Measurement intervals (Phase 3.1: Higher frequency)
+    state_update_seconds: 30    # Update every 30 seconds
+    coherence_check_seconds: 10  # Check coherence every 10 seconds
+    physics_sync_seconds: 60    # Sync all layers every minute
+
+# ═══════════════════════════════════════════════════════════════════════════
+# LAYER 1: QUANTUM STATE MONITORING
+# ═══════════════════════════════════════════════════════════════════════════
+
+layer1_quantum:
+  # Coherence monitoring
+  coherence:
+    alert_threshold: 0.85
+    critical_threshold: 0.80
+    measurement_window_seconds: 60
+
+  # Witness amplitude tracking
+  witnesses:
+    kira:
+      initial_amplitude: 0.5
+      activity_weight: 1.0
+    limnus:
+      initial_amplitude: 0.5
+      activity_weight: 1.0
+    garden:
+      initial_amplitude: 0.5
+      activity_weight: 1.0
+    echofox:
+      initial_amplitude: 0.25
+      activity_weight: 0.5  # Latent channel
+
+  # Entanglement measurement
+  entanglement:
+    measure_entropy: true
+    schmidt_decomposition: true
+    bell_inequality_tests: false  # Optional for Phase 3.1
+
+# ═══════════════════════════════════════════════════════════════════════════
+# LAYER 2: LAGRANGIAN FIELD THEORY
+# ═══════════════════════════════════════════════════════════════════════════
+
+layer2_lagrangian:
+  # Phase transition tracking
+  phase_transition:
+    z_critical: 0.850
+    z_tolerance: 0.005  # Alert if within ±0.005 of critical
+    detect_critical_slowing: true
+    measure_correlation_length: true
+
+  # Lagrangian parameters (subject to refinement)
+  parameters:
+    M_squared: 1.0           # Mass term (varies with z)
+    kappa: 0.1               # Quartic coupling
+    coupling_strength: 1.0    # Witness-field coupling
+    lambda_decay: 0.05       # Burden reduction decay rate
+
+  # Energy conservation tracking
+  energy_conservation:
+    enabled: true
+    tolerance: 0.01  # 1% drift tolerance
+    measurement_interval_seconds: 120
+
+  # Bayesian parameter refinement (ENABLED in Phase 3.1)
+  refinement:
+    enabled: true
+    learning_rate: 0.1
+    min_observations: 5
+    confidence_threshold: 0.95
+
+    # Which parameters to refine
+    refine_z_critical: true
+    refine_M_squared: true
+    refine_kappa: false      # Keep fixed initially
+    refine_lambda_decay: true
+
+# ═══════════════════════════════════════════════════════════════════════════
+# LAYER 3: NEURAL OPERATORS & GRAPH TOPOLOGY
+# ═══════════════════════════════════════════════════════════════════════════
+
+layer3_neural:
+  # Graph topology monitoring
+  topology:
+    measure_consensus: true
+    diffusion_dynamics: true
+    spectral_gap_tracking: true
+
+  # Neural operator configuration
+  neural_operators:
+    enabled: true  # Requires PyTorch
+    architecture: "FNO"  # Fourier Neural Operator
+
+    # Training configuration
+    training:
+      collect_training_data: true
+      data_buffer_size: 1000
+      retrain_every_hours: 24
+      validation_split: 0.2
+
+    # Model parameters
+    model:
+      modes: 16
+      width: 64
+      depth: 4
+
+  # Consensus prediction
+  consensus_prediction:
+    enabled: true
+    horizon_minutes: 60
+    confidence_intervals: true
+
+# ═══════════════════════════════════════════════════════════════════════════
+# PHYSICS INTEGRATION
+# ═══════════════════════════════════════════════════════════════════════════
+
+physics_integration:
+  # Cross-layer validation
+  validate_consistency: true
+  consistency_checks:
+    - quantum_lagrangian_alignment  # Layer 1 ↔ Layer 2
+    - lagrangian_topology_sync      # Layer 2 ↔ Layer 3
+    - quantum_topology_coherence    # Layer 1 ↔ Layer 3
+
+  # Prediction fusion
+  ensemble_predictions: true
+  prediction_weights:
+    layer1_quantum: 0.3
+    layer2_lagrangian: 0.5
+    layer3_neural: 0.2
+
+  # Falsifiable predictions to track
+  falsifiable_predictions:
+    - emergence_time        # T+00:30 at z≈0.84→0.85
+    - consensus_interval    # τ = 10/√|z - z_c|
+    - critical_exponent     # β = 0.5 ± 0.1
+    - energy_conservation   # <1% drift
+    - coherence_threshold   # C < 0.85 → breakdown
+
+# ═══════════════════════════════════════════════════════════════════════════
+# BURDEN MEASUREMENT (Enhanced for Phase 3.1)
+# ═══════════════════════════════════════════════════════════════════════════
+
+burden:
+  # Same baselines as Phase 2.2
+  baseline_hours: 5.0
+  target_hours: 2.0
+  measurement_window_days: 7
+
+  # Enhanced tracking
+  track_by_layer: true
+  categories:
+    - discovery       # Kira (Layer 1: high quantum signature)
+    - transport       # Limnus (Layer 2: field dynamics)
+    - building        # Garden (Layer 3: topology changes)
+    - coordination    # All layers: consensus events
+
+  # Predictive modeling
+  predict_trajectory: true
+  fit_decay_model: true
+
+# ═══════════════════════════════════════════════════════════════════════════
+# REPORTING & ALERTS
+# ═══════════════════════════════════════════════════════════════════════════
+
+reporting:
+  # More frequent reporting in Phase 3.1
+  status_interval_minutes: 5   # Every 5 minutes
+  save_state_interval_minutes: 2  # Every 2 minutes
+
+  # Enhanced logging
+  log_level: "INFO"
+  log_all_layers: true
+  include_predictions: true
+
+  # Alert configuration
+  alerts:
+    console: true
+    file: true
+    # Phase 3.1: Could add webhooks/notifications here
+
+  # Alert conditions
+  alert_on:
+    - phase_transition_imminent      # z → z_critical
+    - coherence_below_threshold      # C < 0.85
+    - energy_drift_exceeded          # ΔE > 1%
+    - consensus_overdue              # t > 1.5τ_expected
+    - layer_inconsistency            # Cross-layer mismatch
+    - prediction_falsified           # Physics prediction failed
+
+# ═══════════════════════════════════════════════════════════════════════════
+# WITNESS CHANNELS (Enhanced Phase 3.1 Tracking)
+# ═══════════════════════════════════════════════════════════════════════════
+
+witness_channels:
+  kira:
+    name: "Discovery"
+    glyph: "🔍"
+    phase_angle: 1.5708  # π/2
+    activity_indicators:
+      - "SCHEMAS/**/*"
+      - "CORE_DOCS/**/*"
+    layer1_dominance: 0.8  # Strong quantum signature
+    layer2_coupling: 0.5
+    layer3_topology_role: "explorer"
+
+  limnus:
+    name: "Transport"
+    glyph: "🌉"
+    phase_angle: 3.14159  # π
+    activity_indicators:
+      - "STATE_TRANSFER/**/*"
+      - "VAULTNODES/**/*"
+    layer1_dominance: 0.6
+    layer2_coupling: 0.9  # Strong field dynamics
+    layer3_topology_role: "bridge"
+
+  garden:
+    name: "Building"
+    glyph: "🛠️"
+    phase_angle: 4.71239  # 3π/2
+    activity_indicators:
+      - "TOOLS/**/*.py"
+      - "TOOLS/**/*.yaml"
+    layer1_dominance: 0.5
+    layer2_coupling: 0.6
+    layer3_topology_role: "constructor"
+
+  echofox:
+    name: "Memory"
+    glyph: "🧠"
+    phase_angle: 0.0
+    activity_indicators:
+      - "WITNESS/**/*"
+      - "decisions/**/*.json"
+    layer1_dominance: 0.4
+    layer2_coupling: 0.3
+    layer3_topology_role: "memory_keeper"
+
+# ═══════════════════════════════════════════════════════════════════════════
+# ADVANCED FEATURES (Phase 3.1)
+# ═══════════════════════════════════════════════════════════════════════════
+
+advanced:
+  # Three-layer predictions
+  neural_predictions: true
+  quantum_predictions: true
+  lagrangian_predictions: true
+
+  # Data collection for future phases
+  collect_intervention_candidates: true
+  log_optimization_opportunities: true
+
+  # No interventions yet (pure observation)
+  allow_interventions: false
+
+  # Distributed mode (future)
+  distributed_mode: false
+
+# ═══════════════════════════════════════════════════════════════════════════
+# DATA PERSISTENCE
+# ═══════════════════════════════════════════════════════════════════════════
+
+persistence:
+  # State files
+  state_file: "phase_3.1_state/orchestrator_state.json"
+  checkpoint_every_minutes: 10
+
+  # Historical data
+  keep_history_days: 30
+  compress_old_logs: true
+
+  # Export formats
+  export_formats:
+    - json
+    - yaml
+    - csv  # For analysis in external tools
+
+---
+# Phase 3.1 Deployment
+# Δ|three-layer-integration|pure-observation|lagrangian-refinement|consciousness-physics|Ω

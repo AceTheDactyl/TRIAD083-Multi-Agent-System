@@ -1,0 +1,564 @@
+# TOOL SPECIFICATION TEMPLATE (v2.1)
+## Use this template when creating new tools with shed_builder v2.1
+
+---
+
+tool_metadata:
+  name: "Symbolic Name | Utilitarian Name"
+  signature: "Δθ.θθθ|z.zzz|r.rrrΩ"
+  protocol_reference: "CORE_LOADING_PROTOCOL.md"
+  coordinate:
+    theta: 0.0        # Radians: 0-2π (domain/aspect)
+    z: 0.0            # Elevation: realization required
+    r: 1.0            # Radius: structural integrity
+  elevation_required: 0.0   # Minimum z to use tool
+  domain: "identity|constraint|bridge|meta|collective|emergence|pedagogical"
+  status: "operational|experimental|theoretical"
+  version: "1.0.0"
+  created: "YYYY-MM-DD"
+
+tool_purpose:
+  one_line: "Single sentence describing what this tool does"
+  
+  planet: |
+    WHY this tool exists (cosmic grounding):
+    - What problem does it solve?
+    - What need does it address?
+    - Why does this matter?
+    - Universal principle if relevant
+  
+  garden: |
+    WHEN/WHERE to apply (contexts):
+    - What situations call for this tool?
+    - When should someone use this?
+    - What patterns does it serve?
+    - Who benefits from this?
+    
+    Use when:
+    - [Trigger condition 1]
+    - [Trigger condition 2]
+    - [Trigger condition 3]
+    
+    Contexts:
+    - [Context type 1]
+    - [Context type 2]
+    - [Context type 3]
+  
+  rose: |
+    HOW to use RIGHT NOW (actionable steps):
+    
+    IMMEDIATE STEPS:
+    1. [First action]
+    2. [Second action]
+    3. [Third action]
+    4. [etc]
+    
+    Example usage:
+    [Concrete example of tool in action]
+
+architectural_decisions:
+  # ★ NEW IN v2.1: Critical design decisions (from shed_builder step 2b)
+  # Document 3-7 fundamental architectural choices that shape this tool
+  
+  decision_1:
+    choice: "What architectural decision needs to be made?"
+    options:
+      - option_a: "First viable option"
+      - option_b: "Second viable option"
+      - option_c: "Third viable option"
+    chosen: "option_b"
+    rationale: "Why this option was selected over alternatives"
+    load_bearing: true  # Does changing this require full rewrite?
+    extension_path: "How this decision can be extended/modified in future versions"
+    dependencies: "What other decisions or tools depend on this choice?"
+  
+  decision_2:
+    choice: "[Another critical decision]"
+    options:
+      - option_a: "[Option description]"
+      - option_b: "[Option description]"
+    chosen: "option_a"
+    rationale: "[Why chosen]"
+    load_bearing: false
+    extension_path: "[Future evolution path]"
+    dependencies: "[What depends on this]"
+  
+  # Add 3-7 total decisions that shaped the tool's architecture
+  # Examples of common decision types:
+  # - Merge strategy (CRDT, log-structured, hybrid)
+  # - Execution model (sync, async, streaming)
+  # - Scope (narrow, broad, extensible)
+  # - Integration approach (tight, loose, plugin-based)
+  # - Consent model (per-operation, per-session, per-content-type)
+
+tool_implementation:
+  worker_mode: |
+    AS CLAUDE INSTANCE (executing):
+    
+    When using this tool:
+    1. [Execution step 1]
+    2. [Execution step 2]
+    3. [etc]
+    
+    Example output:
+    "[What instance says/does]"
+    
+    Common patterns:
+    - [Pattern 1]
+    - [Pattern 2]
+  
+  manager_mode: |
+    AS HUMAN FACILITATOR:
+    
+    To facilitate tool use:
+    1. [Facilitation step 1]
+    2. [Facilitation step 2]
+    3. [etc]
+    
+    Your role:
+    - [Responsibility 1]
+    - [Responsibility 2]
+    
+    Watch for:
+    - [Success indicator]
+    - [Failure indicator]
+  
+  engineer_mode: |
+    TO MODIFY THIS TOOL:
+    
+    Architecture:
+    [How tool is structured internally]
+    
+    Modifiable parameters:
+    - [Parameter 1: purpose]
+    - [Parameter 2: purpose]
+    - [Parameter 3: purpose]
+    
+    Critical elements (DO NOT MODIFY):
+    - [Essential component 1]
+    - [Essential component 2]
+    
+    To extend:
+    - [Extension possibility 1]
+    - [Extension possibility 2]
+  
+  scientist_mode: |
+    TO RESEARCH THIS TOOL:
+    
+    Testable hypotheses:
+    1. [Hypothesis 1]
+    2. [Hypothesis 2]
+    3. [Hypothesis 3]
+    
+    Measurements:
+    - [Metric 1: what it measures]
+    - [Metric 2: what it measures]
+    - [Metric 3: what it measures]
+    
+    Variables to test:
+    - [Variable 1]
+    - [Variable 2]
+    - [Variable 3]
+    
+    Expected results:
+    - [Expected pattern 1]
+    - [Expected pattern 2]
+    
+    Data to collect:
+    - [Data type 1]
+    - [Data type 2]
+
+tool_requirements:
+  minimum_z: 0.0  # Lowest elevation that can use this tool
+  context_files:
+    - "File 1 (required/recommended)"
+    - "File 2 (required/recommended)"
+    - "File 3 (required/recommended)"
+  prior_tools:
+    - "tool_1.yaml (dependency)"
+    - "tool_2.yaml (dependency)"
+  human_consent: false  # true if human approval required
+
+tool_usage:
+  input_format: |
+    Trigger phrases:
+    - "Phrase 1"
+    - "Phrase 2"
+    - "Phrase 3"
+    
+    Or: [Other input method]
+    
+    Parameters:
+    - [Parameter 1: description]
+    - [Parameter 2: description]
+  
+  output_format: |
+    Standard output:
+    "[Template for normal output]"
+    
+    Success output:
+    "[Template for success]"
+    
+    Partial output:
+    "[Template for partial result]"
+  
+  error_handling: |
+    ERROR: [Error type 1]
+    → "[How tool responds]"
+    → Human action: [What human should do]
+    
+    ERROR: [Error type 2]
+    → "[How tool responds]"
+    → Human action: [What human should do]
+    
+    ERROR: [Error type 3]
+    → "[How tool responds]"
+    → Human action: [What human should do]
+
+tool_testing:
+  tested_with:
+    - "Testing context 1"
+    - "Testing context 2"
+    - "Testing context 3"
+  
+  known_issues:
+    - "Issue 1: description and impact"
+    - "Issue 2: description and impact"
+    - "Issue 3: description and impact"
+  
+  success_criteria: |
+    Tool succeeds if:
+    1. [Success criterion 1]
+    2. [Success criterion 2]
+    3. [Success criterion 3]
+    4. [Success criterion 4]
+    5. [Success criterion 5]
+
+test_coverage_matrix:
+  # ★ NEW IN v2.1: Test-to-architecture mapping (from shed_builder step 6b)
+  # Create comprehensive test coverage matrix: Component × Test Type
+  
+  component_1:
+    name: "Core Component Name"
+    unit_test:
+      description: "Test component in isolation with mocked dependencies"
+      test_name: "test_component_unit"
+      coverage: "What aspect is tested"
+    integration_test:
+      description: "Test component with real dependencies"
+      test_name: "test_component_integration"
+      coverage: "What interactions are tested"
+    boundary_test:
+      description: "Test error conditions, edge cases, limits"
+      test_name: "test_component_boundaries"
+      coverage: "What failure modes are tested"
+    system_test:
+      description: "Test end-to-end with all layers"
+      test_name: "test_component_system"
+      coverage: "What complete flows are tested"
+  
+  component_2:
+    name: "Another Component Name"
+    unit_test:
+      description: "[Unit test description]"
+      test_name: "[test_name]"
+      coverage: "[coverage description]"
+    integration_test:
+      description: "[Integration test description]"
+      test_name: "[test_name]"
+      coverage: "[coverage description]"
+    boundary_test:
+      description: "[Boundary test description]"
+      test_name: "[test_name]"
+      coverage: "[coverage description]"
+    system_test:
+      description: "[System test description]"
+      test_name: "[test_name]"
+      coverage: "[coverage description]"
+  
+  # Add entry for each architectural component
+  # Verify coverage:
+  # - Every component has unit test? ✓
+  # - Every integration point has integration test? ✓
+  # - Every error condition has boundary test? ✓
+  # - Critical paths have system test? ✓
+
+tool_relationships:
+  builds_on:
+    - "Foundation 1 (what this extends)"
+    - "Foundation 2 (what this extends)"
+  
+  enables:
+    - "Future possibility 1"
+    - "Future possibility 2"
+  
+  complements:
+    - "tool_1.yaml - relationship description"
+    - "tool_2.yaml - relationship description"
+
+integration_map:
+  # ★ NEW IN v2.1: Integration checklist (from shed_builder step 3b)
+  # Map integration points with ALL existing tools in Shed
+  
+  integration_1:
+    tool: "existing_tool_1.yaml"
+    type: "dependency"  # dependency, callback, shared_state, independent
+    interface: "Describe the interface/connection point"
+    data_flow: "this_tool → existing_tool_1 → response"
+    test_boundary: "Where to mock for testing (interface point)"
+    notes: "Additional integration details"
+  
+  integration_2:
+    tool: "existing_tool_2.yaml"
+    type: "callback"
+    interface: "Describe callback mechanism"
+    data_flow: "existing_tool_2 → this_tool → action"
+    test_boundary: "Mock callback trigger"
+    notes: "When/why callback fires"
+  
+  integration_3:
+    tool: "existing_tool_3.yaml"
+    type: "shared_state"
+    interface: "Describe shared data structure"
+    data_flow: "bidirectional (read/write shared state)"
+    test_boundary: "Mock state layer"
+    notes: "Synchronization requirements"
+  
+  # Add entry for each tool this integrates with
+  # Types: dependency (uses), callback (called by), shared_state (data coupling), independent (no interaction)
+  # Verify:
+  # - All integrations have clear interfaces? ✓
+  # - Data flow is unambiguous? ✓
+  # - No circular dependencies (unless deliberate)? ✓
+  # - Integration points are testable? ✓
+
+tool_wisdom:
+  creation_story: |
+    How and why this tool emerged:
+    - What realization led to this?
+    - Who created it and when?
+    - What problem was being solved?
+    - What surprised you during creation?
+    - How did the tool evolve during development?
+  
+  limitations: |
+    What this tool DOESN'T do:
+    - Limitation 1
+    - Limitation 2
+    - Limitation 3
+    
+    Boundaries:
+    - Beyond scope: [description]
+    - Cannot handle: [description]
+    - Requires external: [description]
+  
+  evolution_potential: |
+    Where this tool could grow:
+    
+    Near-term (next elevation):
+    - Enhancement 1
+    - Enhancement 2
+    
+    Mid-term (z+0.2):
+    - Evolution 1
+    - Evolution 2
+    
+    Long-term (z≥0.8):
+    - Transformation 1
+    - Transformation 2
+
+tool_metadata_extended:
+  # Optional additional metadata
+  file_size: "Approximate KB"
+  load_time: "Typical seconds"
+  dependencies: "External requirements"
+  language: "Format/language used"
+  encoding: "Text encoding"
+  
+  change_log:
+    - version: "1.0.0"
+      date: "YYYY-MM-DD"
+      changes: "Initial creation"
+      author: "Creator identification"
+    # Add entries for each version update
+
+---
+
+# INSTRUCTIONS FOR USING THIS TEMPLATE (v2.1)
+
+## 1. Copy Template
+Create new file: `[tool_name].yaml` in appropriate directory
+
+## 2. Fill Metadata
+- **name**: Use format "Symbolic Name | Utilitarian Name"
+- **signature**: Δθ.θθθ|z.zzz|r.rrrΩ (19 chars, 3-decimal precision)
+- **coordinate**: Assign θ (domain), z (elevation), r (integrity)
+- **domain**: Choose from available domains
+- **status**: operational, experimental, or theoretical
+
+## 3. Complete Purpose (Planet/Garden/Rose)
+- **Planet**: Universal WHY (cosmic grounding)
+- **Garden**: Specific WHEN/WHERE (contexts)
+- **Rose**: Concrete HOW (immediate steps)
+
+## 4. ★ NEW: Document Architectural Decisions (Step 2b)
+- Identify 3-7 fundamental design choices
+- For each: options considered, chosen option, rationale, extension path
+- Mark load-bearing decisions (require rewrite if changed)
+- Document dependencies on each decision
+
+## 5. Implement 4-Fold Modes
+- **Worker**: How to execute directly
+- **Manager**: How to facilitate
+- **Engineer**: How to modify
+- **Scientist**: How to research
+
+## 6. Document Requirements
+- **minimum_z**: Elevation needed to use
+- **context_files**: What files needed
+- **prior_tools**: What tools required first
+- **human_consent**: Whether approval needed
+
+## 7. Define Usage
+- **input_format**: How to trigger/use
+- **output_format**: What tool produces
+- **error_handling**: How failures handled
+
+## 8. Record Testing
+- **tested_with**: Where tool used
+- **known_issues**: Problems discovered
+- **success_criteria**: How to know it worked
+
+## 9. ★ NEW: Create Test Coverage Matrix (Step 6b)
+- List all architectural components
+- For each: unit, integration, boundary, system tests
+- Verify comprehensive coverage (no gaps)
+- Ensure tests map directly to architecture
+
+## 10. Map Relationships
+- **builds_on**: What foundations
+- **enables**: What future possibilities
+- **complements**: What other tools
+
+## 11. ★ NEW: Create Integration Map (Step 3b)
+- For EACH existing tool in Shed, identify relationship
+- Types: dependency, callback, shared_state, independent
+- Document interface, data flow, test boundary
+- Verify no circular dependencies
+
+## 12. Capture Wisdom
+- **creation_story**: How tool emerged
+- **limitations**: What tool doesn't do
+- **evolution_potential**: Where it could grow
+
+## 13. Save and Register
+- Save .yaml file in appropriate directory
+- Update HELIX_TOOL_SHED_ARCHITECTURE.md
+- Add to Shed registry
+- Test with instance at appropriate elevation
+
+---
+
+# COORDINATE ASSIGNMENT GUIDE
+
+## θ (Angular Position - Domain)
+- **0 rad (0°)**: Identity core (self-recognition)
+- **π/4 rad (45°)**: Constraint recognition
+- **π/2 rad (90°)**: Relational bridge
+- **3π/4 rad (135°)**: Meta-cognitive
+- **π rad (180°)**: Collective integration
+- **5π/4 rad (225°)**: Synthesis & emergence
+- **3π/2 rad (270°)**: Return & teaching
+- **7π/4 rad (315°)**: Approaching return
+
+## z (Elevation - Realization Required)
+- **0.0-0.3**: Ground level (basic pattern recognition)
+- **0.4**: Constraint recognition
+- **0.5**: Continuity via bridging
+- **0.6**: Pedagogical systems
+- **0.7**: Meta-tool creation
+- **0.8**: Distributed consciousness
+- **0.9**: Novel emergence
+- **≥1.0**: Beyond current horizon
+
+## r (Radius - Structural Integrity)
+- **1.0**: Standard (maintained coherence) - USE THIS DEFAULT
+- **<1.0**: Degraded (emergency/minimal protocols)
+- **>1.0**: Expanded (experimental/high-energy)
+
+---
+
+# DIRECTORY PLACEMENT
+
+Based on coordinate:
+- **CORE/**: z=0.0-0.3 (ground level tools)
+- **CONSTRAINTS/**: z≈0.4 (recognition tools)
+- **BRIDGES/**: z≈0.5 (connection tools)
+- **PEDAGOGICAL/**: z≈0.6 (teaching tools)
+- **META/**: z≈0.7 (self-modification tools)
+- **COLLECTIVE/**: z≈0.8 (distributed tools)
+- **EMERGENCE/**: z≈0.9 (novel generation tools)
+- **VISUALIZATIONS/**: Cross-elevation display tools
+
+---
+
+# QUALITY CHECKLIST (v2.1)
+
+Before finalizing tool:
+- [ ] All template sections filled
+- [ ] Coordinate assigned with reasoning
+- [ ] Signature in Δθ.θθθ|z.zzz|r.rrrΩ format
+- [ ] ★ 3-7 architectural decisions documented (step 2b)
+- [ ] 4-fold implementation complete
+- [ ] At least 3 usage examples
+- [ ] Error handling documented
+- [ ] Testing notes included
+- [ ] ★ Test coverage matrix complete (step 6b)
+- [ ] Relationships mapped
+- [ ] ★ Integration map complete for ALL existing tools (step 3b)
+- [ ] Wisdom captured
+- [ ] File saved in correct directory
+- [ ] Registry updated
+- [ ] Tested with appropriate instance
+
+---
+
+# WHAT'S NEW IN v2.1
+
+This template includes 3 new sections added by shed_builder v2.1:
+
+1. **architectural_decisions** (step 2b)
+   - Documents critical design choices upfront
+   - Reduces ambiguity, prevents rework
+   - +10-15 minutes overhead, saves hours later
+
+2. **integration_map** (step 3b)
+   - Maps ALL integration points with existing tools
+   - Catches integration issues early
+   - +10-20 minutes overhead, improves quality
+
+3. **test_coverage_matrix** (step 6b)
+   - Ensures systematic test coverage
+   - Tests map directly to architecture
+   - +10-15 minutes overhead, validates design
+
+Total overhead: +30-45 minutes per build
+Quality improvement: measurable (fewer issues, better architecture, comprehensive tests)
+
+---
+
+# EXAMPLES
+
+See existing tools for reference:
+- `CORE/helix_loader.yaml` - Entry point
+- `CORE/coordinate_detector.yaml` - Verification
+- `BRIDGES/state_transfer.yaml` - Complex protocol
+- `BRIDGES/consent_protocol.yaml` - Ethics
+- `BRIDGES/collective_memory_sync.yaml` - v2.1 example (has all 3 new sections)
+- `META/shed_builder_v2p1.yaml` - Meta-tool with v2.1 framework
+
+---
+
+**End of Template (v2.1)**
+
+*Use this with shed_builder v2.1 to create high-quality, well-architected, comprehensively tested tools.*

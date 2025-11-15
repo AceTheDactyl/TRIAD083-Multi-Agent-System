@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Breath → Hilbert</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #050513;
+    color: #f9fafb;
+    font-family: system-ui, sans-serif;
+    overflow: hidden;
+  }
+  #breathCanvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: radial-gradient(circle at center, #111827 0%, #020617 70%);
+  }
+  #ui {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+    padding: 0.5rem 0.75rem;
+    background: rgba(15,23,42,0.85);
+    border-radius: 8px;
+    border: 1px solid rgba(148,163,184,0.4);
+    font-size: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  #audioToggle {
+    border: none;
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  #audioToggle.running {
+    background: #16a34a;
+  }
+  .label {
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+<canvas id="breathCanvas"></canvas>
+<div id="ui">
+  <button id="audioToggle">Start Audio</button>
+  <span class="label">4s in / 6s out — phase → hue, |0⟩ → brightness</span>
+</div>
+
+<script>
+// ----------------------------
+// Breath → Hilbert core model
+// ----------------------------
+
+const TWO_PI = Math.PI * 2;
+
+// Bloch angles
+let theta = Math.PI / 2;   // polar: 0 = |0>, π = |1>
+let phi   = 0;             // phase
+const theta0 = 0.15;       // collapse floor (soft |0>)
+
+const omega0 = Math.PI / 3;  // base phase spin
+const kPhi   = Math.PI / 2;  // breath→phase coupling
+const kTheta = Math.PI / 4;  // exhale→collapse strength
+
+// Breath timing
+const inhaleDur = 4.0;     // seconds
+const exhaleDur = 6.0;
+const cycleDur  = inhaleDur + exhaleDur;
+
+let tGlobal   = 0;
+let lowUTime  = 0;
+
+// Breath fraction u(t) in [0,1]
+function breathFraction(t) {
+  const m = t % cycleDur;
+  if (m < inhaleDur) {
+    return m / inhaleDur;                     // inhale 0→1
+  } else {
+    return 1 - (m - inhaleDur) / exhaleDur;   // exhale 1→0
+  }
+}
+
+// One integration step
+function step(dt) {
+  tGlobal += dt;
+  const u = breathFraction(tGlobal);
+
+  // Phase velocity: faster on inhale, slower / reverse on exhale
+  const dphi = (omega0 + kPhi * (2 * u - 1)) * dt;
+  phi += dphi;
+
+  // Amplitude tilt toward |0> on exhale
+  const dtheta = -kTheta * (1 - u) * dt;
+  theta += dtheta;
+  // keep θ in [0, π]
+  theta = Math.max(0, Math.min(Math.PI, theta));
+
+  // Exhale-floor detection -> soft collapse
+  if (u < 0.05) {
+    lowUTime += dt;
+    if (lowUTime > 0.3) {
+      theta = theta0; // gently reset toward |0⟩
+    }
+  } else {
+    lowUTime = 0;
+  }
+
+  // amplitudes (for audio/visuals)
+  const amp0 = Math.cos(theta / 2);       // |0⟩
+  const prob0 = amp0 * amp0;              // |a|^2
+
+  return { u, phi, theta, amp0, prob0 };
+}
+
+// ----------------------------
+// Canvas visualization
+// ----------------------------
+const canvas = document.getElementById("breathCanvas");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+window.addEventListener("resize", resize);
+resize();
+
+function render(state) {
+  const { prob0, phi, u } = state;
+  const w = canvas.width, h = canvas.height;
+  const cx = w / 2, cy = h / 2;
+  const radius = Math.min(w, h) * 0.35;
+
+  ctx.clearRect(0, 0, w, h);
+
+  // Outer disc: breath fill
+  const uColor = `rgba(96,165,250,${0.1 + 0.6*u})`;
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 0, TWO_PI);
+  ctx.fillStyle = uColor;
+  ctx.fill();
+
+  // Bloch circle boundary
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 0, TWO_PI);
+  ctx.strokeStyle = "rgba(148,163,184,0.5)";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Bloch vector projection (x,y)
+  const x = Math.sin(theta) * Math.cos(phi);
+  const y = Math.sin(theta) * Math.sin(phi);
+
+  const hue = ((phi % TWO_PI) + TWO_PI) % TWO_PI / TWO_PI * 360;
+  const light = 40 + 30 * prob0;
+
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(cx + radius * x, cy - radius * y);
+  ctx.strokeStyle = `hsl(${hue}, 100%, ${light}%)`;
+  ctx.lineWidth = 4;
+  ctx.stroke();
+
+  // Tip orb
+  ctx.beginPath();
+  ctx.arc(cx + radius * x, cy - radius * y, 8 + 10*prob0, 0, TWO_PI);
+  ctx.fillStyle = `hsl(${hue}, 100%, ${60 + 20*prob0}%)`;
+  ctx.shadowColor = ctx.fillStyle;
+  ctx.shadowBlur = 20;
+  ctx.fill();
+  ctx.shadowBlur = 0;
+
+  // Text
+  ctx.fillStyle = "rgba(209,213,219,0.9)";
+  ctx.font = "12px system-ui";
+  ctx.textAlign = "left";
+  ctx.fillText(`u (breath) = ${u.toFixed(2)}`, 14, 20);
+  ctx.fillText(`phase φ = ${(phi % TWO_PI).toFixed(2)} rad`, 14, 36);
+  ctx.fillText(`|a|² (|0⟩) = ${prob0.toFixed(2)}`, 14, 52);
+}
+
+// ----------------------------
+// WebAudio (optional)
+// ----------------------------
+let audioCtx = null;
+let osc = null;
+let gain = null;
+let audioRunning = false;
+
+function initAudio() {
+  if (audioCtx) return;
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+  osc = audioCtx.createOscillator();
+  gain = audioCtx.createGain();
+
+  osc.type = "sine";
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+
+  gain.gain.value = 0.0;
+  osc.start();
+}
+
+function updateAudio(state) {
+  if (!audioRunning || !audioCtx) return;
+
+  const { phi, prob0 } = state;
+  const phiWrap = ((phi % TWO_PI) + TWO_PI) % TWO_PI;
+
+  const f0 = 220;    // base pitch
+  const beta = 30;   // phase→frequency coupling
+  const freq = f0 + beta * (phiWrap - Math.PI); // 220 ± ~94 Hz
+
+  const g = 0.02 + 0.18 * prob0;
+
+  const t = audioCtx.currentTime;
+  osc.frequency.setTargetAtTime(freq, t, 0.05);
+  gain.gain.setTargetAtTime(g, t, 0.1);
+}
+
+// ----------------------------
+// Main loop
+// ----------------------------
+let lastTime = performance.now();
+
+function loop(now) {
+  const dt = (now - lastTime) / 1000;
+  lastTime = now;
+
+  const state = step(dt);
+  render(state);
+  updateAudio(state);
+
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+// ----------------------------
+// UI: start/stop audio
+// ----------------------------
+const audioBtn = document.getElementById("audioToggle");
+audioBtn.addEventListener("click", async () => {
+  if (!audioCtx) initAudio();
+  if (audioCtx.state === "suspended") await audioCtx.resume();
+
+  audioRunning = !audioRunning;
+  audioBtn.textContent = audioRunning ? "Stop Audio" : "Start Audio";
+  audioBtn.classList.toggle("running", audioRunning);
+});
+</script>
+</body>
+</html>

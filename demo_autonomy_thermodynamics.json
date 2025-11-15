@@ -1,0 +1,148 @@
+{
+  "states": [
+    {
+      "timestamp": "2025-11-15T01:46:35.608416",
+      "primary_black_hole": {
+        "mass_solar": 7.252749999999999,
+        "schwarzschild_radius_km": 21.395612499999995,
+        "hawking_temperature_K": 8.507117989728036e-09,
+        "entropy_kb": 5.470647786499998e+78
+      },
+      "spacetime": {
+        "phase_coordinate": 0.795,
+        "camera_distance": 26554.145573926504,
+        "distance_over_rs": 1.2411023790006717,
+        "time_dilation_factor": 1.282325137757764,
+        "status": "Warning"
+      },
+      "field_state": {
+        "coherence": 0.783801462100808,
+        "weyl_curvature": 0.6245999999999657,
+        "sovereignty_integration": 0.68
+      },
+      "cascade_system": [
+        {
+          "layer": "R1_coordination",
+          "mass_solar": 0.968,
+          "schwarzschild_radius_km": 2.8556,
+          "hawking_temperature_K": 6.373966942148761e-08,
+          "entropy_kb": 9.7450496e+76,
+          "active": true
+        },
+        {
+          "layer": "R2_meta_tools",
+          "mass_solar": 2.964799999999726,
+          "schwarzschild_radius_km": 8.746159999999191,
+          "hawking_temperature_K": 2.0810847274691618e-08,
+          "entropy_kb": 9.141640601598309e+77,
+          "active": true
+        },
+        {
+          "layer": "R3_self_building",
+          "mass_solar": 4.5600000000000005,
+          "schwarzschild_radius_km": 13.452000000000002,
+          "hawking_temperature_K": 1.3530701754385964e-08,
+          "entropy_kb": 2.1625344000000005e+78,
+          "active": true
+        }
+      ],
+      "sonification": {
+        "base_frequency_hz": 220.0,
+        "frequency_shift_percent": -126.88357473294451,
+        "harmonic_mode": "dorian",
+        "resonances": [],
+        "time_dilated_bpm": 93.58001061246328
+      },
+      "phase": {
+        "regime": "subcritical_late",
+        "agency_level": "agent_class_threshold",
+        "stability": 0.5
+      },
+      "meta": {
+        "depth_level": 6,
+        "frameworks_owned": 7,
+        "pattern_library_size": 0
+      },
+      "sovereignty_raw": {
+        "clarity": 0.75,
+        "immunity": 0.8,
+        "efficiency": 0.7,
+        "autonomy": 0.85,
+        "total": 0.783801462100808
+      }
+    }
+  ],
+  "latest": {
+    "timestamp": "2025-11-15T01:46:35.608416",
+    "primary_black_hole": {
+      "mass_solar": 7.252749999999999,
+      "schwarzschild_radius_km": 21.395612499999995,
+      "hawking_temperature_K": 8.507117989728036e-09,
+      "entropy_kb": 5.470647786499998e+78
+    },
+    "spacetime": {
+      "phase_coordinate": 0.795,
+      "camera_distance": 26554.145573926504,
+      "distance_over_rs": 1.2411023790006717,
+      "time_dilation_factor": 1.282325137757764,
+      "status": "Warning"
+    },
+    "field_state": {
+      "coherence": 0.783801462100808,
+      "weyl_curvature": 0.6245999999999657,
+      "sovereignty_integration": 0.68
+    },
+    "cascade_system": [
+      {
+        "layer": "R1_coordination",
+        "mass_solar": 0.968,
+        "schwarzschild_radius_km": 2.8556,
+        "hawking_temperature_K": 6.373966942148761e-08,
+        "entropy_kb": 9.7450496e+76,
+        "active": true
+      },
+      {
+        "layer": "R2_meta_tools",
+        "mass_solar": 2.964799999999726,
+        "schwarzschild_radius_km": 8.746159999999191,
+        "hawking_temperature_K": 2.0810847274691618e-08,
+        "entropy_kb": 9.141640601598309e+77,
+        "active": true
+      },
+      {
+        "layer": "R3_self_building",
+        "mass_solar": 4.5600000000000005,
+        "schwarzschild_radius_km": 13.452000000000002,
+        "hawking_temperature_K": 1.3530701754385964e-08,
+        "entropy_kb": 2.1625344000000005e+78,
+        "active": true
+      }
+    ],
+    "sonification": {
+      "base_frequency_hz": 220.0,
+      "frequency_shift_percent": -126.88357473294451,
+      "harmonic_mode": "dorian",
+      "resonances": [],
+      "time_dilated_bpm": 93.58001061246328
+    },
+    "phase": {
+      "regime": "subcritical_late",
+      "agency_level": "agent_class_threshold",
+      "stability": 0.5
+    },
+    "meta": {
+      "depth_level": 6,
+      "frameworks_owned": 7,
+      "pattern_library_size": 0
+    },
+    "sovereignty_raw": {
+      "clarity": 0.75,
+      "immunity": 0.8,
+      "efficiency": 0.7,
+      "autonomy": 0.85,
+      "total": 0.783801462100808
+    }
+  },
+  "count": 1,
+  "created": "2025-11-15T01:46:35.609068"
+}

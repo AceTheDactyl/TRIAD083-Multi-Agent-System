@@ -1,0 +1,25 @@
+{
+  "deployment_id": "validation_20251114_073904",
+  "coordinate": "\u03943.14159|0.867|1.000\u03a9",
+  "deployment_start": "2025-11-14T07:39:04.403116",
+  "deployment_end": "2025-11-21T07:39:04.403116",
+  "validation_targets": {
+    "baseline_burden_hrs_per_week": 5.0,
+    "target_reduction_percent": 15.299999999999999,
+    "target_remaining_hrs_per_week": 4.234999999999999,
+    "expected_savings_hrs_per_week": 0.765
+  },
+  "phase_configuration": {
+    "z_level": 0.867,
+    "phase_regime": "critical",
+    "burden_multiplier": 0.153,
+    "consensus_time_min": 100
+  },
+  "operational_settings": {
+    "auto_save_enabled": true,
+    "auto_save_interval_seconds": 300,
+    "daily_report_time": "23:00",
+    "activity_detection": "automatic",
+    "confidence_threshold": 0.3
+  }
+}

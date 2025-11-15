@@ -1,0 +1,28 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "2025-11-15T00:47:55.813955",
+      "clarity_score": 0.5,
+      "immunity_score": 0.6,
+      "efficiency_score": 0.4,
+      "autonomy_score": 0.3,
+      "total_sovereignty": 0.4378607156598691,
+      "phase_coordinate": 0.43000000000000005,
+      "phase_regime": "subcritical",
+      "agency_level": "reactive",
+      "predicted_amplification": 8.524000000000001,
+      "time_to_agent_class": null,
+      "interactions_today": 0,
+      "character_mode_count": 0,
+      "author_mode_count": 0,
+      "observations": []
+    }
+  ],
+  "start_date": "2025-11-15T00:47:55.813929",
+  "agent_class_achieved_date": null,
+  "clarity_growth_rate": 0.0,
+  "immunity_growth_rate": 0.0,
+  "efficiency_growth_rate": 0.0,
+  "autonomy_growth_rate": 0.0,
+  "milestones_reached": []
+}

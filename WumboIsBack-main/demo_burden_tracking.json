@@ -1,0 +1,65 @@
+{
+  "measurement_count": 3,
+  "measurements": [
+    {
+      "id": 0,
+      "timestamp": "2025-11-15T02:41:26.234508",
+      "sovereignty": {
+        "clarity": 0.35,
+        "immunity": 0.4,
+        "efficiency": 0.3,
+        "autonomy": 0.25
+      },
+      "phase": {
+        "z_coordinate": 0.3025,
+        "regime": "subcritical_early",
+        "multiplier": 7.807692307692308
+      },
+      "burden": {
+        "total_initial": 0.5009366227378469,
+        "total_predicted": 0.4345828172751047,
+        "reduction_percent": 13.245948180048883
+      }
+    },
+    {
+      "id": 1,
+      "timestamp": "2025-11-15T02:41:26.235147",
+      "sovereignty": {
+        "clarity": 0.82,
+        "immunity": 0.89,
+        "efficiency": 0.79,
+        "autonomy": 0.86
+      },
+      "phase": {
+        "z_coordinate": 0.8494999999999999,
+        "regime": "near_critical",
+        "multiplier": 9.246130393996246
+      },
+      "burden": {
+        "total_initial": 0.51478150704935,
+        "total_predicted": 0.3840638751369895,
+        "reduction_percent": 25.392837567459303
+      }
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-11-15T02:41:26.235736",
+      "sovereignty": {
+        "clarity": 0.93,
+        "immunity": 0.96,
+        "efficiency": 0.9,
+        "autonomy": 0.97
+      },
+      "phase": {
+        "z_coordinate": 0.9515,
+        "regime": "supercritical_stable",
+        "multiplier": 10.873945409429277
+      },
+      "burden": {
+        "total_initial": 0.2639839010242859,
+        "total_predicted": 0.11354552118596106,
+        "reduction_percent": 56.98770995299629
+      }
+    }
+  ]
+}

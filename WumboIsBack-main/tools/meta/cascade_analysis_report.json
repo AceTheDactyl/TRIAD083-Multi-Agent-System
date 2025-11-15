@@ -1,0 +1,474 @@
+{
+  "timestamp": "2025-11-14T13:02:34.194242",
+  "phase_coordinate": "\u03943.14159|0.867|1.000\u03a9",
+  "analysis": {
+    "dependencies": {
+      "CORE": {
+        "count": 3,
+        "dependencies": [
+          {
+            "file": "helix_loader.yaml",
+            "dependencies": [
+              "1. Files containing state (VaultNodes)"
+            ]
+          }
+        ]
+      },
+      "BRIDGES": {
+        "count": 7,
+        "dependencies": []
+      },
+      "META": {
+        "count": 35,
+        "dependencies": [
+          {
+            "file": "analyze_decisions.py",
+            "dependencies": [
+              "numpy",
+              "re",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "typing",
+              "json",
+              "argparse"
+            ]
+          },
+          {
+            "file": "README_LAYER3.md",
+            "dependencies": [
+              "neural_operators.py",
+              "orchestrator_state/physics_state_*.json`",
+              "three_layer_integration.py"
+            ]
+          },
+          {
+            "file": "PHYSICS_INTEGRATION.md",
+            "dependencies": [
+              "quantum_state_monitor.py",
+              "orchestrator_state/physics_state_*.json",
+              "physics_validator.py",
+              "three_layer_integration.py",
+              "orchestrator_state/physics_validation_report.json`",
+              "coherence_monitor_state.json",
+              "lagrangian_tracker.py",
+              "neural_operators.py",
+              "deploy_orchestrator.sh",
+              "orchestrator_state/physics_state_latest.json"
+            ]
+          },
+          {
+            "file": "lagrangian_tracker.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "typing",
+              "json"
+            ]
+          },
+          {
+            "file": "README.md",
+            "dependencies": [
+              "orchestrator_state/`",
+              "orchestrator_state.json",
+              "report_YYYYMMDD_HHMMSS.json`",
+              "- At least 5 observations per parameter",
+              "decisions/`:",
+              "decisions"
+            ]
+          },
+          {
+            "file": "three_layer_integration.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "quantum_state_monitor",
+              "neural_operators",
+              "typing",
+              "json",
+              "lagrangian_tracker"
+            ]
+          },
+          {
+            "file": "neural_operators.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "typing",
+              "json"
+            ]
+          },
+          {
+            "file": "physics_validator.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "pathlib",
+              "quantum_state_monitor",
+              "typing",
+              "json",
+              "lagrangian_tracker"
+            ]
+          },
+          {
+            "file": "validate_complete_physics.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "pathlib",
+              "typing",
+              "json",
+              "T"
+            ]
+          },
+          {
+            "file": "meta_orchestrator.py",
+            "dependencies": [
+              "numpy",
+              "yaml",
+              "logging",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "asyncio",
+              "typing",
+              "json",
+              "time"
+            ]
+          },
+          {
+            "file": "quantum_state_monitor.py",
+            "dependencies": [
+              "numpy",
+              "logging",
+              "datetime",
+              "dataclasses",
+              "pathlib",
+              "coherence_monitor_state.json",
+              "typing",
+              "json",
+              "coherence_monitor_state.json)"
+            ]
+          },
+          {
+            "file": "cascade_analyzer.py",
+            "dependencies": [
+              "json",
+              "os",
+              "re",
+              "datetime",
+              "pathlib",
+              "collections",
+              "subprocess"
+            ]
+          },
+          {
+            "file": "generate_validation_dashboard.py",
+            "dependencies": [
+              "numpy",
+              "matplotlib.patches",
+              "100",
+              "matplotlib.pyplot"
+            ]
+          },
+          {
+            "file": "comprehensive_100_theories_validation.py",
+            "dependencies": [
+              "numpy",
+              "matplotlib.collections",
+              "scipy.ndimage",
+              "matplotlib.pyplot",
+              "scipy.special",
+              "scipy.stats",
+              "scipy.spatial.distance",
+              "dataclasses",
+              "warnings",
+              "scipy.linalg",
+              "scipy.signal",
+              "matplotlib.animation",
+              "scipy.optimize",
+              "matplotlib.patches",
+              "seaborn",
+              "typing",
+              "scipy.integrate"
+            ]
+          },
+          {
+            "file": "COMPREHENSIVE_VALIDATION_SUMMARY.md",
+            "dependencies": [
+              "PHASE_3.1_VALIDATION_REPORT.md`",
+              "100_THEORETICAL_FOUNDATIONS.md`",
+              "VALIDATION_RESPONSE.md`",
+              "SECTION_6_INFORMATION_PROCESSING.md`"
+            ]
+          },
+          {
+            "file": "DEPLOY_NOW.md",
+            "dependencies": [
+              "phase_3.1_state/validation_*.log",
+              "phase_3.1_state/three_layer_*.log",
+              "phase_3.1_state/phase_3.1_report_*.md",
+              "phase_3.1_state/refinement_*.log",
+              "phase_3.1_state/validation_reports",
+              "phase_3.1_state/refinement_logs"
+            ]
+          },
+          {
+            "file": "VALIDATION_RESPONSE.md",
+            "dependencies": [
+              "README_LAYER3.md`",
+              "ALLEN_CAHN_RATIONALE.md`",
+              "PHYSICS_INTEGRATION.md`",
+              "README_LAYER3.md:257`"
+            ]
+          },
+          {
+            "file": "PHASE_3.1_DEPLOYMENT.md",
+            "dependencies": [
+              "phase_3.1_state/validation_reports/latest.json",
+              "phase_3.1_state/validation_*.log",
+              "phase_3.1_state/three_layer_*.log",
+              "phase_3.1_state/refinement_*.log",
+              "phase_3.1_state/validation_reports/",
+              "phase_3.1_state/refinement_logs/",
+              "phase_3.1_state/`",
+              "phase_3.1_state/*.pid)"
+            ]
+          },
+          {
+            "file": "visualize_phase_transition.py",
+            "dependencies": [
+              "numpy",
+              "scipy.ndimage",
+              "matplotlib.pyplot",
+              "warnings",
+              "matplotlib.animation"
+            ]
+          },
+          {
+            "file": "run_100_theories_text_only.py",
+            "dependencies": [
+              "numpy",
+              "dataclasses",
+              "typing"
+            ]
+          }
+        ]
+      }
+    },
+    "amplification": {
+      "tool_counts": {
+        "CORE": 3,
+        "BRIDGES": 7,
+        "META": 35
+      },
+      "amplification_factors": {
+        "\u03b1 (CORE\u2192BRIDGES)": 2.33,
+        "\u03b2 (BRIDGES\u2192META)": 5.0,
+        "total_cascade": 11.67
+      },
+      "lines_per_layer": {
+        "CORE": 841,
+        "BRIDGES": 1704,
+        "META": 16927
+      },
+      "complexity_growth": {
+        "CORE\u2192BRIDGES": 2.03,
+        "BRIDGES\u2192META": 9.93
+      }
+    },
+    "meta_composition": {
+      "total_meta_tools": 13,
+      "categories": {
+        "orchestrators": 1,
+        "validators": 4,
+        "generators": 1,
+        "other": 7
+      },
+      "ratios": {
+        "orchestration": 0.08,
+        "validation": 0.31,
+        "generation": 0.08
+      },
+      "tools": [
+        {
+          "name": "analyze_decisions.py",
+          "lines": 416,
+          "classes": 3,
+          "functions": 1,
+          "imports": 8,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "lagrangian_tracker.py",
+          "lines": 658,
+          "classes": 4,
+          "functions": 0,
+          "imports": 7,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "three_layer_integration.py",
+          "lines": 560,
+          "classes": 2,
+          "functions": 1,
+          "imports": 10,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "neural_operators.py",
+          "lines": 749,
+          "classes": 2,
+          "functions": 1,
+          "imports": 7,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "physics_validator.py",
+          "lines": 583,
+          "classes": 1,
+          "functions": 1,
+          "imports": 8,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "validate_complete_physics.py",
+          "lines": 415,
+          "classes": 0,
+          "functions": 6,
+          "imports": 7,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": false,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "meta_orchestrator.py",
+          "lines": 1061,
+          "classes": 6,
+          "functions": 0,
+          "imports": 10,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "quantum_state_monitor.py",
+          "lines": 798,
+          "classes": 4,
+          "functions": 1,
+          "imports": 7,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "cascade_analyzer.py",
+          "lines": 355,
+          "classes": 1,
+          "functions": 1,
+          "imports": 7,
+          "meta_characteristics": {
+            "orchestrates": true,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "generate_validation_dashboard.py",
+          "lines": 417,
+          "classes": 0,
+          "functions": 4,
+          "imports": 5,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": false,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "comprehensive_100_theories_validation.py",
+          "lines": 1232,
+          "classes": 2,
+          "functions": 0,
+          "imports": 17,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "visualize_phase_transition.py",
+          "lines": 408,
+          "classes": 1,
+          "functions": 1,
+          "imports": 5,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        },
+        {
+          "name": "run_100_theories_text_only.py",
+          "lines": 254,
+          "classes": 2,
+          "functions": 1,
+          "imports": 3,
+          "meta_characteristics": {
+            "orchestrates": false,
+            "recursive": true,
+            "builds_tools": true
+          }
+        }
+      ]
+    },
+    "emergence_velocity": {
+      "period_days": 7,
+      "lines_added": 42541,
+      "lines_deleted": 680,
+      "net_growth": 41861,
+      "velocity_per_day": 5980.1,
+      "human_hours": 2.0,
+      "lines_per_human_hour": 20930.5,
+      "autonomy_ratio": 249.17
+    }
+  }
+}

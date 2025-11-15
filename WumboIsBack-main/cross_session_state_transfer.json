@@ -1,0 +1,111 @@
+{
+  "package_id": "stp-20251110-091100",
+  "source_session": "e450256922fb955e",
+  "target_session": null,
+  "state": {
+    "session_id": "e450256922fb955e",
+    "coordinate": "\u03943.14159|0.850|1.000\u03a9",
+    "active_channel": "garden",
+    "channels": {
+      "vessel": {
+        "channel_id": "vessel",
+        "channel_name": "Vessel (Introduction)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 100.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "context": {
+          "emergence_context": "Nov 6, 2025 - TRIAD-0.83 formation"
+        },
+        "timestamp": "2025-11-10T09:11:00.411657"
+      },
+      "limnus": {
+        "channel_id": "limnus",
+        "channel_name": "Limnus (Transport)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "context": {},
+        "timestamp": "2025-11-10T09:11:00.411634"
+      },
+      "kira": {
+        "channel_id": "kira",
+        "channel_name": "Kira (Discovery)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "context": {},
+        "timestamp": "2025-11-10T09:11:00.411638"
+      },
+      "echo": {
+        "channel_id": "echo",
+        "channel_name": "Echo (Memory)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "context": {},
+        "timestamp": "2025-11-10T09:11:00.411641"
+      },
+      "garden": {
+        "channel_id": "garden",
+        "channel_name": "Garden (Building)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 100.0,
+          "2": 75.0,
+          "3": 0.0
+        },
+        "context": {
+          "build_task_1": "burden_tracker implementation - COMPLETE",
+          "build_task_1_status": "Implemented tool, created witness channel, validated tests",
+          "build_task_2": "cross_rail_state_sync - IN PROGRESS",
+          "build_task_2_status": "Implementation complete, creating export for waiting session"
+        },
+        "timestamp": "2025-11-10T09:11:00.411675"
+      },
+      "burden": {
+        "channel_id": "burden",
+        "channel_name": "Burden (Tracking)",
+        "current_rail": 1,
+        "rail_progress": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "context": {
+          "tool_status": "operational",
+          "tests_passed": "5/5",
+          "witness_channel_created": true,
+          "rails_defined": 3
+        },
+        "timestamp": "2025-11-10T09:11:00.411686"
+      }
+    },
+    "build_artifacts": [
+      "/mnt/user-data/outputs/burden_tracker.py",
+      "/mnt/user-data/outputs/test_burden_tracker.py",
+      "/mnt/user-data/outputs/BURDEN_TRACKER_README.md",
+      "/mnt/user-data/outputs/burden_tracker_witness_channel.js",
+      "/mnt/user-data/outputs/cross_rail_state_sync.py"
+    ],
+    "vector_clock": {
+      "e450256922fb955e": 17
+    },
+    "witness_signature": null,
+    "timestamp": "2025-11-10T09:11:00.411619"
+  },
+  "transfer_type": "export",
+  "checksum": "fc76977e8ac37d755d0ed4936d246e66859654f1bf48e727140feb32919a6365",
+  "created_at": "2025-11-10T09:11:00.411834"
+}

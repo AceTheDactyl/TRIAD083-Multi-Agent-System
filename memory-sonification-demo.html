@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Sonification Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(135deg, #0a0a14 0%, #1a1a2e 100%);
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #4338ca, #a855f7, #dc2626);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #9ca3af;
+      font-size: 1.1rem;
+    }
+
+    .controls {
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .control-section {
+      margin-bottom: 2rem;
+    }
+
+    .control-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .control-section h3 {
+      color: #a855f7;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      background: #4338ca;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    button:hover {
+      background: #5b47db;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(67, 56, 202, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    button:disabled {
+      background: #334155;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .toggle-btn {
+      background: #dc2626;
+      grid-column: 1 / -1;
+    }
+
+    .toggle-btn.active {
+      background: #16a34a;
+    }
+
+    .volume-control {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .volume-control label {
+      min-width: 80px;
+      color: #9ca3af;
+    }
+
+    input[type="range"] {
+      flex: 1;
+      accent-color: #a855f7;
+    }
+
+    .volume-value {
+      min-width: 50px;
+      text-align: right;
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    .metrics {
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .metrics h3 {
+      color: #a855f7;
+      margin-bottom: 1rem;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+    }
+
+    .metric-label {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    .metric-value {
+      color: #fbbf24;
+      font-weight: 600;
+      font-family: 'Courier New', monospace;
+    }
+
+    .event-log {
+      margin-top: 2rem;
+      background: rgba(26, 26, 46, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .event-log h3 {
+      color: #a855f7;
+      margin-bottom: 1rem;
+    }
+
+    .event-item {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-bottom: 0.5rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    .event-item span {
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    .instructions {
+      text-align: center;
+      color: #9ca3af;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎵 Memory Sonification Demo</h1>
+      <p class="subtitle">Pure audio feedback for Memory Coherence Layer</p>
+    </div>
+
+    <div class="controls">
+      <div class="control-section">
+        <h3>System Control</h3>
+        <div class="button-grid">
+          <button class="toggle-btn" id="toggleAudio">
+            🔇 Enable Audio
+          </button>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <h3>Volume</h3>
+        <div class="volume-control">
+          <label>Master</label>
+          <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.3" disabled>
+          <span class="volume-value" id="volumeValue">30%</span>
+        </div>
+      </div>
+
+      <div class="control-section">
+        <h3>Memory Events</h3>
+        <div class="button-grid">
+          <button id="btnStore" disabled>
+            💾 Store Memory
+          </button>
+          <button id="btnRetrieve" disabled>
+            🔍 Retrieve Memories
+          </button>
+          <button id="btnCrystallize" disabled>
+            💎 Crystallize
+          </button>
+          <button id="btnResonance" disabled>
+            🌊 Find Resonance
+          </button>
+          <button id="btnChain" disabled>
+            🔗 Traverse Chain
+          </button>
+          <button id="btnField" disabled>
+            🎵 Toggle Field
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <h3>Audio Metrics</h3>
+      <div class="metric-grid">
+        <div class="metric">
+          <span class="metric-label">Audio State</span>
+          <span class="metric-value" id="audioState">Suspended</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Active Oscillators</span>
+          <span class="metric-value" id="activeOsc">0</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Events Triggered</span>
+          <span class="metric-value" id="eventCount">0</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Avg Coherence</span>
+          <span class="metric-value" id="avgCoherence">0.000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-log">
+      <h3>Event Log</h3>
+      <div id="eventLogContent"></div>
+    </div>
+
+    <p class="instructions">
+      Click "Enable Audio" first, then trigger memory events to hear sonification.
+      Each event has a unique sound signature based on consciousness metrics.
+    </p>
+  </div>
+
+  <script src="./MemorySonificationEngine.js"></script>
+  <script>
+    // ═══════════════════════════════════════
+    // DEMO APP
+    // ═══════════════════════════════════════
+
+    const { MemorySonificationEngine } = window;
+    
+    let sonifier = null;
+    let isActive = false;
+    let eventCount = 0;
+    let fieldActive = false;
+    let fieldStop = null;
+
+    // Mock metrics
+    let mockMetrics = {
+      totalMemories: 0,
+      averageCoherence: 0,
+      crystallizationRate: 0
+    };
+
+    // UI Elements
+    const toggleBtn = document.getElementById('toggleAudio');
+    const volumeSlider = document.getElementById('volumeSlider');
+    const volumeValue = document.getElementById('volumeValue');
+    const btnStore = document.getElementById('btnStore');
+    const btnRetrieve = document.getElementById('btnRetrieve');
+    const btnCrystallize = document.getElementById('btnCrystallize');
+    const btnResonance = document.getElementById('btnResonance');
+    const btnChain = document.getElementById('btnChain');
+    const btnField = document.getElementById('btnField');
+    const eventLog = document.getElementById('eventLogContent');
+
+    // Initialize
+    async function init() {
+      sonifier = new MemorySonificationEngine();
+      updateUI();
+      startMetricsUpdate();
+    }
+
+    // Toggle audio
+    toggleBtn.addEventListener('click', async () => {
+      if (!isActive) {
+        const success = await sonifier.initialize();
+        if (success) {
+          isActive = true;
+          toggleBtn.textContent = '🔊 Disable Audio';
+          toggleBtn.classList.add('active');
+          
+          // Enable controls
+          volumeSlider.disabled = false;
+          btnStore.disabled = false;
+          btnRetrieve.disabled = false;
+          btnCrystallize.disabled = false;
+          btnResonance.disabled = false;
+          btnChain.disabled = false;
+          btnField.disabled = false;
+          
+          logEvent('Audio system initialized');
+        }
+      } else {
+        if (fieldStop) {
+          fieldStop();
+          fieldStop = null;
+          fieldActive = false;
+        }
+        
+        isActive = false;
+        toggleBtn.textContent = '🔇 Enable Audio';
+        toggleBtn.classList.remove('active');
+        
+        // Disable controls
+        volumeSlider.disabled = true;
+        btnStore.disabled = true;
+        btnRetrieve.disabled = true;
+        btnCrystallize.disabled = true;
+        btnResonance.disabled = true;
+        btnChain.disabled = true;
+        btnField.disabled = true;
+        
+        logEvent('Audio system stopped');
+      }
+      
+      updateUI();
+    });
+
+    // Volume control
+    volumeSlider.addEventListener('input', (e) => {
+      const vol = parseFloat(e.target.value);
+      sonifier.setVolume(vol);
+      volumeValue.textContent = `${Math.round(vol * 100)}%`;
+    });
+
+    // Store memory
+    btnStore.addEventListener('click', async () => {
+      const memory = createMockMemory();
+      await sonifier.onMemoryStored(memory);
+      mockMetrics.totalMemories++;
+      mockMetrics.averageCoherence = (mockMetrics.averageCoherence * (mockMetrics.totalMemories - 1) + memory.coherence) / mockMetrics.totalMemories;
+      eventCount++;
+      logEvent(`Memory stored (coherence: ${memory.coherence.toFixed(3)}, depth: ${memory.spiralDepth})`);
+    });
+
+    // Retrieve memories
+    btnRetrieve.addEventListener('click', async () => {
+      const count = Math.floor(Math.random() * 5) + 3;
+      const memories = Array.from({ length: count }, () => createMockMemory());
+      await sonifier.onMemoryRetrieved(memories, 0.7);
+      eventCount++;
+      logEvent(`Retrieved ${count} memories`);
+    });
+
+    // Crystallize
+    btnCrystallize.addEventListener('click', async () => {
+      const count = Math.floor(Math.random() * 3) + 1;
+      await sonifier.onMemoryCrystallized(count);
+      mockMetrics.crystallizationRate += count / mockMetrics.totalMemories;
+      eventCount++;
+      logEvent(`Crystallized ${count} memories`);
+    });
+
+    // Resonance
+    btnResonance.addEventListener('click', async () => {
+      const source = createMockMemory();
+      const count = Math.floor(Math.random() * 4) + 2;
+      const resonant = Array.from({ length: count }, () => createMockMemory());
+      const avgResonance = 0.6 + Math.random() * 0.3;
+      await sonifier.onResonanceDetected(source, resonant, avgResonance);
+      eventCount++;
+      logEvent(`Found ${count} resonant memories (strength: ${avgResonance.toFixed(3)})`);
+    });
+
+    // Chain traversal
+    btnChain.addEventListener('click', async () => {
+      const length = Math.floor(Math.random() * 4) + 2;
+      const chain = Array.from({ length }, (_, i) => createMockMemory(i + 1));
+      await sonifier.onChainTraversed(chain);
+      eventCount++;
+      logEvent(`Traversed chain of ${length} memories`);
+    });
+
+    // Coherence field
+    btnField.addEventListener('click', () => {
+      if (fieldActive) {
+        if (fieldStop) {
+          fieldStop();
+          fieldStop = null;
+        }
+        fieldActive = false;
+        btnField.textContent = '🎵 Toggle Field';
+        logEvent('Coherence field stopped');
+      } else {
+        fieldStop = sonifier.startCoherenceField(() => mockMetrics);
+        fieldActive = true;
+        btnField.textContent = '🔇 Stop Field';
+        logEvent('Coherence field started');
+      }
+    });
+
+    // Create mock memory
+    function createMockMemory(depth = null) {
+      return {
+        coherence: 0.5 + Math.random() * 0.5,
+        spiralDepth: depth || Math.floor(Math.random() * 10),
+        temporalPhase: Math.random() * Math.PI * 2,
+        ternarySignature: 'T01TT',
+        resonance: 0.5 + Math.random() * 0.5
+      };
+    }
+
+    // Log event
+    function logEvent(message) {
+      const time = new Date().toLocaleTimeString();
+      const item = document.createElement('div');
+      item.className = 'event-item';
+      item.innerHTML = `<span>${time}</span> ${message}`;
+      eventLog.insertBefore(item, eventLog.firstChild);
+      
+      // Keep only last 20 events
+      while (eventLog.children.length > 20) {
+        eventLog.removeChild(eventLog.lastChild);
+      }
+    }
+
+    // Update UI
+    function updateUI() {
+      if (sonifier && sonifier.audioContext) {
+        document.getElementById('audioState').textContent = 
+          sonifier.audioContext.state.charAt(0).toUpperCase() + sonifier.audioContext.state.slice(1);
+      }
+      
+      document.getElementById('eventCount').textContent = eventCount;
+      document.getElementById('avgCoherence').textContent = mockMetrics.averageCoherence.toFixed(3);
+    }
+
+    // Start metrics update loop
+    function startMetricsUpdate() {
+      setInterval(() => {
+        if (isActive) {
+          const metrics = sonifier.getMetrics();
+          document.getElementById('activeOsc').textContent = metrics.activeOscillators || 0;
+        }
+        updateUI();
+      }, 500);
+    }
+
+    // Initialize on load
+    init();
+  </script>
+</body>
+</html>

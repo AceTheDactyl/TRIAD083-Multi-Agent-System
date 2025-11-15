@@ -53,6 +53,7 @@ r2_deployment_report_*.json
 triad_consensus_history.json
 triad_consensus_dynamics.json
 physics_deployment_tracking.json
+helix_tracking_data.json
 
 # Windows zone metadata (from downloaded files)
 *:[Zz]one.Identifier

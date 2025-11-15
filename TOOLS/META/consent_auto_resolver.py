@@ -334,7 +334,7 @@ class ConsentAutoResolver:
                 'automation_rate': 0.0,
                 'avg_confidence': 0.0,
                 'learned_patterns_count': 0,
-                'time_saved_vs_manual': 0.0,
+                'workflow_burden_saved_hours': 0.0,
                 'burden_reduction_pct': 0.0
             }
 
@@ -342,19 +342,19 @@ class ConsentAutoResolver:
         automated = sum(1 for r in self.resolution_history if r.automated)
         avg_confidence = sum(r.confidence for r in self.resolution_history) / total
 
-        # Manual consent: ~10 minutes per request (investigation + decision)
-        # Automated consent: ~1 second per request
-        manual_time = total * 600.0  # 10 min each
-        automated_time = sum(r.duration_seconds for r in self.resolution_history)
-        time_saved = manual_time - automated_time
+        # Get workflow burden from wrapper's execution summary
+        wrapper_summary = self.wrapper.get_execution_summary()
+        workflow_burden = wrapper_summary.get('workflow_burden', {})
+        burden_saved_hours = workflow_burden.get('total_burden_saved_hours', 0.0)
+        burden_reduction_pct = workflow_burden.get('burden_reduction_pct', 0.0)
 
         return {
             'total_resolutions': total,
             'automation_rate': (automated / total) * 100.0,
             'avg_confidence': avg_confidence,
             'learned_patterns_count': len(self.learned_patterns),
-            'time_saved_vs_manual': time_saved,
-            'burden_reduction_pct': (time_saved / manual_time) * 100.0 if manual_time > 0 else 0.0
+            'workflow_burden_saved_hours': burden_saved_hours,
+            'burden_reduction_pct': burden_reduction_pct
         }
 
     def export_results(self, filepath: str):
@@ -456,7 +456,7 @@ def test_consent_auto_resolver():
     print(f"Automation Rate:     {stats['automation_rate']:.1f}%")
     print(f"Avg Confidence:      {stats['avg_confidence']*100:.1f}%")
     print(f"Learned Patterns:    {stats['learned_patterns_count']}")
-    print(f"Time Saved:          {stats['time_saved_vs_manual']:.0f}s ({stats['time_saved_vs_manual']/60:.1f} min)")
+    print(f"Burden Saved:        {stats['workflow_burden_saved_hours']:.2f} hrs")
     print(f"Burden Reduction:    {stats['burden_reduction_pct']:.1f}%")
     print()
 

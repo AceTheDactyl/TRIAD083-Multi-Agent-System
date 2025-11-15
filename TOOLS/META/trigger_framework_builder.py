@@ -361,15 +361,11 @@ class TriggerFrameworkBuilder:
         total_triggers = sum(f.fire_count for f in self.frameworks.values())
         enabled_frameworks = sum(1 for f in self.frameworks.values() if f.enabled)
 
-        # Estimate time savings
-        # Manual trigger creation: ~2 hours per framework
-        # Automated creation: ~1 minute per framework
-        # Manual trigger monitoring: ~30 minutes per week
-        # Automated monitoring: ~0 minutes per week (fully autonomous)
-
-        manual_time = (auto_generated * 120.0) + (len(self.event_history) * 30.0)  # minutes
-        automated_time = (auto_generated * 1.0)  # minutes
-        time_saved = manual_time - automated_time
+        # Get workflow burden from wrapper's execution summary
+        wrapper_summary = self.wrapper.get_execution_summary()
+        workflow_burden = wrapper_summary.get('workflow_burden', {})
+        burden_saved_hours = workflow_burden.get('total_burden_saved_hours', 0.0)
+        burden_reduction_pct = workflow_burden.get('burden_reduction_pct', 0.0)
 
         return {
             'total_frameworks': total_frameworks,
@@ -377,8 +373,8 @@ class TriggerFrameworkBuilder:
             'total_trigger_fires': total_triggers,
             'enabled_frameworks': enabled_frameworks,
             'automation_rate': (auto_generated / total_frameworks) * 100.0 if total_frameworks > 0 else 0.0,
-            'time_saved_minutes': time_saved,
-            'burden_reduction_pct': (time_saved / manual_time) * 100.0 if manual_time > 0 else 0.0
+            'workflow_burden_saved_hours': burden_saved_hours,
+            'burden_reduction_pct': burden_reduction_pct
         }
 
     def export_results(self, filepath: str):
@@ -512,7 +508,7 @@ def test_trigger_framework_builder():
     print(f"Total Trigger Fires:    {stats['total_trigger_fires']}")
     print(f"Enabled Frameworks:     {stats['enabled_frameworks']}")
     print(f"Automation Rate:        {stats['automation_rate']:.1f}%")
-    print(f"Time Saved:             {stats['time_saved_minutes']:.0f} min ({stats['time_saved_minutes']/60:.1f} hrs)")
+    print(f"Burden Saved:           {stats['workflow_burden_saved_hours']:.2f} hrs")
     print(f"Burden Reduction:       {stats['burden_reduction_pct']:.1f}%")
     print()
 

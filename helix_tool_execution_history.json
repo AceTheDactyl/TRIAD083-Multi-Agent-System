@@ -1,35 +1,41 @@
 {
   "summary": {
     "total_executions": 7,
-    "total_time_seconds": 1.314,
+    "total_time_seconds": 1.313,
     "success_rate": 1.0,
     "average_manual_effort": 0.6,
     "by_layer": {
       "CORE": {
         "count": 3,
-        "total_time": 0.37128496170043945,
+        "total_time": 0.3709430694580078,
         "tools": [
+          "coordinate_detector",
           "helix_loader",
-          "pattern_verifier",
-          "coordinate_detector"
+          "pattern_verifier"
         ]
       },
       "BRIDGES": {
         "count": 3,
-        "total_time": 0.641674280166626,
+        "total_time": 0.6415274143218994,
         "tools": [
+          "cross_instance_messenger",
           "autonomous_trigger_detector",
-          "consent_protocol",
-          "cross_instance_messenger"
+          "consent_protocol"
         ]
       },
       "META": {
         "count": 1,
-        "total_time": 0.30075931549072266,
+        "total_time": 0.30066895484924316,
         "tools": [
           "shed_builder"
         ]
       }
+    },
+    "workflow_burden": {
+      "total_manual_workflow_hours": 3.167,
+      "total_automated_workflow_hours": 1.702,
+      "total_burden_saved_hours": 1.465,
+      "burden_reduction_pct": 46.3
     }
   },
   "executions": [
@@ -37,87 +43,108 @@
       "tool_name": "helix_loader",
       "layer": "CORE",
       "operation_type": "load_pattern",
-      "duration_seconds": 0.1002349853515625,
+      "duration_seconds": 0.10048508644104004,
       "success": true,
       "manual_effort_pct": 0.8,
-      "timestamp": "2025-11-15T13:43:25.073851Z",
+      "timestamp": "2025-11-15T17:08:04.382065Z",
       "context": {
         "pattern_id": "helix-emergence"
-      }
+      },
+      "manual_workflow_minutes": 5.0,
+      "automated_workflow_minutes": 4.1,
+      "burden_saved_minutes": 0.9000000000000004
     },
     {
       "tool_name": "coordinate_detector",
       "layer": "CORE",
       "operation_type": "detect_coordinate",
-      "duration_seconds": 0.1203620433807373,
+      "duration_seconds": 0.12008047103881836,
       "success": true,
       "manual_effort_pct": 0.8,
-      "timestamp": "2025-11-15T13:43:25.199143Z",
+      "timestamp": "2025-11-15T17:08:04.507252Z",
       "context": {
         "vaultnode_id": "z0p85"
-      }
+      },
+      "manual_workflow_minutes": 8.0,
+      "automated_workflow_minutes": 6.6000000000000005,
+      "burden_saved_minutes": 1.3999999999999995
     },
     {
       "tool_name": "pattern_verifier",
       "layer": "CORE",
       "operation_type": "verify_pattern",
-      "duration_seconds": 0.15068793296813965,
+      "duration_seconds": 0.15037751197814941,
       "success": true,
       "manual_effort_pct": 0.5,
-      "timestamp": "2025-11-15T13:43:25.356988Z",
+      "timestamp": "2025-11-15T17:08:04.665353Z",
       "context": {
         "pattern_id": "meta-awareness"
-      }
+      },
+      "manual_workflow_minutes": 15.0,
+      "automated_workflow_minutes": 8.5,
+      "burden_saved_minutes": 6.5
     },
     {
       "tool_name": "consent_protocol",
       "layer": "BRIDGES",
       "operation_type": "request_consent",
-      "duration_seconds": 0.20049214363098145,
+      "duration_seconds": 0.20055055618286133,
       "success": true,
       "manual_effort_pct": 0.6,
-      "timestamp": "2025-11-15T13:43:25.564025Z",
+      "timestamp": "2025-11-15T17:08:04.872859Z",
       "context": {
         "action": "state_transfer",
         "target": "vaultnode_z0p80"
-      }
+      },
+      "manual_workflow_minutes": 10.0,
+      "automated_workflow_minutes": 6.2,
+      "burden_saved_minutes": 3.8
     },
     {
       "tool_name": "autonomous_trigger_detector",
       "layer": "BRIDGES",
       "operation_type": "detect_trigger",
-      "duration_seconds": 0.24023771286010742,
+      "duration_seconds": 0.2405083179473877,
       "success": true,
       "manual_effort_pct": 0.5,
-      "timestamp": "2025-11-15T13:43:25.814129Z",
+      "timestamp": "2025-11-15T17:08:05.124211Z",
       "context": {
         "trigger_type": "cascade_opportunity"
-      }
+      },
+      "manual_workflow_minutes": 12.0,
+      "automated_workflow_minutes": 6.5,
+      "burden_saved_minutes": 5.5
     },
     {
       "tool_name": "cross_instance_messenger",
       "layer": "BRIDGES",
       "operation_type": "send_message",
-      "duration_seconds": 0.2009444236755371,
+      "duration_seconds": 0.2004685401916504,
       "success": true,
       "manual_effort_pct": 0.6,
-      "timestamp": "2025-11-15T13:43:26.020506Z",
+      "timestamp": "2025-11-15T17:08:05.331720Z",
       "context": {
         "recipient": "triad_instance_2",
         "message_type": "sync_request"
-      }
+      },
+      "manual_workflow_minutes": 20.0,
+      "automated_workflow_minutes": 13.2,
+      "burden_saved_minutes": 6.800000000000001
     },
     {
       "tool_name": "shed_builder",
       "layer": "META",
       "operation_type": "build_framework",
-      "duration_seconds": 0.30075931549072266,
+      "duration_seconds": 0.30066895484924316,
       "success": true,
       "manual_effort_pct": 0.4,
-      "timestamp": "2025-11-15T13:43:26.329277Z",
+      "timestamp": "2025-11-15T17:08:05.640149Z",
       "context": {
         "framework_type": "autonomous_consolidation"
-      }
+      },
+      "manual_workflow_minutes": 120.0,
+      "automated_workflow_minutes": 57.0,
+      "burden_saved_minutes": 63.0
     }
   ]
 }

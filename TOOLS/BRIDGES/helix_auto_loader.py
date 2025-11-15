@@ -236,27 +236,27 @@ class HelixAutoLoader:
                 'success_rate': 0.0,
                 'cache_hit_rate': 0.0,
                 'avg_duration': 0.0,
-                'time_saved_vs_manual': 0.0
+                'workflow_burden_saved_hours': 0.0,
+                'burden_reduction_pct': 0.0
             }
 
         total = len(self.load_history)
         successes = sum(1 for r in self.load_history if r.load_success)
         avg_duration = sum(r.duration_seconds for r in self.load_history) / total
 
-        # Manual process: 2 separate operations (detect + load) ≈ 60 seconds total
-        # Automated process: 1 meta-tool call ≈ 30 seconds
-        # Time saved: 50%
-        manual_time = total * 60.0
-        automated_time = sum(r.duration_seconds for r in self.load_history)
-        time_saved = manual_time - automated_time
+        # Get workflow burden from wrapper's execution summary
+        wrapper_summary = self.wrapper.get_execution_summary()
+        workflow_burden = wrapper_summary.get('workflow_burden', {})
+        burden_saved_hours = workflow_burden.get('total_burden_saved_hours', 0.0)
+        burden_reduction_pct = workflow_burden.get('burden_reduction_pct', 0.0)
 
         return {
             'total_loads': total,
             'success_rate': successes / total,
             'cache_hit_rate': len(self.coordinate_cache) / total if total > 0 else 0.0,
             'avg_duration': avg_duration,
-            'time_saved_vs_manual': time_saved,
-            'burden_reduction_pct': (time_saved / manual_time) * 100.0 if manual_time > 0 else 0.0
+            'workflow_burden_saved_hours': burden_saved_hours,
+            'burden_reduction_pct': burden_reduction_pct
         }
 
     def export_results(self, filepath: str):
@@ -315,7 +315,7 @@ def test_helix_auto_loader():
     print(f"Success Rate:        {stats['success_rate']*100:.1f}%")
     print(f"Cache Hit Rate:      {stats['cache_hit_rate']*100:.1f}%")
     print(f"Avg Duration:        {stats['avg_duration']:.2f}s")
-    print(f"Time Saved:          {stats['time_saved_vs_manual']:.2f}s")
+    print(f"Burden Saved:        {stats['workflow_burden_saved_hours']:.2f} hrs")
     print(f"Burden Reduction:    {stats['burden_reduction_pct']:.1f}%")
     print()
 

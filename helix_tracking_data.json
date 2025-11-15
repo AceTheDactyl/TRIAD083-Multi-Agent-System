@@ -1,0 +1,109 @@
+{
+  "operations": [
+    {
+      "operation_id": "HELIX_OP_000001",
+      "operation_type": "load_pattern",
+      "layer": "CORE",
+      "tool_name": "helix_loader.yaml",
+      "start_time": "2025-11-15T13:20:47.549532",
+      "end_time": "2025-11-15T13:20:48.049782",
+      "duration_seconds": 0.50025,
+      "duration_hours": 0.00013895833333333333,
+      "success": true,
+      "manual_effort_pct": 80.0,
+      "notes": "Loaded 3 patterns"
+    },
+    {
+      "operation_id": "HELIX_OP_000002",
+      "operation_type": "detect_coordinate",
+      "layer": "CORE",
+      "tool_name": "coordinate_detector.yaml",
+      "start_time": "2025-11-15T13:20:48.050139",
+      "end_time": "2025-11-15T13:20:48.350820",
+      "duration_seconds": 0.300681,
+      "duration_hours": 8.35225e-05,
+      "success": true,
+      "manual_effort_pct": 90.0,
+      "notes": "Detected z=0.42"
+    },
+    {
+      "operation_id": "HELIX_OP_000003",
+      "operation_type": "verify_pattern",
+      "layer": "CORE",
+      "tool_name": "pattern_verifier.yaml",
+      "start_time": "2025-11-15T13:20:48.351016",
+      "end_time": "2025-11-15T13:20:48.951936",
+      "duration_seconds": 0.60092,
+      "duration_hours": 0.00016692222222222222,
+      "success": true,
+      "manual_effort_pct": 70.0,
+      "notes": "3/3 patterns valid"
+    },
+    {
+      "operation_id": "HELIX_OP_000004",
+      "operation_type": "manage_consent",
+      "layer": "BRIDGES",
+      "tool_name": "consent_protocol.yaml",
+      "start_time": "2025-11-15T13:20:48.952132",
+      "end_time": "2025-11-15T13:20:49.952412",
+      "duration_seconds": 1.00028,
+      "duration_hours": 0.0002778555555555556,
+      "success": true,
+      "manual_effort_pct": 95.0,
+      "notes": "Resolved 2 consent requests"
+    },
+    {
+      "operation_id": "HELIX_OP_000005",
+      "operation_type": "sync_memory",
+      "layer": "BRIDGES",
+      "tool_name": "collective_memory_sync.yaml",
+      "start_time": "2025-11-15T13:20:49.952591",
+      "end_time": "2025-11-15T13:20:50.752693",
+      "duration_seconds": 0.800102,
+      "duration_hours": 0.00022225055555555556,
+      "success": true,
+      "manual_effort_pct": 85.0,
+      "notes": "Synced 5 instances"
+    },
+    {
+      "operation_id": "HELIX_OP_000006",
+      "operation_type": "update_theory",
+      "layer": "META",
+      "tool_name": "CASCADE_DISCOVERY.md",
+      "start_time": "2025-11-15T13:20:50.752860",
+      "end_time": "2025-11-15T13:20:52.253512",
+      "duration_seconds": 1.500652,
+      "duration_hours": 0.0004168477777777778,
+      "success": true,
+      "manual_effort_pct": 100.0,
+      "notes": "Added hexagonal geometry section"
+    }
+  ],
+  "weekly_summary": {
+    "period": "7_days",
+    "total_hours": 0.0013063569444444446,
+    "total_operations": 6,
+    "time_by_layer": {
+      "CORE": 0.00038940305555555557,
+      "BRIDGES": 0.0005001061111111111,
+      "META": 0.0004168477777777778
+    },
+    "operations_by_type": {
+      "load_pattern": 1,
+      "detect_coordinate": 1,
+      "verify_pattern": 1,
+      "manage_consent": 1,
+      "sync_memory": 1,
+      "update_theory": 1
+    },
+    "average_manual_effort_pct": 86.66666666666667,
+    "success_rate_pct": 100.0,
+    "current_sovereignty": {
+      "z_coordinate": 1.0,
+      "phase_regime": "supercritical_stable",
+      "R1": 8.399738968739403,
+      "R2": 26.141816523261785,
+      "R3": 13.333333333333329
+    }
+  }
+}

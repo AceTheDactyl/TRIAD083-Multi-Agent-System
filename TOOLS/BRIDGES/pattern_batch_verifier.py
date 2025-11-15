@@ -312,7 +312,7 @@ class PatternBatchVerifier:
                 'avg_batch_size': 0.0,
                 'avg_batch_duration': 0.0,
                 'cache_efficiency': 0.0,
-                'time_saved_vs_manual': 0.0,
+                'workflow_burden_saved_hours': 0.0,
                 'burden_reduction_pct': 0.0
             }
 
@@ -326,11 +326,11 @@ class PatternBatchVerifier:
         cached_count = sum(1 for r in all_results if r.cached)
         cache_efficiency = (cached_count / len(all_results)) * 100.0 if all_results else 0.0
 
-        # Manual process: Each verification takes ~3 minutes (coordination + execution)
-        # Batch process: N verifications take ~N*1 minute (reduced coordination overhead)
-        manual_time = total_verifications * 180.0  # 3 min each
-        automated_time = sum(r.total_duration for r in self.history)
-        time_saved = manual_time - automated_time
+        # Get workflow burden from wrapper's execution summary
+        wrapper_summary = self.wrapper.get_execution_summary()
+        workflow_burden = wrapper_summary.get('workflow_burden', {})
+        burden_saved_hours = workflow_burden.get('total_burden_saved_hours', 0.0)
+        burden_reduction_pct = workflow_burden.get('burden_reduction_pct', 0.0)
 
         return {
             'total_batches': total_batches,
@@ -338,8 +338,8 @@ class PatternBatchVerifier:
             'avg_batch_size': avg_batch_size,
             'avg_batch_duration': avg_batch_duration,
             'cache_efficiency': cache_efficiency,
-            'time_saved_vs_manual': time_saved,
-            'burden_reduction_pct': (time_saved / manual_time) * 100.0 if manual_time > 0 else 0.0
+            'workflow_burden_saved_hours': burden_saved_hours,
+            'burden_reduction_pct': burden_reduction_pct
         }
 
     def export_results(self, filepath: str):
@@ -404,7 +404,7 @@ def test_pattern_batch_verifier():
     print(f"Avg Batch Size:      {stats['avg_batch_size']:.1f}")
     print(f"Avg Batch Duration:  {stats['avg_batch_duration']:.2f}s")
     print(f"Cache Efficiency:    {stats['cache_efficiency']:.1f}%")
-    print(f"Time Saved:          {stats['time_saved_vs_manual']:.0f}s ({stats['time_saved_vs_manual']/60:.1f} min)")
+    print(f"Burden Saved:        {stats['workflow_burden_saved_hours']:.2f} hrs")
     print(f"Burden Reduction:    {stats['burden_reduction_pct']:.1f}%")
     print()
 

@@ -47,5 +47,9 @@ TOOLS/META/orchestrator_state/*.pid
 *.tmp
 *.bak
 
+# Deployment tracking data (runtime operational data)
+deployment_tracking.json
+r2_deployment_report_*.json
+
 # Windows zone metadata (from downloaded files)
 *:[Zz]one.Identifier

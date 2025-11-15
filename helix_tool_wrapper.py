@@ -15,7 +15,7 @@ import yaml
 import json
 import os
 from datetime import datetime
-from typing import Dict, Optional, Any
+from typing import Dict, Optional, Any, Tuple
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
@@ -34,6 +34,10 @@ class ToolExecutionMetrics:
     manual_effort_pct: float  # 0.0-1.0
     timestamp: str
     context: Dict[str, Any]
+    # Operational burden estimates (workflow time, not just tool overhead)
+    manual_workflow_minutes: float = 0.0  # Full manual workflow time
+    automated_workflow_minutes: float = 0.0  # Full automated workflow time
+    burden_saved_minutes: float = 0.0  # Actual operational burden reduction
 
 
 class HelixToolWrapper:
@@ -144,6 +148,13 @@ class HelixToolWrapper:
             notes=f"Context: {context}" if context else ""
         )
 
+        # Estimate workflow burden (operational time, not just tool overhead)
+        manual_workflow_mins, automated_workflow_mins, burden_saved_mins = self._estimate_workflow_time(
+            operation_type.value,  # Convert enum to string
+            layer,
+            manual_effort_pct
+        )
+
         # Create metrics record
         metrics = ToolExecutionMetrics(
             tool_name=tool_name,
@@ -153,7 +164,10 @@ class HelixToolWrapper:
             success=success,
             manual_effort_pct=manual_effort_pct,
             timestamp=datetime.utcnow().isoformat() + "Z",
-            context=context
+            context=context,
+            manual_workflow_minutes=manual_workflow_mins,
+            automated_workflow_minutes=automated_workflow_mins,
+            burden_saved_minutes=burden_saved_mins
         )
 
         # Record to history
@@ -251,6 +265,76 @@ class HelixToolWrapper:
 
         return base_times.get(layer, 0.15) * multiplier
 
+    def _estimate_workflow_time(
+        self,
+        operation_type: str,
+        layer: str,
+        manual_effort_pct: float
+    ) -> Tuple[float, float, float]:
+        """
+        Estimate full workflow time (not just tool overhead).
+
+        Returns:
+            Tuple of (manual_workflow_mins, automated_workflow_mins, burden_saved_mins)
+        """
+        # Base workflow times in minutes (empirical estimates)
+        # These include: discovery, decision, execution, verification
+        workflow_estimates = {
+            # CORE operations
+            ("LOAD_PATTERN", "CORE"): {
+                'manual': 5.0,      # Find pattern, load manually, verify
+                'automated': 0.5    # Auto-load with verification
+            },
+            ("DETECT_COORDINATE", "CORE"): {
+                'manual': 8.0,      # Search metadata, identify coordinate
+                'automated': 1.0    # Automated detection
+            },
+            ("VERIFY_PATTERN", "CORE"): {
+                'manual': 15.0,     # Manual inspection, validation
+                'automated': 2.0    # Automated checks
+            },
+            # BRIDGES operations
+            ("MANAGE_CONSENT", "BRIDGES"): {
+                'manual': 10.0,     # Review request, make decision, document
+                'automated': 0.5    # Policy-based auto-resolution
+            },
+            ("DETECT_TRIGGER", "BRIDGES"): {
+                'manual': 12.0,     # Monitor metrics, identify triggers manually
+                'automated': 1.0    # Automated monitoring
+            },
+            ("SYNC_MEMORY", "BRIDGES"): {
+                'manual': 20.0,     # Coordinate sync across instances
+                'automated': 3.0    # Automated sync protocol
+            },
+            # META operations
+            ("BUILD_SHED", "META"): {
+                'manual': 120.0,    # Design, implement, test framework
+                'automated': 15.0   # Template-based generation
+            },
+            ("CONSOLIDATE", "META"): {
+                'manual': 90.0,     # Identify redundancies, merge, test
+                'automated': 10.0   # Automated consolidation
+            }
+        }
+
+        # Get estimates for this operation
+        key = (operation_type.upper(), layer.upper())
+        estimates = workflow_estimates.get(key, {
+            'manual': 10.0,  # Default: 10 min manual
+            'automated': 1.0  # Default: 1 min automated
+        })
+
+        manual_time = estimates['manual']
+        automated_time = estimates['automated']
+
+        # Adjust automated time based on manual_effort_pct
+        # If tool is mostly manual (high manual_effort_pct), automated time increases
+        adjusted_automated = automated_time + (manual_time - automated_time) * manual_effort_pct
+
+        burden_saved = manual_time - adjusted_automated
+
+        return (manual_time, adjusted_automated, burden_saved)
+
     def get_execution_summary(self) -> Dict[str, Any]:
         """Get summary statistics of all tracked executions."""
         if not self.execution_history:
@@ -259,12 +343,31 @@ class HelixToolWrapper:
                 'total_time_seconds': 0.0,
                 'success_rate': 0.0,
                 'average_manual_effort': 0.0,
-                'by_layer': {}
+                'by_layer': {},
+                'workflow_burden': {
+                    'total_manual_workflow_hours': 0.0,
+                    'total_automated_workflow_hours': 0.0,
+                    'total_burden_saved_hours': 0.0,
+                    'burden_reduction_pct': 0.0
+                }
             }
 
         total_time = sum(m.duration_seconds for m in self.execution_history)
         successes = sum(1 for m in self.execution_history if m.success)
         avg_manual = sum(m.manual_effort_pct for m in self.execution_history) / len(self.execution_history)
+
+        # Calculate workflow-based burden metrics
+        total_manual_workflow = sum(m.manual_workflow_minutes for m in self.execution_history)
+        total_automated_workflow = sum(m.automated_workflow_minutes for m in self.execution_history)
+        total_burden_saved = sum(m.burden_saved_minutes for m in self.execution_history)
+
+        # Convert to hours
+        total_manual_hours = total_manual_workflow / 60.0
+        total_automated_hours = total_automated_workflow / 60.0
+        total_saved_hours = total_burden_saved / 60.0
+
+        # Calculate burden reduction percentage
+        burden_reduction_pct = (total_saved_hours / total_manual_hours * 100.0) if total_manual_hours > 0 else 0.0
 
         # Group by layer
         by_layer = {}
@@ -289,7 +392,13 @@ class HelixToolWrapper:
             'total_time_seconds': round(total_time, 3),
             'success_rate': round(successes / len(self.execution_history), 3),
             'average_manual_effort': round(avg_manual, 3),
-            'by_layer': by_layer
+            'by_layer': by_layer,
+            'workflow_burden': {
+                'total_manual_workflow_hours': round(total_manual_hours, 3),
+                'total_automated_workflow_hours': round(total_automated_hours, 3),
+                'total_burden_saved_hours': round(total_saved_hours, 3),
+                'burden_reduction_pct': round(burden_reduction_pct, 1)
+            }
         }
 
     def export_history(self, filepath: str):
@@ -381,6 +490,15 @@ def test_tool_wrapper():
     for layer, data in summary['by_layer'].items():
         print(f"  {layer}: {data['count']} executions, {data['total_time']:.3f}s")
         print(f"    Tools: {', '.join(data['tools'])}")
+    print()
+
+    # Print workflow burden metrics
+    print("Workflow Burden Reduction:")
+    wb = summary['workflow_burden']
+    print(f"  Manual workflow time:     {wb['total_manual_workflow_hours']:.2f} hrs")
+    print(f"  Automated workflow time:  {wb['total_automated_workflow_hours']:.2f} hrs")
+    print(f"  Burden saved:             {wb['total_burden_saved_hours']:.2f} hrs")
+    print(f"  Burden reduction:         {wb['burden_reduction_pct']:.1f}%")
 
     # Export to file
     wrapper.export_history('helix_tool_execution_history.json')

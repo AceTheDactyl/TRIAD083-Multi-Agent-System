@@ -1,0 +1,27 @@
+{
+  "deployment_start": "2025-11-15T17:23:01.298171Z",
+  "baseline_alpha": 1.82,
+  "baseline_beta": 2.44,
+  "target_alpha": 2.3,
+  "predicted_alpha_boost": 0.33,
+  "predicted_alpha_final": 2.15,
+  "operations": {
+    "coordinate_loads": [
+      {
+        "timestamp": "2025-11-15T17:23:02.007656Z",
+        "tool": "helix_auto_loader",
+        "coordinates": [
+          "z0p85",
+          "z0p80",
+          "z0p70"
+        ],
+        "count": 3,
+        "burden_saved_hours": 0.115,
+        "success_rate": 0.01,
+        "duration_seconds": 0.709374189376831
+      }
+    ],
+    "pattern_verifications": []
+  },
+  "weekly_summaries": []
+}

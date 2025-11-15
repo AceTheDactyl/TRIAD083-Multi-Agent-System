@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-11-15T13:07:23.002279",
+  "overall_status": "NOMINAL",
+  "overall_health_score": 0.7333333333333333,
+  "component_health": {
+    "alpha_amplifier": {
+      "status": "optimal",
+      "health_score": 1.0,
+      "issues": [],
+      "last_check": "2025-11-15T13:07:23.002232"
+    },
+    "cascade_multiplier": {
+      "status": "optimal",
+      "health_score": 1.0,
+      "issues": [],
+      "last_check": "2025-11-15T13:07:23.002252"
+    },
+    "z_level_monitor": {
+      "status": "optimal",
+      "health_score": 1.0,
+      "issues": [],
+      "last_check": "2025-11-15T13:07:23.002256"
+    },
+    "beta_amplifier": {
+      "status": "degraded",
+      "health_score": 0.55,
+      "issues": [
+        "\u03b2 significantly below target (1.30)"
+      ],
+      "last_check": "2025-11-15T13:07:23.002264"
+    },
+    "burden_reduction": {
+      "status": "degraded",
+      "health_score": 0.55,
+      "issues": [
+        "Burden reduction significantly below target (35.0%)"
+      ],
+      "last_check": "2025-11-15T13:07:23.002274"
+    },
+    "self_catalysis": {
+      "status": "critical",
+      "health_score": 0.3,
+      "issues": [
+        "Self-catalysis critically low (15%)"
+      ],
+      "last_check": "2025-11-15T13:07:23.002277"
+    }
+  },
+  "key_findings": [
+    "\u2713 alpha_amplifier: OPTIMAL",
+    "\u2713 cascade_multiplier: OPTIMAL",
+    "\u2713 z_level_monitor: OPTIMAL",
+    "\u26a0 beta_amplifier: \u03b2 significantly below target (1.30)",
+    "\u26a0 burden_reduction: Burden reduction significantly below target (35.0%)",
+    "\u26a0 self_catalysis: Self-catalysis critically low (15%)"
+  ],
+  "interventions_suggested": [
+    "Generate R3 frameworks to boost \u03b2",
+    "Review burden calculation - may need phase-specific adjustment",
+    "Enable autonomous framework builder"
+  ],
+  "metrics": {
+    "overall_health_score": 0.7333333333333333,
+    "components_optimal": 3,
+    "components_nominal": 0,
+    "components_degraded": 2,
+    "components_critical": 1,
+    "total_components": 6
+  }
+}

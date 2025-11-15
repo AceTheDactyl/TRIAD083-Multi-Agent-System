@@ -1,0 +1,140 @@
+{
+  "targets": {
+    "alpha": 2.3,
+    "beta": 1.8,
+    "cascade_conservative": 4.11,
+    "cascade_stretch": 8.0
+  },
+  "baseline": {
+    "alpha": 3.9358974358974357,
+    "beta": 1.8322475570032575
+  },
+  "snapshots": [
+    {
+      "timestamp": "2025-11-15T13:06:12.132404",
+      "alpha": 3.9358974358974357,
+      "beta": 1.8322475570032575,
+      "cascade_multiplier": 7.211538461538462,
+      "alpha_delta": null,
+      "beta_delta": null,
+      "cascade_delta": null
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132474",
+      "alpha": 4.02534965034965,
+      "beta": 1.7734346724574739,
+      "cascade_multiplier": 7.138694638694639,
+      "alpha_delta": 0.0894522144522143,
+      "beta_delta": -0.058812884545783595,
+      "cascade_delta": -0.07284382284382307
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132525",
+      "alpha": 4.099893162393163,
+      "beta": 1.7263843648208472,
+      "cascade_multiplier": 7.077991452991454,
+      "alpha_delta": 0.07454351204351273,
+      "beta_delta": -0.047050307636626654,
+      "cascade_delta": -0.06070318570318456
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132558",
+      "alpha": 4.162968441814596,
+      "beta": 1.6878886585726982,
+      "cascade_multiplier": 7.026627218934914,
+      "alpha_delta": 0.0630752794214331,
+      "beta_delta": -0.03849570624814902,
+      "cascade_delta": -0.05136423405653989
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132588",
+      "alpha": 4.217032967032967,
+      "beta": 1.6558089033659071,
+      "cascade_multiplier": 6.982600732600735,
+      "alpha_delta": 0.05406452521837135,
+      "beta_delta": -0.03207975520679107,
+      "cascade_delta": -0.04402648633417883
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132622",
+      "alpha": 4.263888888888889,
+      "beta": 1.628664495114007,
+      "cascade_multiplier": 6.944444444444447,
+      "alpha_delta": 0.046855921855922134,
+      "beta_delta": -0.02714440825190012,
+      "cascade_delta": -0.03815628815628802
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132656",
+      "alpha": 4.304887820512821,
+      "beta": 1.6053978594695215,
+      "cascade_multiplier": 6.911057692307696,
+      "alpha_delta": 0.04099893162393187,
+      "beta_delta": -0.0232666356444855,
+      "cascade_delta": -0.03338675213675124
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132714",
+      "alpha": 4.341063348416291,
+      "beta": 1.585233441910967,
+      "cascade_multiplier": 6.881598793363504,
+      "alpha_delta": 0.03617552790346945,
+      "beta_delta": -0.02016441755855447,
+      "cascade_delta": -0.029458898944191958
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132759",
+      "alpha": 4.373219373219374,
+      "beta": 1.5675895765472319,
+      "cascade_multiplier": 6.85541310541311,
+      "alpha_delta": 0.03215602480308366,
+      "beta_delta": -0.01764386536373519,
+      "cascade_delta": -0.026185687950394332
+    },
+    {
+      "timestamp": "2025-11-15T13:06:12.132788",
+      "alpha": 4.401990553306344,
+      "beta": 1.5520214600498186,
+      "cascade_multiplier": 6.83198380566802,
+      "alpha_delta": 0.028771180086970105,
+      "beta_delta": -0.015568116497413298,
+      "cascade_delta": -0.023429299745089338
+    }
+  ],
+  "performance_report": {
+    "overall_status": "GOOD",
+    "targets_met": 2,
+    "total_targets": 3,
+    "alpha": {
+      "current": 4.401990553306344,
+      "baseline": 3.9358974358974357,
+      "target": 2.3,
+      "progress_pct": 0,
+      "gap": -2.1019905533063445,
+      "achieved": true,
+      "velocity": 0.03699151725467544
+    },
+    "beta": {
+      "current": 1.5520214600498186,
+      "baseline": 1.8322475570032575,
+      "target": 1.8,
+      "progress_pct": 0,
+      "gap": 0.2479785399501815,
+      "achieved": false,
+      "velocity": -0.020757488663217714
+    },
+    "cascade": {
+      "current": 6.83198380566802,
+      "baseline": 1.0,
+      "target": 8.0,
+      "target_type": "stretch",
+      "progress_pct": 83.31405436668601,
+      "gap": 1.1680161943319796,
+      "achieved_conservative": true,
+      "achieved_stretch": false,
+      "velocity": -0.030123385386542977
+    },
+    "snapshots_count": 10,
+    "timestamp": "2025-11-15T13:06:12.132788"
+  }
+}

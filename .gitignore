@@ -50,6 +50,8 @@ TOOLS/META/orchestrator_state/*.pid
 # Deployment tracking data (runtime operational data)
 deployment_tracking.json
 r2_deployment_report_*.json
+r3_deployment_tracking.json
+r3_deployment_report_*.json
 triad_consensus_history.json
 triad_consensus_dynamics.json
 physics_deployment_tracking.json

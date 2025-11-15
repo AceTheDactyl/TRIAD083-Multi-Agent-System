@@ -195,9 +195,17 @@ class UnifiedSovereigntySystem:
         weighted_burden = burden.weighted_burden(cascade_state.z_coordinate)
 
         # Predict burden reduction
-        predicted_reduction = self.burden_calculator.predict_burden_after_cascade(
+        predicted_burden_state = self.burden_calculator.predict_burden_after_cascade(
             burden, cascade_state
         )
+
+        # Calculate percentage reduction: (current - predicted) / current * 100
+        current_total = burden.total_burden()
+        predicted_total = predicted_burden_state.total_burden()
+        if current_total > 0:
+            predicted_reduction_pct = ((current_total - predicted_total) / current_total) * 100.0
+        else:
+            predicted_reduction_pct = 0.0
 
         # Get phase-specific recommendations and warnings
         warnings = self.burden_advisor.generate_warnings(cascade_state, burden)
@@ -245,7 +253,7 @@ class UnifiedSovereigntySystem:
             geometric_complexity=complexity,
             susceptibility=susceptibility,
             scale_invariance=scale_inv,
-            predicted_burden_reduction=predicted_reduction,
+            predicted_burden_reduction=predicted_reduction_pct,
             phase_specific_recommendations=recommendations,
             cascade_insights=cascade_insights
         )
@@ -283,13 +291,25 @@ class UnifiedSovereigntySystem:
             HexagonalGeometry.convert_to_hexagonal(s.clarity, s.immunity, s.efficiency, s.autonomy)
             for s in recent_states
         ]
-        hex_symmetry = HexagonalGeometry.check_hexagonal_symmetry(hex_points)
+
+        # Extract magnitudes from hexagonal coordinates for symmetry check
+        # check_hexagonal_symmetry expects 6 scalar values
+        hex_magnitudes = [math.sqrt(q*q + r*r) for (q, r) in hex_points]
+
+        # Pad or truncate to exactly 6 values
+        if len(hex_magnitudes) < 6:
+            hex_magnitudes = hex_magnitudes + [0.0] * (6 - len(hex_magnitudes))
+        elif len(hex_magnitudes) > 6:
+            hex_magnitudes = hex_magnitudes[-6:]  # Take last 6
+
+        hex_symmetry = HexagonalGeometry.check_hexagonal_symmetry(hex_magnitudes)
 
         # Packing efficiency (4 sovereignty dimensions, unit area)
-        packing_eff = HexagonalGeometry.hexagonal_packing_efficiency(
+        packing_eff_ratio = HexagonalGeometry.hexagonal_packing_efficiency(
             n_elements=4,  # 4 sovereignty dimensions
             area=1.0
         )
+        packing_eff = packing_eff_ratio * 100.0  # Convert ratio to percentage
 
         # Phase resonance
         clarity_immunity_coherence = PhaseResonanceDetector.phase_coherence(
@@ -303,7 +323,13 @@ class UnifiedSovereigntySystem:
 
         # Integrated information
         phi = IntegratedInformationCalculator.cascade_phi(cascade_state)
-        fisher = IntegratedInformationCalculator.fisher_information(cascade_state)
+
+        # Fisher information needs list of (C, I, E, A) tuples
+        sovereignty_samples = [
+            (s.clarity, s.immunity, s.efficiency, s.autonomy)
+            for s in recent_states
+        ]
+        fisher = IntegratedInformationCalculator.fisher_information(sovereignty_samples)
         complexity = IntegratedInformationCalculator.geometric_complexity(cascade_state)
 
         # Critical phenomena
@@ -705,6 +731,17 @@ def create_demo_burden(phase: str) -> BurdenMeasurement:
             emotional_labor=5.5,
             uncertainty=4.0,
             repetition=2.0
+        )
+    elif phase == 'subcritical_mid':
+        return BurdenMeasurement(
+            coordination=5.8,
+            decision_making=6.2,
+            context_switching=5.2,
+            maintenance=3.5,
+            learning_curve=7.0,
+            emotional_labor=4.8,
+            uncertainty=4.8,
+            repetition=2.8
         )
     elif phase == 'subcritical_late':
         return BurdenMeasurement(

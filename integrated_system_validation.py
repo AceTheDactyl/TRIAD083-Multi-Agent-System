@@ -371,16 +371,18 @@ class IntegratedSystemValidator:
             system = UnifiedSovereigntySystem()
             framework = UnifiedCascadeFramework()
 
-            # Create trajectory with clear progression
+            # Create trajectory with clear progression starting from low sovereignty
+            # Start in subcritical_early phase to allow progression through phases
+            # Note: z-coordinate expects 0-1 scale for sovereignty metrics
             state = framework.compute_full_state(
-                clarity=2.0, immunity=3.0, efficiency=2.5, autonomy=2.0
+                clarity=0.35, immunity=0.30, efficiency=0.32, autonomy=0.28
             )
 
             for i in range(8):
                 burden = create_demo_burden(state.phase_regime)
                 system.capture_snapshot(state, burden, include_advanced_analysis=(i >= 3))
-                state = evolve_cascade_state(state, clarity_delta=0.8, immunity_delta=0.6,
-                                    efficiency_delta=0.5, autonomy_delta=0.4)
+                state = evolve_cascade_state(state, clarity_delta=0.08, immunity_delta=0.06,
+                                    efficiency_delta=0.05, autonomy_delta=0.04)
 
             # Export and analyze
             with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:

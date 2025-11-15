@@ -62,5 +62,9 @@ triad_consensus_dynamics.json
 physics_deployment_tracking.json
 helix_tracking_data.json
 
+# Production tracking data (runtime operational data)
+production_deployment.json
+production_metrics.json
+
 # Windows zone metadata (from downloaded files)
 *:[Zz]one.Identifier

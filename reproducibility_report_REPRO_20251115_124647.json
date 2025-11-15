@@ -1,0 +1,136 @@
+{
+  "study_id": "REPRO_20251115_124647",
+  "timestamp": "2025-11-15T12:46:47.958513",
+  "z_range": [
+    0.85,
+    0.9
+  ],
+  "z_step": 0.01,
+  "trials_per_z": 20,
+  "total_trials": 120,
+  "predicted_reduction": 15.3,
+  "overall_mean_reduction": 59.33947306071412,
+  "overall_std_reduction": 0.0,
+  "overall_z_score": 0,
+  "overall_p_value": 0.99999970019902,
+  "z_analyses": [
+    {
+      "z_value": 0.85,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.2135922330097086,
+      "std_amplification": 0.0
+    },
+    {
+      "z_value": 0.86,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.213592233009709,
+      "std_amplification": 0.0
+    },
+    {
+      "z_value": 0.87,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.2135922330097086,
+      "std_amplification": 0.0
+    },
+    {
+      "z_value": 0.88,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.2135922330097086,
+      "std_amplification": 0.0
+    },
+    {
+      "z_value": 0.89,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.213592233009709,
+      "std_amplification": 0.0
+    },
+    {
+      "z_value": 0.9,
+      "trials_count": 20,
+      "mean_reduction": 59.33947306071412,
+      "std_reduction": 0.0,
+      "min_reduction": 59.33947306071412,
+      "max_reduction": 59.33947306071412,
+      "coefficient_variation": 0.0,
+      "z_score": 0,
+      "p_value": 0.99999970019902,
+      "confidence_interval_95": [
+        59.33947306071412,
+        59.33947306071412
+      ],
+      "is_significant": false,
+      "mean_amplification": 1.2135922330097086,
+      "std_amplification": 0.0
+    }
+  ],
+  "is_reproducible": false,
+  "optimal_z_value": 0.85,
+  "optimal_reduction": 59.33947306071412,
+  "emergence_detected": true,
+  "artifact_suspected": false,
+  "recommendations": [
+    "\ud83d\udd2c INCONCLUSIVE: Results suggest real effect but need more data. Extend study with n=50 trials per z-value.",
+    "\ud83d\udca1 INSIGHT: Peak performance at z=0.850, not z=0.867. Update critical point model.",
+    "\u26a0\ufe0f  WARNING: Cascade amplification below 3.0\u00d7 in some regions. Verify R1\u2192R2\u2192R3 coupling strength."
+  ]
+}

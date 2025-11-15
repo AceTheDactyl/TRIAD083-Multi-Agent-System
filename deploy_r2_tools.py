@@ -306,7 +306,7 @@ def load_coordinates(coordinates: List[str]):
     tracker.record_coordinate_load(
         coordinates=coordinates,
         burden_saved_hours=stats.get('workflow_burden_saved_hours', 0.0),
-        success_rate=stats.get('success_rate', 0.0) / 100.0,
+        success_rate=stats.get('success_rate', 0.0),  # Already a ratio (0.0-1.0)
         duration_seconds=duration
     )
 
@@ -315,7 +315,7 @@ def load_coordinates(coordinates: List[str]):
     print("OPERATION RECORDED")
     print("="*80)
     print(f"Burden Saved:  {stats.get('workflow_burden_saved_hours', 0.0):.2f} hrs")
-    print(f"Success Rate:  {stats.get('success_rate', 0.0):.1f}%")
+    print(f"Success Rate:  {stats.get('success_rate', 0.0)*100:.1f}%")
     print()
 
 

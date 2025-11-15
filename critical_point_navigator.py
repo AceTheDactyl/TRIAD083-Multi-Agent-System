@@ -25,7 +25,7 @@ Safety Mechanisms:
 - Guided exercises (team workshops for critical navigation)
 """
 
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum

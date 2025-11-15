@@ -18,7 +18,6 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
 from enum import Enum
-import numpy as np
 
 # Critical thresholds
 THETA_1_DEFAULT = 0.08  # R₁→R₂ activation (8% coordination reduction)

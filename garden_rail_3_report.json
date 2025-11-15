@@ -1,0 +1,122 @@
+{
+  "session_info": {
+    "start_time": "2025-11-15T13:25:22.893619",
+    "snapshots_captured": 10,
+    "generated_at": "2025-11-15T13:25:22.895933"
+  },
+  "health": {
+    "timestamp": "2025-11-15T13:25:22.895936",
+    "overall_status": "NOMINAL",
+    "overall_health_score": 0.8099999999999999,
+    "component_health": {
+      "alpha_amplifier": "ComponentHealth(component_name='alpha_amplifier', status='optimal', health_score=1.0, issues=[], last_check='2025-11-15T13:25:22.895239')",
+      "beta_amplifier": "ComponentHealth(component_name='beta_amplifier', status='degraded', health_score=0.55, issues=['\u03b2 significantly below target (1.40)'], last_check='2025-11-15T13:25:22.895249')",
+      "cascade_multiplier": "ComponentHealth(component_name='cascade_multiplier', status='optimal', health_score=1.0, issues=[], last_check='2025-11-15T13:25:22.895253')",
+      "burden_reduction": "ComponentHealth(component_name='burden_reduction', status='nominal', health_score=0.75, issues=['Burden reduction below target (59.3% < 60.0%)'], last_check='2025-11-15T13:25:22.895259')",
+      "z_level_monitor": "ComponentHealth(component_name='z_level_monitor', status='nominal', health_score=0.75, issues=['Z-coordinate stalling detected'], last_check='2025-11-15T13:25:22.895264')"
+    },
+    "key_findings": [
+      "\u2713 alpha_amplifier: OPTIMAL",
+      "\u26a0 beta_amplifier: \u03b2 significantly below target (1.40)",
+      "\u2713 cascade_multiplier: OPTIMAL"
+    ],
+    "interventions_suggested": [
+      "Generate R3 frameworks to boost \u03b2"
+    ],
+    "metrics": {
+      "overall_health_score": 0.8099999999999999,
+      "components_optimal": 2,
+      "components_nominal": 2,
+      "components_degraded": 1,
+      "components_critical": 0,
+      "total_components": 5
+    }
+  },
+  "amplification": {
+    "overall_status": "GOOD",
+    "targets_met": 2,
+    "total_targets": 3,
+    "alpha": {
+      "current": 3.6997435897435884,
+      "baseline": 3.9358974358974357,
+      "target": 2.3,
+      "progress_pct": 0,
+      "gap": -1.3997435897435886,
+      "achieved": true,
+      "velocity": -0.015743589743589935
+    },
+    "beta": {
+      "current": 1.4034236606833463,
+      "baseline": 1.8322475570032575,
+      "target": 1.8,
+      "progress_pct": 0,
+      "gap": 0.3965763393166537,
+      "achieved": false,
+      "velocity": -0.02977943724443821
+    },
+    "cascade": {
+      "current": 5.192307692307692,
+      "baseline": 1.0,
+      "target": 8.0,
+      "target_type": "stretch",
+      "progress_pct": 59.890109890109876,
+      "gap": 2.8076923076923084,
+      "achieved_conservative": true,
+      "achieved_stretch": false,
+      "velocity": -0.13461538461538466
+    },
+    "snapshots_count": 10,
+    "timestamp": "2025-11-15T13:25:22.895036"
+  },
+  "z_monitoring": {
+    "status": "active",
+    "snapshots_count": 10,
+    "current_z": 1.0,
+    "current_phase": "supercritical_stable",
+    "z_velocity": 0.0,
+    "z_range": [
+      1.0,
+      1.0
+    ],
+    "approaching_critical": null,
+    "is_stalling": true,
+    "predictions_7d": [
+      [
+        "2025-11-16 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-17 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-18 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-19 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-20 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-21 13:25:22.895019",
+        1.0
+      ],
+      [
+        "2025-11-22 13:25:22.895019",
+        1.0
+      ]
+    ],
+    "recent_alerts": 1,
+    "timestamp": "2025-11-15T13:25:22.895019"
+  },
+  "latest_snapshot": {
+    "z_coordinate": 1.0,
+    "phase": "supercritical_stable",
+    "weighted_burden": 4.65,
+    "predicted_reduction": 59.33947306071412
+  }
+}

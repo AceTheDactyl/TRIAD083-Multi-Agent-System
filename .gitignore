@@ -66,5 +66,10 @@ helix_tracking_data.json
 production_deployment.json
 production_metrics.json
 
+# R5 tracking data (runtime operational data)
+r5_deployment_tracking.json
+r5_multi_instance_tracking.json
+r5_physics_report_*.json
+
 # Windows zone metadata (from downloaded files)
 *:[Zz]one.Identifier

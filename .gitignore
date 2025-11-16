@@ -71,5 +71,10 @@ r5_deployment_tracking.json
 r5_multi_instance_tracking.json
 r5_physics_report_*.json
 
+# R6 tracking data (runtime operational data)
+r6_deployment_tracking.json
+r6_multi_instance_tracking.json
+r6_physics_report_*.json
+
 # Windows zone metadata (from downloaded files)
 *:[Zz]one.Identifier
